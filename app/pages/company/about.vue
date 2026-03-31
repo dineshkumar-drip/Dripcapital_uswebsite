@@ -56,7 +56,9 @@
         </div>
         <div class="grid-3">
           <div class="value-card reveal" v-for="(v, i) in values" :key="i" :class="`reveal-delay-${i}`">
-            <div class="value-icon">{{ v.icon }}</div>
+            <div class="value-icon">
+              <AppIcon :name="v.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="value-title">{{ v.title }}</h3>
             <p class="value-desc">{{ v.desc }}</p>
           </div>
@@ -120,12 +122,12 @@
 useHead({ title: 'About Us | Drip Capital' })
 
 const values = [
-  { icon: '🚀', title: 'Speed as a Feature', desc: 'Every business decision has a time value. We obsess over reducing time-to-capital so our customers can seize opportunities before they pass.' },
-  { icon: '🤝', title: 'Partnership Mindset', desc: 'We\'re not just lenders — we\'re partners in your growth. Your success is our success. We grow our facilities as our customers grow.' },
-  { icon: '🔍', title: 'Data-Driven Trust', desc: 'We use technology and data to see what traditional banks miss — the full picture of a business\'s health and potential, not just a credit score.' },
-  { icon: '💡', title: 'Customer Obsession', desc: 'Everything we build starts with the customer. Simpler applications, faster approvals, better service — all driven by listening to the businesses we serve.' },
-  { icon: '🌍', title: 'Global Perspective', desc: 'Trade is global. Our products and team reflect that. We serve businesses across the US and India, with a deep understanding of cross-border commerce.' },
-  { icon: '📖', title: 'Radical Transparency', desc: 'We believe in clear, honest communication — no hidden fees, no confusing terms. What you see is what you get with Drip Capital.' }
+  { icon: 'zap', title: 'Speed as a Feature', desc: 'Every business decision has a time value. We obsess over reducing time-to-capital so our customers can seize opportunities before they pass.' },
+  { icon: 'partner', title: 'Partnership Mindset', desc: 'We\'re not just lenders — we\'re partners in your growth. Your success is our success. We grow our facilities as our customers grow.' },
+  { icon: 'shield', title: 'Data-Driven Trust', desc: 'We use technology and data to see what traditional banks miss — the full picture of a business\'s health and potential, not just a credit score.' },
+  { icon: 'dollar', title: 'Customer Obsession', desc: 'Everything we build starts with the customer. Simpler applications, faster approvals, better service — all driven by listening to the businesses we serve.' },
+  { icon: 'map-pin', title: 'Global Perspective', desc: 'Trade is global. Our products and team reflect that. We serve businesses across the US and India, with a deep understanding of cross-border commerce.' },
+  { icon: 'unlock', title: 'Radical Transparency', desc: 'We believe in clear, honest communication — no hidden fees, no confusing terms. What you see is what you get with Drip Capital.' }
 ]
 
 const team = [

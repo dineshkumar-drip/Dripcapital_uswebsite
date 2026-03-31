@@ -24,7 +24,9 @@
         </div>
         <div class="grid-3">
           <div class="challenge-card reveal" v-for="(c, i) in challenges" :key="i" :class="`reveal-delay-${i}`">
-            <div class="challenge-icon">{{ c.icon }}</div>
+            <div class="challenge-icon">
+              <AppIcon :name="c.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="challenge-title">{{ c.title }}</h3>
             <p class="challenge-desc">{{ c.desc }}</p>
           </div>
@@ -98,9 +100,9 @@
 useHead({ title: 'Seafood Industry Working Capital | Drip Capital' })
 
 const challenges = [
-  { icon: '🧊', title: 'Perishable Goods', desc: 'Seafood has a very short shelf life. Delays in financing or payment can result in expired inventory and significant financial losses.' },
-  { icon: '🌊', title: 'Seasonal Supply Fluctuations', desc: 'Fishing seasons, catch limits, and weather events create unpredictable supply variability that makes cash planning extremely difficult.' },
-  { icon: '🚢', title: 'Import & Logistics Complexity', desc: 'Seafood importers must pay overseas suppliers before goods arrive, navigate customs, manage cold chain logistics, and then wait on customer payments.' }
+  { icon: 'fish', title: 'Perishable Goods', desc: 'Seafood has a very short shelf life. Delays in financing or payment can result in expired inventory and significant financial losses.' },
+  { icon: 'refresh', title: 'Seasonal Supply Fluctuations', desc: 'Fishing seasons, catch limits, and weather events create unpredictable supply variability that makes cash planning extremely difficult.' },
+  { icon: 'map-pin', title: 'Import & Logistics Complexity', desc: 'Seafood importers must pay overseas suppliers before goods arrive, navigate customs, manage cold chain logistics, and then wait on customer payments.' }
 ]
 
 const products = [

@@ -10,8 +10,12 @@
           <div class="hero-left">
             <span class="eyebrow">Working Capital for Growing Businesses</span>
             <h1 class="hero-h1">
-              Fast, flexible capital<br>
-              to <em>grow your business</em>
+              <span class="hero-static-text">
+                <Transition name="word-fade" mode="out-in">
+                  <em :key="currentHeadline.word" class="hero-cycling-word">{{ currentHeadline.word }}</em>
+                </Transition>
+                {{ currentHeadline.suffix }} for growing <span class="hero-highlight-smb">SMBs.</span>
+              </span>
             </h1>
             <p class="hero-subtitle">
               Drip Capital helps businesses doing $5M–$500M in annual revenue access the working capital they need — without traditional banking hurdles.
@@ -250,21 +254,27 @@
         </div>
         <div class="grid-3">
           <div class="hiw-card reveal">
-            <div class="feature-icon">📋</div>
+            <div class="feature-icon">
+              <AppIcon name="clipboard" :size="22" color="var(--green)" />
+            </div>
             <h3 class="hiw-title">Apply &amp; Connect</h3>
             <p class="hiw-desc">
               Complete a brief online application. We'll connect to your accounting or ERP system to assess your business — not just your credit score.
             </p>
           </div>
           <div class="hiw-card reveal reveal-delay-1">
-            <div class="feature-icon">⚡</div>
+            <div class="feature-icon">
+              <AppIcon name="lightning" :size="22" color="var(--green)" />
+            </div>
             <h3 class="hiw-title">Underwriting &amp; Funding</h3>
             <p class="hiw-desc">
               Our proprietary underwriting model gives you a decision in 48 hours. Once approved, funds reach your account or your supplier fast.
             </p>
           </div>
           <div class="hiw-card reveal reveal-delay-2">
-            <div class="feature-icon">🤝</div>
+            <div class="feature-icon">
+              <AppIcon name="partner" :size="22" color="var(--green)" />
+            </div>
             <h3 class="hiw-title">A Partner, Not Just a Lender</h3>
             <p class="hiw-desc">
               Your dedicated account manager is with you every step of the way. As your business grows, your credit facility grows with you.
@@ -286,7 +296,9 @@
         </div>
         <div class="grid-3">
           <div class="usecase-card reveal">
-            <div class="usecase-icon">🔄</div>
+            <div class="usecase-icon">
+              <AppIcon name="refresh" :size="22" color="var(--green)" />
+            </div>
             <h3 class="usecase-title">Bridge the Supplier-Customer Gap</h3>
             <p class="usecase-desc">
               You buy from suppliers today but don't get paid by customers for 60–90 days. Float bridges that gap so you never have to pause orders.
@@ -294,7 +306,9 @@
             <NuxtLink to="/products/vendor-financing" class="usecase-link">Float — Vendor Financing →</NuxtLink>
           </div>
           <div class="usecase-card reveal reveal-delay-1">
-            <div class="usecase-icon">📈</div>
+            <div class="usecase-icon">
+              <AppIcon name="trending" :size="22" color="var(--green)" />
+            </div>
             <h3 class="usecase-title">Fulfill a Large Order Without Draining Reserves</h3>
             <p class="usecase-desc">
               Land a big contract but don't have the inventory capital? Access the working capital you need to fulfill the order and grow.
@@ -302,7 +316,9 @@
             <NuxtLink to="/products/receivable-financing" class="usecase-link">Advance — Receivables →</NuxtLink>
           </div>
           <div class="usecase-card reveal reveal-delay-2">
-            <div class="usecase-icon">✅</div>
+            <div class="usecase-icon">
+              <AppIcon name="check-circle" :size="22" color="var(--green)" />
+            </div>
             <h3 class="usecase-title">Pay Suppliers on Time — Every Time</h3>
             <p class="usecase-desc">
               Maintain your supplier relationships and negotiate better terms. Drip ensures you always pay on time, building trust and loyalty.
@@ -575,6 +591,17 @@ const heroEmail = ref('')
 const openFaq = ref<number | null>(null)
 const particleCanvas = ref<HTMLCanvasElement | null>(null)
 
+const headlines = [
+  { word: 'Transparent', suffix: 'pricing' },
+  { word: 'Fast', suffix: 'approvals on funding' },
+  { word: 'Unsecured', suffix: 'financing' },
+  { word: 'Collateral-free', suffix: 'financing' },
+]
+const headlineIndex = ref(0)
+const currentHeadline = computed(() => headlines[headlineIndex.value])
+
+let headlineTimer: ReturnType<typeof setInterval> | null = null
+
 const faqItems = [
   {
     question: 'What types of businesses qualify for Drip Capital?',
@@ -669,6 +696,13 @@ onMounted(() => {
   if (particleCanvas.value) {
     initParticles(particleCanvas.value)
   }
+  headlineTimer = setInterval(() => {
+    headlineIndex.value = (headlineIndex.value + 1) % headlines.length
+  }, 2500)
+})
+
+onUnmounted(() => {
+  if (headlineTimer) clearInterval(headlineTimer)
 })
 </script>
 
@@ -1461,5 +1495,37 @@ onMounted(() => {
   .cta-actions .btn {
     justify-content: center;
   }
+}
+
+/* ===== CYCLING HEADLINE ===== */
+.hero-static-text {
+  display: block;
+}
+
+.hero-cycling-word {
+  font-style: normal;
+  color: var(--green);
+  font-weight: 900;
+  display: inline-block;
+}
+
+.hero-highlight-smb {
+  color: var(--white);
+  font-weight: 900;
+}
+
+.word-fade-enter-active,
+.word-fade-leave-active {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.word-fade-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.word-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-12px);
 }
 </style>

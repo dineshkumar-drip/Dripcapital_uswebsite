@@ -24,7 +24,9 @@
         </div>
         <div class="grid-3">
           <div class="challenge-card reveal" v-for="(c, i) in challenges" :key="i" :class="`reveal-delay-${i}`">
-            <div class="challenge-icon">{{ c.icon }}</div>
+            <div class="challenge-icon">
+              <AppIcon :name="c.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="challenge-title">{{ c.title }}</h3>
             <p class="challenge-desc">{{ c.desc }}</p>
           </div>
@@ -98,9 +100,9 @@
 useHead({ title: 'Agriculture & Food Working Capital | Drip Capital' })
 
 const challenges = [
-  { icon: '🌱', title: 'Seasonal Cash Flow', desc: 'Agricultural businesses face extreme seasonal cash flow swings. Capital is needed intensely during planting/harvest but revenue comes later.' },
-  { icon: '🚚', title: 'Perishable Goods Risk', desc: 'Food products have short shelf lives. Delays in financing can mean expired inventory and significant losses.' },
-  { icon: '🌍', title: 'Global Supply Chain Complexity', desc: 'Many agri-food businesses import or export across borders, adding currency risk, shipping complexity, and long payment cycles.' }
+  { icon: 'leaf', title: 'Seasonal Cash Flow', desc: 'Agricultural businesses face extreme seasonal cash flow swings. Capital is needed intensely during planting/harvest but revenue comes later.' },
+  { icon: 'clock', title: 'Perishable Goods Risk', desc: 'Food products have short shelf lives. Delays in financing can mean expired inventory and significant losses.' },
+  { icon: 'map-pin', title: 'Global Supply Chain Complexity', desc: 'Many agri-food businesses import or export across borders, adding currency risk, shipping complexity, and long payment cycles.' }
 ]
 
 const products = [

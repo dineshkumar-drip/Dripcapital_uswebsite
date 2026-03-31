@@ -96,7 +96,9 @@
         </div>
         <div class="grid-2">
           <div class="benefit-card reveal" v-for="(b, i) in benefits" :key="i" :class="`reveal-delay-${i}`">
-            <div class="feature-icon">{{ b.icon }}</div>
+            <div class="feature-icon">
+              <AppIcon :name="b.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="benefit-title">{{ b.title }}</h3>
             <p class="benefit-desc">{{ b.desc }}</p>
           </div>
@@ -142,22 +144,22 @@ useHead({ title: 'Advance — Receivables Financing | Drip Capital' })
 
 const benefits = [
   {
-    icon: '📉',
+    icon: 'chart',
     title: 'Improve Days Sales Outstanding',
     desc: 'Cut your DSO from 60–90 days to near zero. Better DSO means better cash flow, better planning, and more capacity to grow.'
   },
   {
-    icon: '🚫',
+    icon: 'unlock',
     title: 'No Collateral Required',
     desc: 'Your invoices are the collateral. No need to pledge real estate, equipment, or other business assets to access working capital.'
   },
   {
-    icon: '⚡',
+    icon: 'lightning',
     title: 'Fast Funding',
     desc: 'Approved invoices are funded within 24–48 hours — not the weeks you\'d wait for a bank to process a traditional loan.'
   },
   {
-    icon: '💎',
+    icon: 'shield',
     title: 'Non-Dilutive',
     desc: 'Unlike equity financing, Advance doesn\'t require you to give up any ownership in your business. You keep 100% of your equity while accessing the capital you need.'
   }

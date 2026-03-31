@@ -112,7 +112,9 @@
         </div>
         <div class="grid-2">
           <div class="benefit-card reveal" v-for="(b, i) in benefits" :key="i" :class="`reveal-delay-${i}`">
-            <div class="feature-icon">{{ b.icon }}</div>
+            <div class="feature-icon">
+              <AppIcon :name="b.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="benefit-title">{{ b.title }}</h3>
             <p class="benefit-desc">{{ b.desc }}</p>
           </div>
@@ -158,22 +160,22 @@ useHead({ title: 'Flex — Line of Credit | Drip Capital' })
 
 const benefits = [
   {
-    icon: '🔓',
+    icon: 'unlock',
     title: 'On-Demand Access',
     desc: 'Your credit line is always available. Draw funds anytime through our portal — no need to reapply every time you need capital.'
   },
   {
-    icon: '💰',
+    icon: 'dollar',
     title: 'Only Pay for What You Use',
     desc: 'Interest only accrues on your outstanding drawn balance. If you don\'t draw, you don\'t pay. No commitment fees on unused credit.'
   },
   {
-    icon: '📈',
+    icon: 'trending',
     title: 'Grows with Your Business',
     desc: 'Your credit limit isn\'t static. As your business grows and your trade history with Drip Capital builds, your limit grows with you.'
   },
   {
-    icon: '📅',
+    icon: 'refresh',
     title: 'No Fixed Repayment Schedule',
     desc: 'Repay when it makes sense for your business — when customers pay you, when seasonal cash flow returns, or on any schedule you prefer.'
   }

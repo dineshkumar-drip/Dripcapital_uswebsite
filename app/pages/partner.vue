@@ -18,7 +18,9 @@
         </div>
         <div class="grid-2">
           <div class="partner-type-card reveal" v-for="(pt, i) in partnerTypes" :key="i" :class="`reveal-delay-${i}`">
-            <div class="pt-icon">{{ pt.icon }}</div>
+            <div class="pt-icon">
+              <AppIcon :name="pt.icon" :size="28" color="var(--green)" />
+            </div>
             <h3 class="pt-title">{{ pt.title }}</h3>
             <p class="pt-desc">{{ pt.desc }}</p>
             <ul class="pt-benefits">
@@ -38,7 +40,9 @@
         </div>
         <div class="grid-3">
           <div class="benefit-card reveal" v-for="(b, i) in benefits" :key="i" :class="`reveal-delay-${i}`">
-            <div class="feature-icon">{{ b.icon }}</div>
+            <div class="feature-icon">
+              <AppIcon :name="b.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="benefit-title">{{ b.title }}</h3>
             <p class="benefit-desc">{{ b.desc }}</p>
           </div>
@@ -58,11 +62,15 @@
             </p>
             <div class="contact-info">
               <div class="ci-item">
-                <span class="ci-icon">✉</span>
+                <span class="ci-icon">
+                  <AppIcon name="mail" :size="16" color="var(--green)" />
+                </span>
                 <a href="mailto:partners@dripcapital.com">partners@dripcapital.com</a>
               </div>
               <div class="ci-item">
-                <span class="ci-icon">📞</span>
+                <span class="ci-icon">
+                  <AppIcon name="phone" :size="16" color="var(--green)" />
+                </span>
                 <a href="tel:+16504370150">+1 (650) 437-0150</a>
               </div>
             </div>
@@ -124,25 +132,25 @@ const form = reactive({
 
 const partnerTypes = [
   {
-    icon: '🏦',
+    icon: 'building',
     title: 'Banks & Credit Unions',
     desc: 'Expand your SMB lending capabilities by referring clients who need working capital products you don\'t currently offer.',
     benefits: ['Earn referral fees on funded clients', 'Complementary — not competitive', 'White-label options available', 'Dedicated bank partnership team']
   },
   {
-    icon: '💼',
+    icon: 'building',
     title: 'Finance Brokers & Advisors',
     desc: 'Offer your clients a best-in-class working capital option and earn competitive referral commissions on funded transactions.',
     benefits: ['Industry-leading referral commissions', 'Fast approvals for your clients', 'Real-time deal tracking portal', 'Marketing support provided']
   },
   {
-    icon: '🤝',
+    icon: 'partner',
     title: 'Trade Associations',
     desc: 'Provide your members with access to exclusive working capital terms through a Drip Capital association partnership.',
     benefits: ['Member benefit announcement support', 'Preferred pricing for your members', 'Educational webinars & content', 'Co-branded materials available']
   },
   {
-    icon: '📊',
+    icon: 'chart',
     title: 'CPAs & Accountants',
     desc: 'Help your business clients optimize cash flow by referring them to Drip Capital working capital solutions.',
     benefits: ['Earn referral income', 'Help clients improve cash flow', 'Simple referral process', 'Client relationship maintained']
@@ -150,12 +158,12 @@ const partnerTypes = [
 ]
 
 const benefits = [
-  { icon: '💵', title: 'Competitive Referral Commissions', desc: 'Earn industry-leading referral fees for every client you refer who gets funded. Transparent, on-time payments — always.' },
-  { icon: '⚡', title: 'Fast Approvals for Your Clients', desc: 'Drip Capital\'s 48-hour approval process means your clients get funded fast, reinforcing your value as a trusted advisor.' },
-  { icon: '🖥', title: 'Partner Portal Access', desc: 'Track referrals, monitor deal status, and access marketing materials through our dedicated partner portal.' },
-  { icon: '🎓', title: 'Training & Support', desc: 'We provide training on our products, dedicated partnership managers, and co-marketing resources to help you succeed.' },
-  { icon: '📈', title: 'Growing Product Suite', desc: 'With Float, Advance, and Flex, there\'s a Drip Capital product for nearly every working capital need your clients may have.' },
-  { icon: '🏆', title: 'Trusted Brand', desc: 'Partner with a brand backed by Sequoia, Accel, Y Combinator, and world-class financial institutions. Trusted by 10,000+ businesses.' }
+  { icon: 'dollar', title: 'Competitive Referral Commissions', desc: 'Earn industry-leading referral fees for every client you refer who gets funded. Transparent, on-time payments — always.' },
+  { icon: 'lightning', title: 'Fast Approvals for Your Clients', desc: 'Drip Capital\'s 48-hour approval process means your clients get funded fast, reinforcing your value as a trusted advisor.' },
+  { icon: 'shield', title: 'Partner Portal Access', desc: 'Track referrals, monitor deal status, and access marketing materials through our dedicated partner portal.' },
+  { icon: 'users', title: 'Training & Support', desc: 'We provide training on our products, dedicated partnership managers, and co-marketing resources to help you succeed.' },
+  { icon: 'trending', title: 'Growing Product Suite', desc: 'With Float, Advance, and Flex, there\'s a Drip Capital product for nearly every working capital need your clients may have.' },
+  { icon: 'star', title: 'Trusted Brand', desc: 'Partner with a brand backed by Sequoia, Accel, Y Combinator, and world-class financial institutions. Trusted by 10,000+ businesses.' }
 ]
 
 function submitPartnerForm() {

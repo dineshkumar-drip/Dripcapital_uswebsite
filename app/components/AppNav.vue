@@ -26,21 +26,27 @@
             <div class="dropdown" :class="{ open: activeDropdown === 'products' }">
               <div class="dropdown-inner">
                 <NuxtLink to="/products/vendor-financing" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">F</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="zap" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Float</div>
                     <div class="dropdown-desc">Supplier / Vendor Financing</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/products/receivable-financing" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">A</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="chart" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Advance</div>
                     <div class="dropdown-desc">Receivables Financing</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/products/line-of-credit" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">X</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="refresh" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Flex</div>
                     <div class="dropdown-desc">Line of Credit</div>
@@ -67,35 +73,45 @@
             <div class="dropdown" :class="{ open: activeDropdown === 'industry' }">
               <div class="dropdown-inner">
                 <NuxtLink to="/industry/manufacturing" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">⚙</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="gear" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Manufacturing</div>
                     <div class="dropdown-desc">Industrial & production businesses</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/industry/wholesale" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">📦</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="box" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Wholesale</div>
                     <div class="dropdown-desc">Distribution & trade businesses</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/industry/agri-food" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">🌾</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="leaf" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Agri-Products</div>
                     <div class="dropdown-desc">Agriculture & food supply chains</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/industry/consumer-goods" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">🛒</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="bag" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Consumer Goods</div>
                     <div class="dropdown-desc">Retail & branded products</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/industry/seafood" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">🐟</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="fish" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Seafood</div>
                     <div class="dropdown-desc">Seafood importers & distributors</div>
@@ -129,21 +145,27 @@
             <div class="dropdown" :class="{ open: activeDropdown === 'company' }">
               <div class="dropdown-inner">
                 <NuxtLink to="/company/about" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">🏢</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="building" :size="16" color="var(--navy)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">About Us</div>
                     <div class="dropdown-desc">Our story and mission</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/company/investors" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">💼</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="trending" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Our Investors</div>
                     <div class="dropdown-desc">World-class backers</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/company/contact" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">✉</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="mail" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Contact Us</div>
                     <div class="dropdown-desc">Get in touch with our team</div>
@@ -170,28 +192,36 @@
             <div class="dropdown" :class="{ open: activeDropdown === 'resources' }">
               <div class="dropdown-inner">
                 <NuxtLink to="/resources/newsroom" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">📰</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="zap" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Newsroom</div>
                     <div class="dropdown-desc">Press releases & media</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/resources/finance-guides" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">📚</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="dollar" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Finance Guides</div>
                     <div class="dropdown-desc">Working capital education</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/resources/blog" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">✏</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="trending" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Blog</div>
                     <div class="dropdown-desc">Insights & industry news</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/resources/use-cases" class="dropdown-item" @click="closeDropdown">
-                  <div class="dropdown-icon">📋</div>
+                  <div class="dropdown-icon">
+                    <AppIcon name="clipboard" :size="16" color="var(--green)" />
+                  </div>
                   <div>
                     <div class="dropdown-label">Use Cases</div>
                     <div class="dropdown-desc">Customer success stories</div>

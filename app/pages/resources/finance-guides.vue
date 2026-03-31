@@ -18,7 +18,9 @@
 
         <div class="categories-grid">
           <div class="category-card reveal" v-for="(cat, i) in categories" :key="i" :class="`reveal-delay-${i % 3}`">
-            <div class="cat-icon">{{ cat.icon }}</div>
+            <div class="cat-icon">
+              <AppIcon :name="cat.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="cat-title">{{ cat.title }}</h3>
             <p class="cat-desc">{{ cat.desc }}</p>
             <div class="cat-articles">
@@ -70,37 +72,37 @@ useHead({ title: 'Finance Guides | Drip Capital' })
 
 const categories = [
   {
-    icon: '💧',
+    icon: 'dollar',
     title: 'Working Capital Basics',
     desc: 'Understand the fundamentals of working capital and why it\'s the lifeblood of any growing business.',
     articles: ['What is Working Capital?', 'Working Capital Ratio Explained', 'How to Calculate Your Working Capital Needs', 'The Cash Conversion Cycle Guide']
   },
   {
-    icon: '🏦',
+    icon: 'building',
     title: 'Trade Finance',
     desc: 'Deep dives into supplier financing, receivables, and the tools that keep international trade flowing.',
     articles: ['Introduction to Trade Finance', 'Supplier Financing vs. Factoring', 'Understanding Invoice Financing', 'Cross-Border Trade Finance Guide']
   },
   {
-    icon: '📊',
+    icon: 'chart',
     title: 'Business Finance',
     desc: 'Practical guides on cash flow management, financial planning, and growth financing strategies.',
     articles: ['Cash Flow Forecasting for SMBs', 'Debt vs. Equity: What\'s Right for You?', 'How to Prepare for a Financing Application', 'Managing Seasonal Cash Flow']
   },
   {
-    icon: '📈',
+    icon: 'trending',
     title: 'Growth Strategies',
     desc: 'How high-growth businesses use working capital to seize market opportunities and scale efficiently.',
     articles: ['Scaling a Distribution Business', 'Financing a Major Retail Partnership', 'Building Supplier Relationships with Extended Terms', 'Using Credit to Capture Market Share']
   },
   {
-    icon: '🌍',
+    icon: 'map-pin',
     title: 'Import & Export',
     desc: 'Navigate the complexities of international trade with guides on documentation, compliance, and financing.',
     articles: ['US Import Finance 101', 'Letters of Credit Explained', 'Managing Currency Risk in Trade', 'Customs and Compliance Basics']
   },
   {
-    icon: '🔢',
+    icon: 'zap',
     title: 'Financial Metrics',
     desc: 'Key metrics every business owner should track to monitor financial health and optimize capital efficiency.',
     articles: ['DSO: Days Sales Outstanding', 'DPO: Days Payable Outstanding', 'Cash Conversion Cycle Calculator', 'Working Capital Efficiency Benchmarks']

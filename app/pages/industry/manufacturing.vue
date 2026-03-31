@@ -31,7 +31,9 @@
         </div>
         <div class="grid-3">
           <div class="challenge-card reveal" v-for="(c, i) in challenges" :key="i" :class="`reveal-delay-${i}`">
-            <div class="challenge-icon">{{ c.icon }}</div>
+            <div class="challenge-icon">
+              <AppIcon :name="c.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="challenge-title">{{ c.title }}</h3>
             <p class="challenge-desc">{{ c.desc }}</p>
           </div>
@@ -109,9 +111,9 @@
 useHead({ title: 'Manufacturing Working Capital | Drip Capital' })
 
 const challenges = [
-  { icon: '⏳', title: 'Long Production Cycles', desc: 'Raw materials must be purchased weeks before goods can be sold. This cash gap strains working capital and limits production throughput.' },
-  { icon: '💸', title: 'Slow Customer Payments', desc: 'Large B2B customers often have net-60 or net-90 payment terms. Waiting months for payment while covering ongoing production costs is a constant challenge.' },
-  { icon: '📦', title: 'Bulk Material Procurement', desc: 'Buying raw materials in bulk reduces unit costs, but requires significant upfront capital that ties up cash and limits operational flexibility.' }
+  { icon: 'clock', title: 'Long Production Cycles', desc: 'Raw materials must be purchased weeks before goods can be sold. This cash gap strains working capital and limits production throughput.' },
+  { icon: 'dollar', title: 'Slow Customer Payments', desc: 'Large B2B customers often have net-60 or net-90 payment terms. Waiting months for payment while covering ongoing production costs is a constant challenge.' },
+  { icon: 'box', title: 'Bulk Material Procurement', desc: 'Buying raw materials in bulk reduces unit costs, but requires significant upfront capital that ties up cash and limits operational flexibility.' }
 ]
 
 const products = [

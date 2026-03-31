@@ -24,7 +24,9 @@
         </div>
         <div class="grid-3">
           <div class="challenge-card reveal" v-for="(c, i) in challenges" :key="i" :class="`reveal-delay-${i}`">
-            <div class="challenge-icon">{{ c.icon }}</div>
+            <div class="challenge-icon">
+              <AppIcon :name="c.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="challenge-title">{{ c.title }}</h3>
             <p class="challenge-desc">{{ c.desc }}</p>
           </div>
@@ -98,9 +100,9 @@
 useHead({ title: 'Consumer Goods Working Capital | Drip Capital' })
 
 const challenges = [
-  { icon: '🛍', title: 'Large Retailer Payment Terms', desc: 'Big box retailers and grocery chains often demand net-60 to net-90 payment terms, creating enormous cash gaps for suppliers.' },
-  { icon: '📦', title: 'Constant Inventory Investment', desc: 'Consumer goods brands must maintain product availability across SKUs and distribution channels — requiring perpetual working capital.' },
-  { icon: '🎄', title: 'Seasonal Demand Spikes', desc: 'Holiday seasons, product launches, and promotional events create sudden surges in demand that require rapid capital deployment.' }
+  { icon: 'bag', title: 'Large Retailer Payment Terms', desc: 'Big box retailers and grocery chains often demand net-60 to net-90 payment terms, creating enormous cash gaps for suppliers.' },
+  { icon: 'box', title: 'Constant Inventory Investment', desc: 'Consumer goods brands must maintain product availability across SKUs and distribution channels — requiring perpetual working capital.' },
+  { icon: 'zap', title: 'Seasonal Demand Spikes', desc: 'Holiday seasons, product launches, and promotional events create sudden surges in demand that require rapid capital deployment.' }
 ]
 
 const products = [

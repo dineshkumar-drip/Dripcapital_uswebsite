@@ -24,7 +24,9 @@
         </div>
         <div class="grid-3">
           <div class="challenge-card reveal" v-for="(c, i) in challenges" :key="i" :class="`reveal-delay-${i}`">
-            <div class="challenge-icon">{{ c.icon }}</div>
+            <div class="challenge-icon">
+              <AppIcon :name="c.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="challenge-title">{{ c.title }}</h3>
             <p class="challenge-desc">{{ c.desc }}</p>
           </div>
@@ -98,9 +100,9 @@
 useHead({ title: 'Wholesale Distribution Working Capital | Drip Capital' })
 
 const challenges = [
-  { icon: '📊', title: 'Thin Margin Environment', desc: 'Wholesale margins are tight. Every dollar of capital must work harder. Cash tied up in inventory or receivables means missed opportunities.' },
-  { icon: '🔄', title: 'High Inventory Turnover Pressure', desc: 'To make thin margins work, you need to turn inventory fast. That requires constant access to capital for new stock before old stock sells.' },
-  { icon: '⏱', title: 'Net-60/90 Customer Terms', desc: 'Major retail and B2B customers demand long payment terms. This creates a cash gap that can cripple growth if not addressed.' }
+  { icon: 'chart', title: 'Thin Margin Environment', desc: 'Wholesale margins are tight. Every dollar of capital must work harder. Cash tied up in inventory or receivables means missed opportunities.' },
+  { icon: 'refresh', title: 'High Inventory Turnover Pressure', desc: 'To make thin margins work, you need to turn inventory fast. That requires constant access to capital for new stock before old stock sells.' },
+  { icon: 'clock', title: 'Net-60/90 Customer Terms', desc: 'Major retail and B2B customers demand long payment terms. This creates a cash gap that can cripple growth if not addressed.' }
 ]
 
 const products = [

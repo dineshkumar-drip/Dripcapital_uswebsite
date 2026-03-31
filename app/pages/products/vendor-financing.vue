@@ -86,7 +86,9 @@
         </div>
         <div class="grid-2">
           <div class="benefit-card reveal" v-for="(b, i) in benefits" :key="i" :class="`reveal-delay-${i}`">
-            <div class="feature-icon">{{ b.icon }}</div>
+            <div class="feature-icon">
+              <AppIcon :name="b.icon" :size="22" color="var(--green)" />
+            </div>
             <h3 class="benefit-title">{{ b.title }}</h3>
             <p class="benefit-desc">{{ b.desc }}</p>
           </div>
@@ -132,22 +134,22 @@ useHead({ title: 'Float — Vendor Financing | Drip Capital' })
 
 const benefits = [
   {
-    icon: '🚫',
+    icon: 'unlock',
     title: 'No Collateral Required',
     desc: 'Unlike traditional bank financing, Float does not require you to pledge real estate, equipment, or other hard assets. Your trade history is enough.'
   },
   {
-    icon: '⚡',
+    icon: 'lightning',
     title: '48-Hour Approval',
     desc: 'Our proprietary underwriting model gives you a credit decision within 48 hours of completing the application — no weeks-long bank review process.'
   },
   {
-    icon: '📅',
+    icon: 'clock',
     title: 'Up to 120-Day Terms',
     desc: 'Extended repayment terms mean your cash stays in your business longer. Match repayment to when you actually receive payment from your customers.'
   },
   {
-    icon: '👤',
+    icon: 'users',
     title: 'Dedicated Account Manager',
     desc: 'You get a dedicated Drip Capital account manager who understands your business, your suppliers, and your growth goals — available when you need them.'
   }

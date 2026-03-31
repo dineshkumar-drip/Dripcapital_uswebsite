@@ -79,21 +79,27 @@
             <div class="info-section">
               <h3 class="info-title">Get in Touch</h3>
               <div class="info-item">
-                <div class="info-icon">📞</div>
+                <div class="info-icon">
+                  <AppIcon name="phone" :size="18" color="var(--green)" />
+                </div>
                 <div>
                   <div class="info-label">Phone</div>
                   <a href="tel:+16504370150" class="info-value">+1 (650) 437-0150</a>
                 </div>
               </div>
               <div class="info-item">
-                <div class="info-icon">✉</div>
+                <div class="info-icon">
+                  <AppIcon name="mail" :size="18" color="var(--green)" />
+                </div>
                 <div>
                   <div class="info-label">Email</div>
                   <a href="mailto:hello@dripcapital.com" class="info-value">hello@dripcapital.com</a>
                 </div>
               </div>
               <div class="info-item">
-                <div class="info-icon">⏰</div>
+                <div class="info-icon">
+                  <AppIcon name="clock" :size="18" color="var(--green)" />
+                </div>
                 <div>
                   <div class="info-label">Hours</div>
                   <div class="info-value">Mon–Fri, 9AM–6PM PST</div>
@@ -104,7 +110,9 @@
             <div class="info-section">
               <h3 class="info-title">Headquarters</h3>
               <div class="info-item">
-                <div class="info-icon">📍</div>
+                <div class="info-icon">
+                  <AppIcon name="map-pin" :size="18" color="var(--green)" />
+                </div>
                 <div>
                   <div class="info-value" style="line-height: 1.8;">
                     228 Hamilton Ave, 3rd Floor<br>
@@ -124,7 +132,9 @@
             </div>
 
             <div class="response-promise">
-              <div class="rp-icon">⚡</div>
+              <div class="rp-icon">
+                <AppIcon name="lightning" :size="20" color="var(--green)" />
+              </div>
               <div>
                 <div class="rp-title">Fast Response</div>
                 <div class="rp-desc">We respond to all inquiries within one business day. For urgent matters, call us directly.</div>
