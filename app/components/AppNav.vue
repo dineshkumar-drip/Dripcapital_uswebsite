@@ -1,0 +1,608 @@
+<template>
+  <header class="nav-wrapper" :class="{ scrolled: isScrolled }">
+    <div class="container">
+      <nav class="nav-inner">
+        <!-- Logo -->
+        <NuxtLink to="/" class="nav-logo">
+          DRIP<span class="logo-accent">/c</span>
+        </NuxtLink>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links">
+          <!-- Products -->
+          <li
+            class="nav-item has-dropdown"
+            @mouseenter="openDropdown('products')"
+            @mouseleave="closeDropdown"
+          >
+            <button class="nav-trigger" :class="{ active: activeDropdown === 'products' }">
+              Products
+              <span class="nav-arrow">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="dropdown" :class="{ open: activeDropdown === 'products' }">
+              <div class="dropdown-inner">
+                <NuxtLink to="/products/vendor-financing" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">F</div>
+                  <div>
+                    <div class="dropdown-label">Float</div>
+                    <div class="dropdown-desc">Supplier / Vendor Financing</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/products/receivable-financing" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">A</div>
+                  <div>
+                    <div class="dropdown-label">Advance</div>
+                    <div class="dropdown-desc">Receivables Financing</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/products/line-of-credit" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">X</div>
+                  <div>
+                    <div class="dropdown-label">Flex</div>
+                    <div class="dropdown-desc">Line of Credit</div>
+                  </div>
+                </NuxtLink>
+              </div>
+            </div>
+          </li>
+
+          <!-- Industry -->
+          <li
+            class="nav-item has-dropdown"
+            @mouseenter="openDropdown('industry')"
+            @mouseleave="closeDropdown"
+          >
+            <button class="nav-trigger" :class="{ active: activeDropdown === 'industry' }">
+              Industry
+              <span class="nav-arrow">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="dropdown" :class="{ open: activeDropdown === 'industry' }">
+              <div class="dropdown-inner">
+                <NuxtLink to="/industry/manufacturing" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">⚙</div>
+                  <div>
+                    <div class="dropdown-label">Manufacturing</div>
+                    <div class="dropdown-desc">Industrial & production businesses</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/industry/wholesale" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">📦</div>
+                  <div>
+                    <div class="dropdown-label">Wholesale</div>
+                    <div class="dropdown-desc">Distribution & trade businesses</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/industry/agri-food" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">🌾</div>
+                  <div>
+                    <div class="dropdown-label">Agri-Products</div>
+                    <div class="dropdown-desc">Agriculture & food supply chains</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/industry/consumer-goods" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">🛒</div>
+                  <div>
+                    <div class="dropdown-label">Consumer Goods</div>
+                    <div class="dropdown-desc">Retail & branded products</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/industry/seafood" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">🐟</div>
+                  <div>
+                    <div class="dropdown-label">Seafood</div>
+                    <div class="dropdown-desc">Seafood importers & distributors</div>
+                  </div>
+                </NuxtLink>
+              </div>
+            </div>
+          </li>
+
+          <!-- Partner -->
+          <li class="nav-item">
+            <NuxtLink to="/partner" class="nav-trigger" active-class="nav-trigger-active">
+              Partner
+            </NuxtLink>
+          </li>
+
+          <!-- Company -->
+          <li
+            class="nav-item has-dropdown"
+            @mouseenter="openDropdown('company')"
+            @mouseleave="closeDropdown"
+          >
+            <button class="nav-trigger" :class="{ active: activeDropdown === 'company' }">
+              Company
+              <span class="nav-arrow">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="dropdown" :class="{ open: activeDropdown === 'company' }">
+              <div class="dropdown-inner">
+                <NuxtLink to="/company/about" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">🏢</div>
+                  <div>
+                    <div class="dropdown-label">About Us</div>
+                    <div class="dropdown-desc">Our story and mission</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/company/investors" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">💼</div>
+                  <div>
+                    <div class="dropdown-label">Our Investors</div>
+                    <div class="dropdown-desc">World-class backers</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/company/contact" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">✉</div>
+                  <div>
+                    <div class="dropdown-label">Contact Us</div>
+                    <div class="dropdown-desc">Get in touch with our team</div>
+                  </div>
+                </NuxtLink>
+              </div>
+            </div>
+          </li>
+
+          <!-- Resources -->
+          <li
+            class="nav-item has-dropdown"
+            @mouseenter="openDropdown('resources')"
+            @mouseleave="closeDropdown"
+          >
+            <button class="nav-trigger" :class="{ active: activeDropdown === 'resources' }">
+              Resources
+              <span class="nav-arrow">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="dropdown" :class="{ open: activeDropdown === 'resources' }">
+              <div class="dropdown-inner">
+                <NuxtLink to="/resources/newsroom" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">📰</div>
+                  <div>
+                    <div class="dropdown-label">Newsroom</div>
+                    <div class="dropdown-desc">Press releases & media</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/resources/finance-guides" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">📚</div>
+                  <div>
+                    <div class="dropdown-label">Finance Guides</div>
+                    <div class="dropdown-desc">Working capital education</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/resources/blog" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">✏</div>
+                  <div>
+                    <div class="dropdown-label">Blog</div>
+                    <div class="dropdown-desc">Insights & industry news</div>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/resources/use-cases" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">📋</div>
+                  <div>
+                    <div class="dropdown-label">Use Cases</div>
+                    <div class="dropdown-desc">Customer success stories</div>
+                  </div>
+                </NuxtLink>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- CTA Area -->
+        <div class="nav-cta">
+          <NuxtLink to="/partner" class="btn btn-outline btn-sm">Become a Partner</NuxtLink>
+          <a href="https://app.dripcapital.com/sign_in" target="_blank" rel="noopener noreferrer" class="nav-signin">Sign In</a>
+          <NuxtLink to="/company/contact" class="btn btn-primary btn-sm">Contact Us</NuxtLink>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="hamburger" :class="{ open: mobileOpen }" @click="toggleMobile" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" :class="{ open: mobileOpen }">
+      <div class="mobile-menu-inner">
+        <div class="mobile-section">
+          <div class="mobile-section-title">Products</div>
+          <NuxtLink to="/products/vendor-financing" class="mobile-link" @click="closeMobile">Float — Vendor Financing</NuxtLink>
+          <NuxtLink to="/products/receivable-financing" class="mobile-link" @click="closeMobile">Advance — Receivables</NuxtLink>
+          <NuxtLink to="/products/line-of-credit" class="mobile-link" @click="closeMobile">Flex — Line of Credit</NuxtLink>
+        </div>
+        <div class="mobile-section">
+          <div class="mobile-section-title">Industry</div>
+          <NuxtLink to="/industry/manufacturing" class="mobile-link" @click="closeMobile">Manufacturing</NuxtLink>
+          <NuxtLink to="/industry/wholesale" class="mobile-link" @click="closeMobile">Wholesale</NuxtLink>
+          <NuxtLink to="/industry/agri-food" class="mobile-link" @click="closeMobile">Agri-Products</NuxtLink>
+          <NuxtLink to="/industry/consumer-goods" class="mobile-link" @click="closeMobile">Consumer Goods</NuxtLink>
+          <NuxtLink to="/industry/seafood" class="mobile-link" @click="closeMobile">Seafood</NuxtLink>
+        </div>
+        <div class="mobile-section">
+          <NuxtLink to="/partner" class="mobile-link" @click="closeMobile">Partner</NuxtLink>
+        </div>
+        <div class="mobile-section">
+          <div class="mobile-section-title">Company</div>
+          <NuxtLink to="/company/about" class="mobile-link" @click="closeMobile">About Us</NuxtLink>
+          <NuxtLink to="/company/investors" class="mobile-link" @click="closeMobile">Our Investors</NuxtLink>
+          <NuxtLink to="/company/contact" class="mobile-link" @click="closeMobile">Contact Us</NuxtLink>
+        </div>
+        <div class="mobile-section">
+          <div class="mobile-section-title">Resources</div>
+          <NuxtLink to="/resources/newsroom" class="mobile-link" @click="closeMobile">Newsroom</NuxtLink>
+          <NuxtLink to="/resources/finance-guides" class="mobile-link" @click="closeMobile">Finance Guides</NuxtLink>
+          <NuxtLink to="/resources/blog" class="mobile-link" @click="closeMobile">Blog</NuxtLink>
+          <NuxtLink to="/resources/use-cases" class="mobile-link" @click="closeMobile">Use Cases</NuxtLink>
+        </div>
+        <div class="mobile-cta">
+          <NuxtLink to="/company/contact" class="btn btn-primary w-full" @click="closeMobile">Contact Us</NuxtLink>
+          <NuxtLink to="/partner" class="btn btn-outline w-full" @click="closeMobile">Become a Partner</NuxtLink>
+        </div>
+      </div>
+    </div>
+  </header>
+</template>
+
+<script setup lang="ts">
+const isScrolled = ref(false)
+const activeDropdown = ref<string | null>(null)
+const mobileOpen = ref(false)
+let closeTimer: ReturnType<typeof setTimeout> | null = null
+
+function openDropdown(name: string) {
+  if (closeTimer) clearTimeout(closeTimer)
+  activeDropdown.value = name
+}
+
+function closeDropdown() {
+  closeTimer = setTimeout(() => {
+    activeDropdown.value = null
+  }, 120)
+}
+
+function toggleMobile() {
+  mobileOpen.value = !mobileOpen.value
+  if (mobileOpen.value) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
+}
+
+function closeMobile() {
+  mobileOpen.value = false
+  document.body.style.overflow = ''
+}
+
+onMounted(() => {
+  const handleScroll = () => {
+    isScrolled.value = window.scrollY > 8
+  }
+  window.addEventListener('scroll', handleScroll, { passive: true })
+  onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+    document.body.style.overflow = ''
+  })
+})
+</script>
+
+<style scoped>
+.nav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.nav-wrapper.scrolled {
+  box-shadow: 0 2px 20px rgba(11, 31, 58, 0.08);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: var(--nav-height);
+  width: 100%;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-accent {
+  color: var(--green);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--body);
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-trigger:hover,
+.nav-trigger.active {
+  color: var(--navy);
+  background: var(--off);
+}
+
+.nav-trigger-active {
+  color: var(--green) !important;
+}
+
+.nav-arrow {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  transition: transform 0.2s;
+}
+
+.nav-trigger.active .nav-arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 260px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 2000;
+}
+
+.dropdown.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.dropdown-inner {
+  padding: 8px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.15s;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: var(--off);
+}
+
+.dropdown-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--off2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  flex-shrink: 0;
+}
+
+.dropdown-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.dropdown-desc {
+  font-size: 11px;
+  color: var(--mid);
+  margin-top: 2px;
+}
+
+/* CTA */
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.nav-signin {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--body);
+  text-decoration: none;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.nav-signin:hover {
+  color: var(--navy);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: calc(var(--topbar-height) + var(--nav-height));
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--white);
+  z-index: 999;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-menu-inner {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobile-section {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mobile-section:last-of-type {
+  border-bottom: none;
+}
+
+.mobile-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 8px;
+  padding: 0 4px;
+}
+
+.mobile-link {
+  display: block;
+  padding: 10px 4px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--body);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 0.2s;
+}
+
+.mobile-link:hover {
+  color: var(--green);
+}
+
+.mobile-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-logo {
+    font-size: 20px;
+  }
+}
+</style>
