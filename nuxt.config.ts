@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
-  nitro: {
-    preset: 'netlify-static'
-  },
   app: {
     head: {
       title: 'Drip Capital — Working Capital for Growing Businesses',
