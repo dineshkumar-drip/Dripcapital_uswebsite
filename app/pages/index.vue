@@ -331,7 +331,7 @@
             <div class="case-card-body">
               <h3 class="case-title">Pacific Seafood Co. scaled import volume by 80%</h3>
               <p class="case-desc">
-                A leading seafood importer used Drip Capital's Float product to extend supplier payment terms, freeing up $3M+ in working capital and enabling rapid expansion.
+                A leading seafood importer used Drip Capital's Vendor Financing to extend supplier payment terms, freeing up $3M+ in working capital and enabling rapid expansion.
               </p>
               <div class="case-metrics">
                 <div class="case-metric">
@@ -359,7 +359,7 @@
             <div class="case-card-body">
               <h3 class="case-title">Apparel brand doubled revenue in 18 months</h3>
               <p class="case-desc">
-                A mid-sized apparel brand leveraged Drip Capital's Advance product to stop waiting on net-60 invoices, accelerating cash flow and doubling production capacity.
+                A mid-sized apparel brand leveraged Drip Capital's Receivables Financing to stop waiting on net-60 invoices, accelerating cash flow and doubling production capacity.
               </p>
               <div class="case-metrics">
                 <div class="case-metric">
@@ -638,8 +638,8 @@ const faqItems = [
     answer: 'No. Drip Capital does not require hard asset collateral like real estate or equipment. Our underwriting is based on your business\'s trade performance, receivables quality, and financial health.'
   },
   {
-    question: 'What is the difference between Float, Advance, and Flex?',
-    answer: 'Float is our supplier financing product — we pay your suppliers and you repay us on extended terms (up to 120 days). Advance is receivables financing — we accelerate payment on your outstanding invoices. Flex is a revolving line of credit you can draw from at any time for any business purpose.'
+    question: 'What is the difference between Vendor Financing, Receivables Financing, and Line of Credit?',
+    answer: 'Vendor Financing is our supplier financing product — we pay your suppliers and you repay us on extended terms (up to 120 days). Receivables Financing lets us accelerate payment on your outstanding invoices. Line of Credit is a revolving facility you can draw from at any time for any business purpose.'
   },
   {
     question: 'How much can I borrow?',
