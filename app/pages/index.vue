@@ -10,13 +10,13 @@
           <div class="hero-left">
             <span class="eyebrow">Working Capital for Growing Businesses</span>
             <h1 class="hero-h1">
-              <span class="hero-static-text">
-                <Transition name="word-fade" mode="out-in">
-                  <em :key="currentHeadline.word" class="hero-cycling-word">{{ currentHeadline.word }}</em>
-                </Transition>
-                {{ currentHeadline.suffix }} for growing <span class="hero-highlight-smb">SMBs.</span>
-              </span>
+              Fast, flexible capital<br>
+              to <em>grow your business.</em>
             </h1>
+            <div class="hero-typewriter-wrap">
+              <span class="hero-tw-prefix">✦</span>
+              <span class="hero-tw-text">{{ typewriterDisplay }}<span class="hero-tw-cursor" :class="{ blink: cursorBlink }">|</span></span>
+            </div>
             <p class="hero-subtitle">
               Drip Capital helps businesses doing $5M–$500M in annual revenue access the working capital they need — without traditional banking hurdles.
             </p>
@@ -27,11 +27,11 @@
               </div>
             </div>
             <div class="hero-pills">
-              <span class="pill pill-green">Float</span>
+              <span class="pill pill-outline">Vendor Financing</span>
               <span class="hero-pill-sep">·</span>
-              <span class="pill pill-green">Advance</span>
+              <span class="pill pill-outline">Receivables Financing</span>
               <span class="hero-pill-sep">·</span>
-              <span class="pill pill-green">Flex</span>
+              <span class="pill pill-outline">Line of Credit</span>
             </div>
           </div>
 
@@ -92,17 +92,17 @@
             <div class="stats-desc">From application to approval</div>
           </div>
           <div class="stats-item reveal reveal-delay-1">
-            <div class="stats-label">Float — Supplier Financing</div>
+            <div class="stats-label">Vendor Financing</div>
             <div class="stats-value">Up to 120 Days</div>
             <div class="stats-desc">Extended repayment — preserve cash</div>
           </div>
           <div class="stats-item reveal reveal-delay-2">
-            <div class="stats-label">Advance — Receivables</div>
+            <div class="stats-label">Receivables Financing</div>
             <div class="stats-value">24–48 Hours</div>
             <div class="stats-desc">Get paid on invoices fast</div>
           </div>
           <div class="stats-item reveal reveal-delay-3">
-            <div class="stats-label">Flex — Line of Credit</div>
+            <div class="stats-label">Line of Credit</div>
             <div class="stats-value">On Demand</div>
             <div class="stats-desc">Draw what you need, when you need it</div>
           </div>
@@ -145,98 +145,80 @@
     <!-- ========== PRODUCTS ========== -->
     <section class="section section-bg">
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" style="text-align:center; max-width:600px; margin:0 auto 48px;">
           <span class="eyebrow">Our Products</span>
           <h2 class="section-title">Three ways to unlock<br>the capital you need.</h2>
         </div>
 
-        <!-- Featured Product: Float -->
-        <div class="product-featured reveal">
-          <div class="product-featured-left">
-            <span class="product-badge">01</span>
-            <h3 class="product-featured-title">Float — Supplier Financing</h3>
-            <p class="product-featured-tagline">Pay suppliers upfront. Repay us later.</p>
-            <p class="product-featured-desc">
-              We pay your suppliers today so you can preserve cash and keep orders moving. You repay on flexible terms — up to 120 days.
-            </p>
-            <div class="product-featured-features">
-              <div class="product-feature-tag">No collateral required</div>
-              <div class="product-feature-tag">48-hour approval</div>
-              <div class="product-feature-tag">Up to 120-day terms</div>
-            </div>
-            <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white mt-32">
-              Learn More →
-            </NuxtLink>
-          </div>
-          <div class="product-featured-right">
-            <div class="product-steps">
-              <div class="product-step">
-                <div class="step-number">1</div>
-                <div>
-                  <div class="product-step-title">Apply & Get Approved</div>
-                  <div class="product-step-desc">Simple application, decision in 48 hours</div>
-                </div>
-              </div>
-              <div class="product-step-connector"></div>
-              <div class="product-step">
-                <div class="step-number">2</div>
-                <div>
-                  <div class="product-step-title">We Pay Your Supplier</div>
-                  <div class="product-step-desc">Drip Capital pays your supplier directly</div>
-                </div>
-              </div>
-              <div class="product-step-connector"></div>
-              <div class="product-step">
-                <div class="step-number">3</div>
-                <div>
-                  <div class="product-step-title">You Repay Us</div>
-                  <div class="product-step-desc">Repay on 30–120 day terms that work for you</div>
-                </div>
+        <div class="products-equal-grid">
+          <!-- Vendor Financing -->
+          <div class="product-eq-card reveal">
+            <div class="product-eq-top">
+              <span class="product-eq-num">01</span>
+              <div class="product-eq-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
               </div>
             </div>
+            <h3 class="product-eq-title">Vendor Financing</h3>
+            <p class="product-eq-tagline">Pay suppliers upfront. Repay us later.</p>
+            <p class="product-eq-desc">We pay your suppliers today so you preserve cash and keep orders moving. You repay on flexible terms — up to 120 days.</p>
+            <ul class="product-eq-list">
+              <li>No collateral required</li>
+              <li>48-hour credit decision</li>
+              <li>Up to 120-day repayment terms</li>
+              <li>Dedicated account manager</li>
+            </ul>
+            <NuxtLink to="/products/vendor-financing" class="product-eq-cta">Learn More →</NuxtLink>
           </div>
-        </div>
 
-        <!-- Product Grid: Advance + Flex -->
-        <div class="products-grid reveal">
-          <div class="product-card">
-            <div class="product-card-header">
-              <span class="product-badge-small">02</span>
-              <h3 class="product-card-title">Advance</h3>
-              <span class="product-card-sub">Receivables Financing</span>
+          <!-- Receivables Financing -->
+          <div class="product-eq-card product-eq-card--featured reveal reveal-delay-1">
+            <div class="product-eq-top">
+              <span class="product-eq-num">02</span>
+              <div class="product-eq-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="5" width="20" height="14" rx="2"/>
+                  <line x1="2" y1="10" x2="22" y2="10"/>
+                </svg>
+              </div>
             </div>
-            <p class="product-card-desc">
-              Stop waiting 60–90 days for customer payments. Convert your outstanding invoices into same-day cash.
-            </p>
-            <ul class="product-card-features">
+            <h3 class="product-eq-title">Receivables Financing</h3>
+            <p class="product-eq-tagline">Get paid today. Not in 60 days.</p>
+            <p class="product-eq-desc">Stop waiting 60–90 days for customer payments. Convert your outstanding invoices into same-day cash — reduce DSO instantly.</p>
+            <ul class="product-eq-list">
               <li>Funded in 24–48 hours</li>
               <li>Improve days sales outstanding</li>
               <li>Non-dilutive financing</li>
               <li>No fixed repayment schedule</li>
             </ul>
-            <NuxtLink to="/products/receivable-financing" class="btn btn-secondary mt-24">
-              Learn About Advance →
-            </NuxtLink>
+            <NuxtLink to="/products/receivable-financing" class="product-eq-cta">Learn More →</NuxtLink>
           </div>
 
-          <div class="product-card">
-            <div class="product-card-header">
-              <span class="product-badge-small">03</span>
-              <h3 class="product-card-title">Flex</h3>
-              <span class="product-card-sub">Line of Credit</span>
+          <!-- Line of Credit -->
+          <div class="product-eq-card reveal reveal-delay-2">
+            <div class="product-eq-top">
+              <span class="product-eq-num">03</span>
+              <div class="product-eq-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <polyline points="1 20 1 14 7 14"/>
+                  <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
+                </svg>
+              </div>
             </div>
-            <p class="product-card-desc">
-              A revolving credit facility for any business need. Draw what you need, repay, and draw again — with no fixed schedule.
-            </p>
-            <ul class="product-card-features">
+            <h3 class="product-eq-title">Line of Credit</h3>
+            <p class="product-eq-tagline">Flexible capital, on demand.</p>
+            <p class="product-eq-desc">A revolving credit facility for any business need. Draw what you need, repay, and draw again — capital that moves with you.</p>
+            <ul class="product-eq-list">
               <li>On-demand access to capital</li>
               <li>Only pay for what you draw</li>
               <li>Grows with your business</li>
-              <li>Dedicated account manager</li>
+              <li>No bank deposit requirement</li>
             </ul>
-            <NuxtLink to="/products/line-of-credit" class="btn btn-secondary mt-24">
-              Learn About Flex →
-            </NuxtLink>
+            <NuxtLink to="/products/line-of-credit" class="product-eq-cta">Learn More →</NuxtLink>
           </div>
         </div>
       </div>
@@ -301,9 +283,9 @@
             </div>
             <h3 class="usecase-title">Bridge the Supplier-Customer Gap</h3>
             <p class="usecase-desc">
-              You buy from suppliers today but don't get paid by customers for 60–90 days. Float bridges that gap so you never have to pause orders.
+              You buy from suppliers today but don't get paid by customers for 60–90 days. Vendor Financing bridges that gap so you never have to pause orders.
             </p>
-            <NuxtLink to="/products/vendor-financing" class="usecase-link">Float — Vendor Financing →</NuxtLink>
+            <NuxtLink to="/products/vendor-financing" class="usecase-link">Vendor Financing →</NuxtLink>
           </div>
           <div class="usecase-card reveal reveal-delay-1">
             <div class="usecase-icon">
@@ -313,7 +295,7 @@
             <p class="usecase-desc">
               Land a big contract but don't have the inventory capital? Access the working capital you need to fulfill the order and grow.
             </p>
-            <NuxtLink to="/products/receivable-financing" class="usecase-link">Advance — Receivables →</NuxtLink>
+            <NuxtLink to="/products/receivable-financing" class="usecase-link">Receivables Financing →</NuxtLink>
           </div>
           <div class="usecase-card reveal reveal-delay-2">
             <div class="usecase-icon">
@@ -323,7 +305,7 @@
             <p class="usecase-desc">
               Maintain your supplier relationships and negotiate better terms. Drip ensures you always pay on time, building trust and loyalty.
             </p>
-            <NuxtLink to="/products/line-of-credit" class="usecase-link">Flex — Line of Credit →</NuxtLink>
+            <NuxtLink to="/products/line-of-credit" class="usecase-link">Line of Credit →</NuxtLink>
           </div>
         </div>
       </div>
@@ -591,16 +573,56 @@ const heroEmail = ref('')
 const openFaq = ref<number | null>(null)
 const particleCanvas = ref<HTMLCanvasElement | null>(null)
 
-const headlines = [
-  { word: 'Transparent', suffix: 'pricing' },
-  { word: 'Fast', suffix: 'approvals on funding' },
-  { word: 'Unsecured', suffix: 'financing' },
-  { word: 'Collateral-free', suffix: 'financing' },
+// Typewriter USP cycling
+const uspPhrases = [
+  'Transparent pricing — no hidden fees.',
+  'Fast approvals — credit decision in 48 hours.',
+  'Unsecured financing — no collateral needed.',
+  'Collateral-free funding — up to $10M.'
 ]
-const headlineIndex = ref(0)
-const currentHeadline = computed(() => headlines[headlineIndex.value])
+const typewriterDisplay = ref('')
+const cursorBlink = ref(false)
+const isTyping = ref(false)
 
-let headlineTimer: ReturnType<typeof setInterval> | null = null
+let twTimeout: ReturnType<typeof setTimeout> | null = null
+
+function typePhrase(phraseIndex: number) {
+  const phrase = uspPhrases[phraseIndex]
+  let charIndex = 0
+  isTyping.value = true
+  cursorBlink.value = false
+  typewriterDisplay.value = ''
+
+  function typeChar() {
+    if (charIndex < phrase.length) {
+      typewriterDisplay.value += phrase[charIndex]
+      charIndex++
+      twTimeout = setTimeout(typeChar, 38)
+    } else {
+      isTyping.value = false
+      cursorBlink.value = true
+      // Pause, then delete
+      twTimeout = setTimeout(() => deletePhrase(phraseIndex), 2400)
+    }
+  }
+  typeChar()
+}
+
+function deletePhrase(phraseIndex: number) {
+  cursorBlink.value = false
+  isTyping.value = true
+  function deleteChar() {
+    if (typewriterDisplay.value.length > 0) {
+      typewriterDisplay.value = typewriterDisplay.value.slice(0, -1)
+      twTimeout = setTimeout(deleteChar, 22)
+    } else {
+      isTyping.value = false
+      const nextIndex = (phraseIndex + 1) % uspPhrases.length
+      twTimeout = setTimeout(() => typePhrase(nextIndex), 400)
+    }
+  }
+  deleteChar()
+}
 
 const faqItems = [
   {
@@ -696,13 +718,11 @@ onMounted(() => {
   if (particleCanvas.value) {
     initParticles(particleCanvas.value)
   }
-  headlineTimer = setInterval(() => {
-    headlineIndex.value = (headlineIndex.value + 1) % headlines.length
-  }, 2500)
+  twTimeout = setTimeout(() => typePhrase(0), 800)
 })
 
 onUnmounted(() => {
-  if (headlineTimer) clearInterval(headlineTimer)
+  if (twTimeout) clearTimeout(twTimeout)
 })
 </script>
 
@@ -1497,35 +1517,176 @@ onUnmounted(() => {
   }
 }
 
-/* ===== CYCLING HEADLINE ===== */
-.hero-static-text {
-  display: block;
+.hero-typewriter-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0 20px;
+  min-height: 28px;
 }
 
-.hero-cycling-word {
-  font-style: normal;
+.hero-tw-prefix {
   color: var(--green);
-  font-weight: 900;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.hero-tw-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: -0.01em;
+}
+
+.hero-tw-cursor {
   display: inline-block;
+  color: var(--green);
+  font-weight: 300;
+  margin-left: 1px;
+  opacity: 1;
 }
 
-.hero-highlight-smb {
-  color: var(--white);
-  font-weight: 900;
+.hero-tw-cursor.blink {
+  animation: cursor-blink 0.8s step-end infinite;
 }
 
-.word-fade-enter-active,
-.word-fade-leave-active {
-  transition: opacity 0.35s ease, transform 0.35s ease;
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
-.word-fade-enter-from {
-  opacity: 0;
-  transform: translateY(12px);
+.pill-outline {
+  border: 1px solid rgba(0,194,124,0.4);
+  color: rgba(255,255,255,0.7);
+  background: transparent;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.word-fade-leave-to {
-  opacity: 0;
-  transform: translateY(-12px);
+/* Equal Products Grid */
+.products-equal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-eq-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.product-eq-card:hover {
+  box-shadow: 0 12px 40px rgba(11,31,58,0.1);
+  transform: translateY(-3px);
+  border-color: rgba(0,194,124,0.3);
+}
+
+.product-eq-card--featured {
+  border-color: var(--green);
+  box-shadow: 0 4px 24px rgba(0,194,124,0.12);
+}
+
+.product-eq-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.product-eq-num {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--mid);
+}
+
+.product-eq-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(0,194,124,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-eq-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+
+.product-eq-tagline {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green-d);
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.product-eq-desc {
+  font-size: 14px;
+  color: var(--body);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.product-eq-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.product-eq-list li {
+  font-size: 13px;
+  color: var(--body);
+  padding-left: 18px;
+  position: relative;
+}
+
+.product-eq-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.product-eq-cta {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.2s, gap 0.2s;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.product-eq-cta:hover {
+  color: var(--green-d);
+}
+
+@media (max-width: 900px) {
+  .products-equal-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

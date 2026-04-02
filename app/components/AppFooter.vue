@@ -5,8 +5,12 @@
         <div class="footer-grid">
           <!-- Brand Column -->
           <div class="footer-brand">
-            <NuxtLink to="/" class="footer-logo">
-              DRIP<span class="logo-accent">/c</span>
+            <NuxtLink to="/" class="footer-logo-link" aria-label="Drip Capital">
+              <svg width="100" height="30" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="26" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="26" fill="#FFFFFF" letter-spacing="-1">DRIP</text>
+                <line x1="72" y1="4" x2="82" y2="32" stroke="#00C27C" stroke-width="3.5" stroke-linecap="round"/>
+                <text x="85" y="26" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="22" fill="#FFFFFF">c</text>
+              </svg>
             </NuxtLink>
             <p class="footer-tagline">Working Capital for Growing Businesses</p>
             <p class="footer-desc">
@@ -42,9 +46,9 @@
           <div class="footer-col">
             <h4 class="footer-col-title">Products</h4>
             <ul class="footer-links">
-              <li><NuxtLink to="/products/vendor-financing">Float — Vendor Financing</NuxtLink></li>
-              <li><NuxtLink to="/products/receivable-financing">Advance — Receivables</NuxtLink></li>
-              <li><NuxtLink to="/products/line-of-credit">Flex — Line of Credit</NuxtLink></li>
+              <li><NuxtLink to="/products/vendor-financing">Vendor Financing</NuxtLink></li>
+              <li><NuxtLink to="/products/receivable-financing">Receivables Financing</NuxtLink></li>
+              <li><NuxtLink to="/products/line-of-credit">Line of Credit</NuxtLink></li>
             </ul>
             <h4 class="footer-col-title" style="margin-top: 28px;">Industry</h4>
             <ul class="footer-links">
@@ -140,18 +144,11 @@ function handleEmail() {
 }
 
 /* Brand */
-.footer-logo {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: 800;
-  color: var(--white);
-  letter-spacing: -0.04em;
+.footer-logo-link {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   margin-bottom: 12px;
-}
-
-.logo-accent {
-  color: var(--green);
 }
 
 .footer-tagline {

@@ -3,8 +3,12 @@
     <div class="container">
       <nav class="nav-inner">
         <!-- Logo -->
-        <NuxtLink to="/" class="nav-logo">
-          DRIP<span class="logo-accent">/c</span>
+        <NuxtLink to="/" class="nav-logo" aria-label="Drip Capital Home">
+          <svg width="120" height="36" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="26" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="26" fill="#0B1F3A" letter-spacing="-1">DRIP</text>
+            <line x1="72" y1="4" x2="82" y2="32" stroke="#00C27C" stroke-width="3.5" stroke-linecap="round"/>
+            <text x="85" y="26" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="22" fill="#0B1F3A">c</text>
+          </svg>
         </NuxtLink>
 
         <!-- Desktop Links -->
@@ -27,29 +31,39 @@
               <div class="dropdown-inner">
                 <NuxtLink to="/products/vendor-financing" class="dropdown-item" @click="closeDropdown">
                   <div class="dropdown-icon">
-                    <AppIcon name="zap" :size="16" color="var(--green)" />
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                      <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
                   </div>
                   <div>
-                    <div class="dropdown-label">Float</div>
-                    <div class="dropdown-desc">Supplier / Vendor Financing</div>
+                    <div class="dropdown-label">Vendor Financing</div>
+                    <div class="dropdown-desc">Pay suppliers now, repay in 120 days</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/products/receivable-financing" class="dropdown-item" @click="closeDropdown">
                   <div class="dropdown-icon">
-                    <AppIcon name="chart" :size="16" color="var(--green)" />
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="5" width="20" height="14" rx="2"/>
+                      <line x1="2" y1="10" x2="22" y2="10"/>
+                    </svg>
                   </div>
                   <div>
-                    <div class="dropdown-label">Advance</div>
-                    <div class="dropdown-desc">Receivables Financing</div>
+                    <div class="dropdown-label">Receivables Financing</div>
+                    <div class="dropdown-desc">Convert invoices to cash in 24–48 hrs</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/products/line-of-credit" class="dropdown-item" @click="closeDropdown">
                   <div class="dropdown-icon">
-                    <AppIcon name="refresh" :size="16" color="var(--green)" />
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="23 4 23 10 17 10"/>
+                      <polyline points="1 20 1 14 7 14"/>
+                      <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
+                    </svg>
                   </div>
                   <div>
-                    <div class="dropdown-label">Flex</div>
-                    <div class="dropdown-desc">Line of Credit</div>
+                    <div class="dropdown-label">Line of Credit</div>
+                    <div class="dropdown-desc">Revolving credit — draw when you need it</div>
                   </div>
                 </NuxtLink>
               </div>
@@ -253,9 +267,9 @@
       <div class="mobile-menu-inner">
         <div class="mobile-section">
           <div class="mobile-section-title">Products</div>
-          <NuxtLink to="/products/vendor-financing" class="mobile-link" @click="closeMobile">Float — Vendor Financing</NuxtLink>
-          <NuxtLink to="/products/receivable-financing" class="mobile-link" @click="closeMobile">Advance — Receivables</NuxtLink>
-          <NuxtLink to="/products/line-of-credit" class="mobile-link" @click="closeMobile">Flex — Line of Credit</NuxtLink>
+          <NuxtLink to="/products/vendor-financing" class="mobile-link" @click="closeMobile">Vendor Financing</NuxtLink>
+          <NuxtLink to="/products/receivable-financing" class="mobile-link" @click="closeMobile">Receivables Financing</NuxtLink>
+          <NuxtLink to="/products/line-of-credit" class="mobile-link" @click="closeMobile">Line of Credit</NuxtLink>
         </div>
         <div class="mobile-section">
           <div class="mobile-section-title">Industry</div>
@@ -359,16 +373,10 @@ onMounted(() => {
 }
 
 .nav-logo {
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--navy);
-  letter-spacing: -0.04em;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
-}
-
-.logo-accent {
-  color: var(--green);
+  text-decoration: none;
 }
 
 .nav-links {
@@ -631,8 +639,9 @@ onMounted(() => {
 }
 
 @media (max-width: 768px) {
-  .nav-logo {
-    font-size: 20px;
+  .nav-logo svg {
+    width: 100px;
+    height: 30px;
   }
 }
 </style>
