@@ -378,58 +378,8 @@
       </div>
     </section>
 
-    <!-- ========== TESTIMONIALS ========== -->
-    <section class="section section-bg">
-      <div class="container">
-        <div class="section-header reveal" style="text-align: center; max-width: 560px; margin: 0 auto 48px;">
-          <span class="eyebrow">What Our Customers Say</span>
-          <h2 class="section-title">Real results from real businesses.</h2>
-        </div>
-        <div class="grid-3">
-          <div class="testimonial-card reveal">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-quote">
-              "Drip Capital gave us the flexibility to take on larger orders without worrying about cash flow. We grew 40% last year — that wouldn't have been possible without their support."
-            </p>
-            <div class="testimonial-person">
-              <div class="testimonial-avatar">MR</div>
-              <div>
-                <div class="testimonial-name">Marcus Rodriguez</div>
-                <div class="testimonial-role">CEO, SunCoast Seafood Imports</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card reveal reveal-delay-1">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-quote">
-              "Unlike traditional banks, Drip understood our business. They approved us in 48 hours and gave us a line of credit that actually scales with our growth."
-            </p>
-            <div class="testimonial-person">
-              <div class="testimonial-avatar">JP</div>
-              <div>
-                <div class="testimonial-name">Jennifer Park</div>
-                <div class="testimonial-role">CFO, Pacific Wholesale Distributors</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card reveal reveal-delay-2">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-quote">
-              "The application was easy, the team was responsive, and the funding was fast. We've been a Drip Capital customer for 3 years and they've been a true partner in our growth."
-            </p>
-            <div class="testimonial-person">
-              <div class="testimonial-avatar">AS</div>
-              <div>
-                <div class="testimonial-name">Amir Singh</div>
-                <div class="testimonial-role">Owner, Apex Manufacturing LLC</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- ========== TESTIMONIALS (Trustpilot) ========== -->
+    <TrustpilotSection />
 
     <!-- ========== COMPARISON TABLE ========== -->
     <section class="section">
