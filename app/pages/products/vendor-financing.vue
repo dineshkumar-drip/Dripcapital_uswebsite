@@ -3,25 +3,25 @@
     <!-- Hero -->
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Product — Float</span>
+        <span class="eyebrow">Product — Vendor Financing</span>
         <h1>Extend supplier payment terms —<br><em>keep your cash.</em></h1>
         <p>We pay your suppliers today so you preserve cash and keep orders moving. You repay on up to 120-day terms that work for your business cycle.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
-          <NuxtLink to="/products/receivable-financing" class="btn btn-outline-white btn-lg">View Advance</NuxtLink>
+          <NuxtLink to="/products/receivable-financing" class="btn btn-outline-white btn-lg">View Receivables Financing</NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- What is Float -->
+    <!-- What is Vendor Financing -->
     <section class="section">
       <div class="container">
         <div class="two-col">
           <div class="reveal">
-            <span class="eyebrow">What is Float?</span>
+            <span class="eyebrow">What is Vendor Financing?</span>
             <h2 class="section-title">Pay suppliers upfront.<br>Repay us later.</h2>
             <p class="section-subtitle">
-              Float is Drip Capital's supplier financing product. When you need to pay a supplier but your cash is tied up in receivables or inventory, Drip Capital steps in to pay your supplier directly.
+              Vendor Financing is Drip Capital's supplier financing product. When you need to pay a supplier but your cash is tied up in receivables or inventory, Drip Capital steps in to pay your supplier directly.
             </p>
             <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
               You get the goods. Your supplier gets paid on time. And you repay Drip Capital over the next 30–120 days — matching your natural cash conversion cycle.
@@ -46,7 +46,7 @@
     <section class="section section-bg">
       <div class="container">
         <div class="section-header reveal" style="text-align: center; max-width: 560px; margin: 0 auto 48px;">
-          <span class="eyebrow">How Float Works</span>
+          <span class="eyebrow">How Vendor Financing Works</span>
           <h2 class="section-title">Three simple steps.</h2>
         </div>
         <div class="steps-row">
@@ -82,7 +82,7 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="eyebrow">Benefits</span>
-          <h2 class="section-title">Why businesses choose Float.</h2>
+          <h2 class="section-title">Why businesses choose Vendor Financing.</h2>
         </div>
         <div class="grid-2">
           <div class="benefit-card reveal" v-for="(b, i) in benefits" :key="i" :class="`reveal-delay-${i}`">
@@ -101,7 +101,7 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="eyebrow">Use Cases</span>
-          <h2 class="section-title">When Float makes sense.</h2>
+          <h2 class="section-title">When Vendor Financing makes sense.</h2>
         </div>
         <div class="grid-3">
           <div class="usecase-simple reveal" v-for="(uc, i) in useCases" :key="i" :class="`reveal-delay-${i}`">
@@ -118,9 +118,9 @@
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Ready to extend your supplier terms?</h2>
-          <p class="cta-simple-desc">Join thousands of businesses that use Float to preserve cash and scale their supply chain.</p>
+          <p class="cta-simple-desc">Join thousands of businesses that use Vendor Financing to preserve cash and scale their supply chain.</p>
           <div class="cta-simple-actions">
-            <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply for Float →</NuxtLink>
+            <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply for Vendor Financing →</NuxtLink>
             <NuxtLink to="/products/receivable-financing" class="btn btn-outline btn-lg">Compare Products</NuxtLink>
           </div>
         </div>
@@ -130,13 +130,13 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Float — Vendor Financing | Drip Capital' })
+useHead({ title: 'Vendor Financing | Drip Capital' })
 
 const benefits = [
   {
     icon: 'unlock',
     title: 'No Collateral Required',
-    desc: 'Unlike traditional bank financing, Float does not require you to pledge real estate, equipment, or other hard assets. Your trade history is enough.'
+    desc: 'Unlike traditional bank financing, Vendor Financing does not require you to pledge real estate, equipment, or other hard assets. Your trade history is enough.'
   },
   {
     icon: 'lightning',
@@ -158,15 +158,15 @@ const benefits = [
 const useCases = [
   {
     title: 'Bridging the Supplier-Customer Gap',
-    desc: 'Your supplier needs payment in 30 days, but your customer pays in 90. Float bridges that gap so you never have to delay orders or strain supplier relationships.'
+    desc: 'Your supplier needs payment in 30 days, but your customer pays in 90. Vendor Financing bridges that gap so you never have to delay orders or strain supplier relationships.'
   },
   {
     title: 'Seasonal Inventory Buildup',
-    desc: 'Need to stock up before a peak selling season but don\'t have the cash on hand? Float lets you build inventory now and repay after the season ends.'
+    desc: 'Need to stock up before a peak selling season but don\'t have the cash on hand? Vendor Financing lets you build inventory now and repay after the season ends.'
   },
   {
     title: 'Capturing Early Pay Discounts',
-    desc: 'Some suppliers offer 2–3% discounts for early payment. Float lets you capture those discounts without tying up your own cash.'
+    desc: 'Some suppliers offer 2–3% discounts for early payment. Vendor Financing lets you capture those discounts without tying up your own cash.'
   }
 ]
 </script>

@@ -7,7 +7,7 @@
         <p>Seafood businesses face unique challenges — perishable goods, seasonal supply, complex import logistics, and demanding customer payment terms. Drip Capital has specialized experience in seafood trade finance.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Talk to Us →</NuxtLink>
-          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Float Product</NuxtLink>
+          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Vendor Financing</NuxtLink>
         </div>
       </div>
     </section>
@@ -69,7 +69,7 @@
         <div class="testimonial-featured reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-featured-quote">
-            "As a shrimp importer, our suppliers in Southeast Asia need payment before we receive the goods. Drip Capital's Float product allows us to pay overseas suppliers while we wait for U.S. customer payments. We grew import volume 80% in 18 months."
+            "As a shrimp importer, our suppliers in Southeast Asia need payment before we receive the goods. Drip Capital's Vendor Financing allows us to pay overseas suppliers while we wait for U.S. customer payments. We grew import volume 80% in 18 months."
           </p>
           <div class="testimonial-person">
             <div class="testimonial-avatar">MR</div>
@@ -106,9 +106,9 @@ const challenges = [
 ]
 
 const products = [
-  { badge: 'Float', name: 'Vendor Financing', desc: 'Pay overseas seafood suppliers before goods arrive. Drip Capital handles supplier payment while you manage import logistics.', link: '/products/vendor-financing' },
-  { badge: 'Advance', name: 'Receivables Financing', desc: 'Turn outstanding invoices from distributors and retailers into immediate cash to fund your next seafood shipment.', link: '/products/receivable-financing' },
-  { badge: 'Flex', name: 'Line of Credit', desc: 'A revolving credit line to capitalize on spot market opportunities and manage cash across fishing seasons.', link: '/products/line-of-credit' }
+  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay overseas seafood suppliers before goods arrive. Drip Capital handles supplier payment while you manage import logistics.', link: '/products/vendor-financing' },
+  { badge: 'Receivables Financing', name: 'Receivables Financing', desc: 'Turn outstanding invoices from distributors and retailers into immediate cash to fund your next seafood shipment.', link: '/products/receivable-financing' },
+  { badge: 'Line of Credit', name: 'Line of Credit', desc: 'A revolving credit line to capitalize on spot market opportunities and manage cash across fishing seasons.', link: '/products/line-of-credit' }
 ]
 
 const stats = [

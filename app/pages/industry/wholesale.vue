@@ -7,7 +7,7 @@
         <p>Wholesale businesses operate on thin margins and require large volumes to succeed. Drip Capital provides the capital velocity you need to grow distribution volumes without cash crunches.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Talk to Us →</NuxtLink>
-          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Float Product</NuxtLink>
+          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Vendor Financing</NuxtLink>
         </div>
       </div>
     </section>
@@ -69,7 +69,7 @@
         <div class="testimonial-featured reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-featured-quote">
-            "We distribute to 200+ retail customers and our cash was constantly tied up in transit inventory and waiting on accounts receivable. Drip Capital's Advance product transformed our cash cycle — we now reinvest every dollar as fast as it comes in."
+            "We distribute to 200+ retail customers and our cash was constantly tied up in transit inventory and waiting on accounts receivable. Drip Capital's Receivables Financing transformed our cash cycle — we now reinvest every dollar as fast as it comes in."
           </p>
           <div class="testimonial-person">
             <div class="testimonial-avatar">JP</div>
@@ -106,9 +106,9 @@ const challenges = [
 ]
 
 const products = [
-  { badge: 'Float', name: 'Vendor Financing', desc: 'Pay your suppliers without waiting. Drip Capital fronts the payment so you can keep ordering and distributing without cash gaps.', link: '/products/vendor-financing' },
-  { badge: 'Advance', name: 'Receivables Financing', desc: 'Turn your net-60/90 invoices into same-day cash and reinvest immediately into new inventory.', link: '/products/receivable-financing' },
-  { badge: 'Flex', name: 'Line of Credit', desc: 'A revolving credit line to handle opportunistic bulk buys and seasonal inventory swings.', link: '/products/line-of-credit' }
+  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay your suppliers without waiting. Drip Capital fronts the payment so you can keep ordering and distributing without cash gaps.', link: '/products/vendor-financing' },
+  { badge: 'Receivables Financing', name: 'Receivables Financing', desc: 'Turn your net-60/90 invoices into same-day cash and reinvest immediately into new inventory.', link: '/products/receivable-financing' },
+  { badge: 'Line of Credit', name: 'Line of Credit', desc: 'A revolving credit line to handle opportunistic bulk buys and seasonal inventory swings.', link: '/products/line-of-credit' }
 ]
 
 const stats = [

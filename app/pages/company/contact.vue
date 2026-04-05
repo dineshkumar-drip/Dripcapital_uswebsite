@@ -53,9 +53,9 @@
                 <label for="c-product">Product Interest</label>
                 <select id="c-product" v-model="form.product">
                   <option value="">What are you interested in?</option>
-                  <option value="float">Float — Vendor/Supplier Financing</option>
-                  <option value="advance">Advance — Receivables Financing</option>
-                  <option value="flex">Flex — Line of Credit</option>
+                  <option value="vendor-financing">Vendor/Supplier Financing</option>
+                  <option value="receivables-financing">Receivables Financing</option>
+                  <option value="line-of-credit">Line of Credit</option>
                   <option value="all">All Products</option>
                   <option value="other">Other</option>
                 </select>
@@ -125,9 +125,9 @@
 
             <div class="info-section">
               <h3 class="info-title">Quick Links</h3>
-              <NuxtLink to="/products/vendor-financing" class="quick-link">Float — Vendor Financing →</NuxtLink>
-              <NuxtLink to="/products/receivable-financing" class="quick-link">Advance — Receivables →</NuxtLink>
-              <NuxtLink to="/products/line-of-credit" class="quick-link">Flex — Line of Credit →</NuxtLink>
+              <NuxtLink to="/products/vendor-financing" class="quick-link">Vendor Financing →</NuxtLink>
+              <NuxtLink to="/products/receivable-financing" class="quick-link">Receivables Financing →</NuxtLink>
+              <NuxtLink to="/products/line-of-credit" class="quick-link">Line of Credit →</NuxtLink>
               <NuxtLink to="/partner" class="quick-link">Partner Program →</NuxtLink>
             </div>
 

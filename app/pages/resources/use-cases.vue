@@ -94,7 +94,7 @@ const allCases = [
     img: 'https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=800&q=80',
     industry: 'Seafood',
     company: 'SunCoast Seafood Imports',
-    product: 'Float — Vendor Financing',
+    product: 'Vendor Financing',
     title: 'SunCoast Seafood grew import volume 80% in 18 months',
     desc: 'A Miami-based shrimp importer needed to pay Southeast Asian suppliers before goods arrived in the US. Drip Capital\'s Float product enabled them to fund each shipment and scale volumes significantly.',
     metrics: [{ value: '$3M+', label: 'Capital Unlocked' }, { value: '80%+', label: 'Volume Growth' }, { value: '18 mo', label: 'Timeline' }]
@@ -103,7 +103,7 @@ const allCases = [
     img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
     industry: 'Consumer Goods',
     company: 'NaturalCare Brands',
-    product: 'Float — Vendor Financing',
+    product: 'Vendor Financing',
     title: 'NaturalCare fulfilled a major retailer order that would have been impossible without Drip',
     desc: 'After landing a Target order for their natural skincare line, NaturalCare needed to 10x their production run. Float paid their overseas manufacturers while they waited for Target\'s net-90 payment.',
     metrics: [{ value: '$1.2M', label: 'Order Value' }, { value: '2×', label: 'Revenue Growth' }, { value: '90 days', label: 'Payment Terms Bridged' }]
@@ -112,7 +112,7 @@ const allCases = [
     img: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80',
     industry: 'Manufacturing',
     company: 'Apex Manufacturing LLC',
-    product: 'Advance — Receivables Financing',
+    product: 'Receivables Financing',
     title: 'Apex Manufacturing cut DSO from 75 days to under 5',
     desc: 'This Phoenix-based manufacturer was waiting 60–90 days for payment from large distributors. Drip Capital\'s Advance product transformed their cash cycle, funding each invoice within 48 hours.',
     metrics: [{ value: '75→5', label: 'DSO Reduction (days)' }, { value: '$500K', label: 'Monthly Invoices Accelerated' }, { value: '40%', label: 'Production Increase' }]
@@ -121,8 +121,8 @@ const allCases = [
     img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
     industry: 'Wholesale',
     company: 'Pacific Wholesale Distributors',
-    product: 'Flex — Line of Credit',
-    title: 'Pacific Wholesale scaled to 200+ retail customers with Flex',
+    product: 'Line of Credit',
+    title: 'Pacific Wholesale scaled to 200+ retail customers with Line of Credit',
     desc: 'A Los Angeles wholesale distributor used Drip Capital\'s Flex line of credit to fund rapid expansion. Drawing on the line for each new retail customer, they tripled their distribution network in 2 years.',
     metrics: [{ value: '200+', label: 'Retail Customers' }, { value: '3×', label: 'Network Growth' }, { value: '$5M', label: 'Credit Facility' }]
   },
@@ -130,7 +130,7 @@ const allCases = [
     img: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80',
     industry: 'Agri-Food',
     company: 'Midwest Grain Trading Co.',
-    product: 'Flex — Line of Credit',
+    product: 'Line of Credit',
     title: 'Midwest Grain Trading doubled purchasing volume in harvest season',
     desc: 'With just 8 weeks of peak grain purchasing season, this Iowa-based grain trader needed capital fast. Drip\'s Flex line let them draw $3M in 3 days, doubling their purchasing volume at peak price.',
     metrics: [{ value: '$3M', label: 'Drawn in Peak Season' }, { value: '2×', label: 'Purchase Volume' }, { value: '3 days', label: 'Time to Fund' }]
@@ -139,7 +139,7 @@ const allCases = [
     img: 'https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=800&q=80',
     industry: 'Seafood',
     company: 'Atlantic Fish Co.',
-    product: 'Advance — Receivables Financing',
+    product: 'Receivables Financing',
     title: 'Atlantic Fish Co. stopped waiting on restaurant clients to fund next week\'s catch',
     desc: 'A Boston seafood distributor serving upscale restaurants faced net-30/60 payment terms. Advance on their invoices freed up constant capital to fund weekly catch purchases without cash gaps.',
     metrics: [{ value: '45 days', label: 'DSO Eliminated' }, { value: '30%', label: 'Revenue Growth' }, { value: '$800K', label: 'Annual Capital Unlocked' }]

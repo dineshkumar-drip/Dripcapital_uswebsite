@@ -3,30 +3,30 @@
     <!-- Hero -->
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Product — Flex</span>
+        <span class="eyebrow">Product — Line of Credit</span>
         <h1>Flexible capital —<br><em>draw when you need it.</em></h1>
         <p>A revolving credit line for any business need. Draw what you need, repay when you can, and draw again — on your terms.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
-          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Float</NuxtLink>
+          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Vendor Financing</NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- What is Flex -->
+    <!-- What is Line of Credit -->
     <section class="section">
       <div class="container">
         <div class="two-col">
           <div class="reveal">
-            <span class="eyebrow">What is Flex?</span>
+            <span class="eyebrow">What is Line of Credit?</span>
             <h2 class="section-title">Capital that revolves<br>with your business.</h2>
             <p class="section-subtitle">
-              Flex is Drip Capital's revolving line of credit. Unlike a term loan, you don't take it all at once — you draw what you need, repay, and draw again. Interest only accrues on what you actually use.
+              Our revolving Line of Credit gives you flexible, on-demand access to capital. Unlike a term loan, you don't take it all at once — you draw what you need, repay, and draw again. Interest only accrues on what you actually use.
             </p>
             <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
               Perfect for businesses with variable cash needs — seasonal businesses, fast-growing companies, and anyone who wants capital on standby.
             </p>
-            <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Apply for Flex →</NuxtLink>
+            <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Apply for Line of Credit →</NuxtLink>
           </div>
           <div class="reveal reveal-delay-1">
             <div class="flex-visual">
@@ -72,7 +72,7 @@
     <section class="section section-bg">
       <div class="container">
         <div class="section-header reveal" style="text-align: center; max-width: 560px; margin: 0 auto 48px;">
-          <span class="eyebrow">How Flex Works</span>
+          <span class="eyebrow">How Line of Credit Works</span>
           <h2 class="section-title">Three simple steps.</h2>
         </div>
         <div class="steps-row">
@@ -108,7 +108,7 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="eyebrow">Benefits</span>
-          <h2 class="section-title">Why businesses choose Flex.</h2>
+          <h2 class="section-title">Why businesses choose Line of Credit.</h2>
         </div>
         <div class="grid-2">
           <div class="benefit-card reveal" v-for="(b, i) in benefits" :key="i" :class="`reveal-delay-${i}`">
@@ -127,7 +127,7 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="eyebrow">Use Cases</span>
-          <h2 class="section-title">When Flex makes sense.</h2>
+          <h2 class="section-title">When Line of Credit makes sense.</h2>
         </div>
         <div class="grid-3">
           <div class="usecase-simple reveal" v-for="(uc, i) in useCases" :key="i" :class="`reveal-delay-${i}`">
@@ -144,9 +144,9 @@
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Capital ready when you need it.</h2>
-          <p class="cta-simple-desc">Get approved for a Flex line of credit and have working capital on standby — draw only when you need it, pay only for what you use.</p>
+          <p class="cta-simple-desc">Get approved for a Line of Credit and have working capital on standby — draw only when you need it, pay only for what you use.</p>
           <div class="cta-simple-actions">
-            <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply for Flex →</NuxtLink>
+            <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply for Line of Credit →</NuxtLink>
             <NuxtLink to="/products/vendor-financing" class="btn btn-outline btn-lg">Compare Products</NuxtLink>
           </div>
         </div>
@@ -156,7 +156,7 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Flex — Line of Credit | Drip Capital' })
+useHead({ title: 'Line of Credit | Drip Capital' })
 
 const benefits = [
   {
@@ -192,7 +192,7 @@ const useCases = [
   },
   {
     title: 'Bridge Operating Expenses',
-    desc: 'Payroll, rent, and operating costs don\'t pause when customers pay late. Flex ensures you can always cover your obligations on time.'
+    desc: 'Payroll, rent, and operating costs don\'t pause when customers pay late. Line of Credit ensures you can always cover your obligations on time.'
   }
 ]
 </script>

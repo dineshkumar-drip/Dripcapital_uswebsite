@@ -7,7 +7,7 @@
         <p>Consumer goods companies move fast, manage complex retail relationships, and require constant inventory investment. Drip Capital helps you keep shelves stocked and cash flowing.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Talk to Us →</NuxtLink>
-          <NuxtLink to="/products/receivable-financing" class="btn btn-outline-white btn-lg">View Advance Product</NuxtLink>
+          <NuxtLink to="/products/receivable-financing" class="btn btn-outline-white btn-lg">View Receivables Financing</NuxtLink>
         </div>
       </div>
     </section>
@@ -69,7 +69,7 @@
         <div class="testimonial-featured reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-featured-quote">
-            "Landing a Target order was a dream come true — but it meant producing 10x our normal volume. Drip Capital's Float product allowed us to pay our overseas manufacturers while we waited for Target's net-90 payment. Without Drip, we would have had to turn down the order."
+            "Landing a Target order was a dream come true — but it meant producing 10x our normal volume. Drip Capital's Vendor Financing allowed us to pay our overseas manufacturers while we waited for Target's net-90 payment. Without Drip, we would have had to turn down the order."
           </p>
           <div class="testimonial-person">
             <div class="testimonial-avatar">TL</div>
@@ -106,9 +106,9 @@ const challenges = [
 ]
 
 const products = [
-  { badge: 'Float', name: 'Vendor Financing', desc: 'Pay overseas manufacturers and domestic suppliers on time while waiting for large retailer payments.', link: '/products/vendor-financing' },
-  { badge: 'Advance', name: 'Receivables Financing', desc: 'Convert outstanding retailer invoices into immediate cash to fund your next production run.', link: '/products/receivable-financing' },
-  { badge: 'Flex', name: 'Line of Credit', desc: 'Keep a revolving credit line available for product launches, trade promotions, and seasonal inventory builds.', link: '/products/line-of-credit' }
+  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay overseas manufacturers and domestic suppliers on time while waiting for large retailer payments.', link: '/products/vendor-financing' },
+  { badge: 'Receivables Financing', name: 'Receivables Financing', desc: 'Convert outstanding retailer invoices into immediate cash to fund your next production run.', link: '/products/receivable-financing' },
+  { badge: 'Line of Credit', name: 'Line of Credit', desc: 'Keep a revolving credit line available for product launches, trade promotions, and seasonal inventory builds.', link: '/products/line-of-credit' }
 ]
 
 const stats = [

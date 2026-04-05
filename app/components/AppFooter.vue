@@ -6,11 +6,7 @@
           <!-- Brand Column -->
           <div class="footer-brand">
             <NuxtLink to="/" class="footer-logo-link" aria-label="Drip Capital">
-              <svg width="100" height="30" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <text x="0" y="26" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="26" fill="#FFFFFF" letter-spacing="-1">DRIP</text>
-                <line x1="72" y1="4" x2="82" y2="32" stroke="#00C27C" stroke-width="3.5" stroke-linecap="round"/>
-                <text x="85" y="26" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="22" fill="#FFFFFF">c</text>
-              </svg>
+              <img src="/logo.png" alt="Drip Capital" class="footer-logo-img" />
             </NuxtLink>
             <p class="footer-tagline">Working Capital for Growing Businesses</p>
             <p class="footer-desc">
@@ -149,6 +145,12 @@ function handleEmail() {
   align-items: center;
   text-decoration: none;
   margin-bottom: 12px;
+}
+
+.footer-logo-img {
+  height: 28px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .footer-tagline {

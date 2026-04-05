@@ -4,11 +4,7 @@
       <nav class="nav-inner">
         <!-- Logo -->
         <NuxtLink to="/" class="nav-logo" aria-label="Drip Capital Home">
-          <svg width="120" height="36" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="0" y="26" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="26" fill="#0B1F3A" letter-spacing="-1">DRIP</text>
-            <line x1="72" y1="4" x2="82" y2="32" stroke="#00C27C" stroke-width="3.5" stroke-linecap="round"/>
-            <text x="85" y="26" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="22" fill="#0B1F3A">c</text>
-          </svg>
+          <img src="/logo.png" alt="Drip Capital" class="nav-logo-img" />
         </NuxtLink>
 
         <!-- Desktop Links -->
@@ -248,7 +244,7 @@
 
         <!-- CTA Area -->
         <div class="nav-cta">
-          <NuxtLink to="/partner" class="btn btn-outline btn-sm">Become a Partner</NuxtLink>
+          <a href="tel:+16504370150" class="nav-phone">+1 650 437 0150</a>
           <a href="https://app.dripcapital.com/sign_in" target="_blank" rel="noopener noreferrer" class="nav-signin">Sign In</a>
           <NuxtLink to="/company/contact" class="btn btn-primary btn-sm">Contact Us</NuxtLink>
         </div>
@@ -297,7 +293,7 @@
         </div>
         <div class="mobile-cta">
           <NuxtLink to="/company/contact" class="btn btn-primary w-full" @click="closeMobile">Contact Us</NuxtLink>
-          <NuxtLink to="/partner" class="btn btn-outline w-full" @click="closeMobile">Become a Partner</NuxtLink>
+          <a href="tel:+16504370150" class="btn btn-outline w-full">+1 650 437 0150</a>
         </div>
       </div>
     </div>
@@ -377,6 +373,26 @@ onMounted(() => {
   align-items: center;
   flex-shrink: 0;
   text-decoration: none;
+}
+
+.nav-logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.nav-phone {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  transition: color 0.2s;
+}
+
+.nav-phone:hover {
+  color: var(--green-d);
 }
 
 .nav-links {
@@ -639,9 +655,8 @@ onMounted(() => {
 }
 
 @media (max-width: 768px) {
-  .nav-logo svg {
-    width: 100px;
-    height: 30px;
+  .nav-logo-img {
+    height: 26px;
   }
 }
 </style>

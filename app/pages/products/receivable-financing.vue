@@ -3,35 +3,35 @@
     <!-- Hero -->
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Product — Advance</span>
+        <span class="eyebrow">Product — Receivables Financing</span>
         <h1>Get paid on your invoices —<br><em>today.</em></h1>
         <p>Stop waiting 60–90 days for customer payments. Access cash against your receivables immediately and put it to work in your business.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
-          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Float</NuxtLink>
+          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Vendor Financing</NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- What is Advance -->
+    <!-- What is Receivables Financing -->
     <section class="section">
       <div class="container">
         <div class="two-col">
           <div class="reveal">
-            <span class="eyebrow">What is Advance?</span>
+            <span class="eyebrow">What is Receivables Financing?</span>
             <h2 class="section-title">Your invoices are worth cash.<br>Get them now.</h2>
             <p class="section-subtitle">
-              Advance is Drip Capital's receivables financing product. Instead of waiting 60–90 days for customer payments, you submit your outstanding invoices and receive funds within 24–48 hours.
+              Receivables Financing is Drip Capital's product for converting invoices to cash. Instead of waiting 60–90 days for customer payments, you submit your outstanding invoices and receive funds within 24–48 hours.
             </p>
             <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
               This isn't a loan — it's your money. You earned it. We just get it to you faster so you can reinvest in your business without waiting.
             </p>
-            <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Apply for Advance →</NuxtLink>
+            <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Apply for Receivables Financing →</NuxtLink>
           </div>
           <div class="reveal reveal-delay-1">
             <div class="dso-card">
               <div class="dso-header">
-                <span class="dso-label">Before Advance</span>
+                <span class="dso-label">Before</span>
                 <span class="dso-value dso-bad">67 days DSO</span>
               </div>
               <div class="dso-bar-outer">
@@ -39,7 +39,7 @@
               </div>
               <div class="dso-divider"></div>
               <div class="dso-header">
-                <span class="dso-label">After Advance</span>
+                <span class="dso-label">After</span>
                 <span class="dso-value dso-good">2 days DSO</span>
               </div>
               <div class="dso-bar-outer">
@@ -56,7 +56,7 @@
     <section class="section section-bg">
       <div class="container">
         <div class="section-header reveal" style="text-align: center; max-width: 560px; margin: 0 auto 48px;">
-          <span class="eyebrow">How Advance Works</span>
+          <span class="eyebrow">How Receivables Financing Works</span>
           <h2 class="section-title">Three simple steps.</h2>
         </div>
         <div class="steps-row">
@@ -92,7 +92,7 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="eyebrow">Benefits</span>
-          <h2 class="section-title">Why businesses choose Advance.</h2>
+          <h2 class="section-title">Why businesses choose Receivables Financing.</h2>
         </div>
         <div class="grid-2">
           <div class="benefit-card reveal" v-for="(b, i) in benefits" :key="i" :class="`reveal-delay-${i}`">
@@ -111,7 +111,7 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="eyebrow">Use Cases</span>
-          <h2 class="section-title">When Advance makes sense.</h2>
+          <h2 class="section-title">When Receivables Financing makes sense.</h2>
         </div>
         <div class="grid-3">
           <div class="usecase-simple reveal" v-for="(uc, i) in useCases" :key="i" :class="`reveal-delay-${i}`">
@@ -128,9 +128,9 @@
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Stop waiting on your customers to pay.</h2>
-          <p class="cta-simple-desc">Access the cash you've already earned. Apply for Advance today and get funded in 48 hours.</p>
+          <p class="cta-simple-desc">Access the cash you've already earned. Apply for Receivables Financing today and get funded in 48 hours.</p>
           <div class="cta-simple-actions">
-            <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply for Advance →</NuxtLink>
+            <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply for Receivables Financing →</NuxtLink>
             <NuxtLink to="/products/line-of-credit" class="btn btn-outline btn-lg">Compare Products</NuxtLink>
           </div>
         </div>
@@ -140,7 +140,7 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Advance — Receivables Financing | Drip Capital' })
+useHead({ title: 'Receivables Financing | Drip Capital' })
 
 const benefits = [
   {
@@ -161,22 +161,22 @@ const benefits = [
   {
     icon: 'shield',
     title: 'Non-Dilutive',
-    desc: 'Unlike equity financing, Advance doesn\'t require you to give up any ownership in your business. You keep 100% of your equity while accessing the capital you need.'
+    desc: 'Unlike equity financing, Receivables Financing doesn\'t require you to give up any ownership in your business. You keep 100% of your equity while accessing the capital you need.'
   }
 ]
 
 const useCases = [
   {
     title: 'Fund Operations While Waiting on Payments',
-    desc: 'You shipped goods, completed work, and sent invoices — but customers take 60–90 days. Advance puts that cash to work immediately.'
+    desc: 'You shipped goods, completed work, and sent invoices — but customers take 60–90 days. Receivables Financing puts that cash to work immediately.'
   },
   {
     title: 'Take on a New Large Client',
-    desc: 'When a major customer wants a large order, you need cash to produce it. Advance on existing receivables frees up capital for the new contract.'
+    desc: 'When a major customer wants a large order, you need cash to produce it. Receivables Financing frees up capital for the new contract.'
   },
   {
     title: 'Avoid Cash Crunches During Growth',
-    desc: 'Fast-growing businesses often face cash shortfalls even when profitable. Advance smooths cash flow so growth doesn\'t create a crisis.'
+    desc: 'Fast-growing businesses often face cash shortfalls even when profitable. Receivables Financing smooths cash flow so growth doesn\'t create a crisis.'
   }
 ]
 </script>

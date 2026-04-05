@@ -69,11 +69,10 @@
               <div class="hero-card-backers">
                 <span class="hero-card-backer-label">Backed by</span>
                 <div class="hero-backer-list">
-                  <span>Sequoia</span>
-                  <span>Accel</span>
-                  <span>Y Combinator</span>
-                  <span>IFC</span>
-                  <span>Barclays</span>
+                  <img src="/logo-accel.png" alt="Accel" class="hero-backer-logo" />
+                  <img src="/logo-peak-xv.webp" alt="Peak XV" class="hero-backer-logo" />
+                  <img src="/logo-barclays.png" alt="Barclays" class="hero-backer-logo" />
+                  <img src="/logo-east-west.png" alt="East West Bank" class="hero-backer-logo" />
                 </div>
               </div>
             </div>
@@ -110,34 +109,28 @@
       </div>
     </section>
 
-    <!-- ========== BACKERS MARQUEE ========== -->
+    <!-- ========== BACKERS ========== -->
     <section class="backers-strip">
       <div class="container">
         <div class="backers-header">
-          <span class="backers-label-text">Backed by world-class investors</span>
+          <span class="backers-label-text">Backed by the best</span>
         </div>
-      </div>
-      <div class="marquee-wrapper">
-        <div class="marquee-track">
-          <span class="marquee-item"><span class="marquee-dot"></span>Accel</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>Barclays</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>East West Bank</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>IFC · World Bank</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>Sequoia Capital</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>SMBC</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>TD Bank</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>Wing VC</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>Y Combinator</span>
-          <!-- Duplicate for infinite scroll -->
-          <span class="marquee-item"><span class="marquee-dot"></span>Accel</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>Barclays</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>East West Bank</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>IFC · World Bank</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>Sequoia Capital</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>SMBC</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>TD Bank</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>Wing VC</span>
-          <span class="marquee-item"><span class="marquee-dot"></span>Y Combinator</span>
+        <div class="backers-logos">
+          <div class="backer-logo-item">
+            <img src="/logo-accel.png" alt="Accel" class="backer-logo" />
+          </div>
+          <div class="backer-logo-item">
+            <img src="/logo-peak-xv.webp" alt="Peak XV" class="backer-logo" />
+          </div>
+          <div class="backer-logo-item">
+            <img src="/logo-barclays.png" alt="Barclays" class="backer-logo" />
+          </div>
+          <div class="backer-logo-item">
+            <img src="/logo-east-west.png" alt="East West Bank" class="backer-logo" />
+          </div>
+          <div class="backer-logo-item">
+            <img src="/logo-wing-vc.svg" alt="Wing VC" class="backer-logo" />
+          </div>
         </div>
       </div>
     </section>
@@ -860,13 +853,12 @@ onUnmounted(() => {
   gap: 8px;
 }
 
-.hero-backer-list span {
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.52);
-  background: rgba(255,255,255,0.06);
-  padding: 4px 10px;
-  border-radius: 4px;
+.hero-backer-logo {
+  height: 18px;
+  width: auto;
+  max-width: 70px;
+  object-fit: contain;
+  filter: brightness(0) invert(1) opacity(0.5);
 }
 
 /* ===== STATS BAR ===== */
@@ -920,32 +912,57 @@ onUnmounted(() => {
 
 /* ===== BACKERS ===== */
 .backers-strip {
-  padding: 28px 0;
+  padding: 40px 0;
   border-bottom: 1px solid var(--border);
-  overflow: hidden;
 }
 
 .backers-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .backers-label-text {
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--mid);
 }
 
-.marquee-dot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--green);
-  margin-right: 4px;
-  flex-shrink: 0;
+.backers-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.backer-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backer-logo {
+  height: 28px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.6);
+  transition: filter 0.2s;
+}
+
+.backer-logo:hover {
+  filter: grayscale(0%) opacity(1);
+}
+
+@media (max-width: 640px) {
+  .backers-logos {
+    gap: 28px;
+  }
+  .backer-logo {
+    height: 22px;
+  }
 }
 
 /* ===== PRODUCTS ===== */

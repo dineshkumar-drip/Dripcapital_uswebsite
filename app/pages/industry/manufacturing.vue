@@ -8,7 +8,7 @@
         <p>Manufacturing businesses face long production cycles, large raw material costs, and slow customer payments. Drip Capital provides the capital to keep your production line moving.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Talk to Us →</NuxtLink>
-          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Float Product</NuxtLink>
+          <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Vendor Financing</NuxtLink>
         </div>
       </div>
     </section>
@@ -117,9 +117,9 @@ const challenges = [
 ]
 
 const products = [
-  { badge: 'Float', name: 'Vendor Financing', desc: 'Pay your raw material and component suppliers on time. Drip pays them now, you repay on up to 120-day terms.', link: '/products/vendor-financing' },
-  { badge: 'Advance', name: 'Receivables Financing', desc: 'Convert your outstanding customer invoices into same-day cash. Stop waiting 60–90 days for payment.', link: '/products/receivable-financing' },
-  { badge: 'Flex', name: 'Line of Credit', desc: 'A revolving credit facility to fund operations, cover payroll, or capitalize on bulk purchase opportunities.', link: '/products/line-of-credit' }
+  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay your raw material and component suppliers on time. Drip pays them now, you repay on up to 120-day terms.', link: '/products/vendor-financing' },
+  { badge: 'Receivables Financing', name: 'Receivables Financing', desc: 'Convert your outstanding customer invoices into same-day cash. Stop waiting 60–90 days for payment.', link: '/products/receivable-financing' },
+  { badge: 'Line of Credit', name: 'Line of Credit', desc: 'A revolving credit facility to fund operations, cover payroll, or capitalize on bulk purchase opportunities.', link: '/products/line-of-credit' }
 ]
 
 const stats = [
