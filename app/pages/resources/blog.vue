@@ -77,7 +77,7 @@ const featuredPost = {
   img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
   category: 'Business Growth',
   title: 'How Mid-Market Businesses Can Use Working Capital to Outperform the Competition',
-  excerpt: 'In today\'s competitive landscape, businesses that can move faster — pay suppliers sooner, fulfill larger orders, stock up ahead of demand — consistently outperform those that can\'t. Working capital is the engine that powers that speed.',
+  excerpt: 'In today\'s competitive landscape, businesses that can move faster: paying suppliers sooner, fulfilling larger orders, and stocking up ahead of demand. Businesses that do this consistently outperform those that can\'t. Working capital is the engine that powers that speed.',
   author: 'Drip Capital Team',
   date: 'March 20, 2026',
   readTime: '8 min'
@@ -88,7 +88,7 @@ const allPosts = [
   { img: 'https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=400&q=80', category: 'Industry Insights', title: 'Seafood Import Finance: A Deep Dive', excerpt: 'The unique challenges facing seafood importers and how modern trade finance tools are reshaping the industry.', date: 'February 28, 2026', readTime: '7 min' },
   { img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80', category: 'Trade Finance', title: 'Invoice Factoring vs. Receivables Financing: What\'s the Difference?', excerpt: 'These two products sound similar but work very differently. Here\'s what you need to know before choosing.', date: 'February 14, 2026', readTime: '6 min' },
   { img: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&q=80', category: 'Industry Insights', title: 'Agricultural Finance in 2026: Trends and Outlook', excerpt: 'How agri-food businesses are navigating rising input costs, supply chain volatility, and changing buyer dynamics.', date: 'January 30, 2026', readTime: '9 min' },
-  { img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&q=80', category: 'Business Growth', title: 'How to Negotiate Better Supplier Payment Terms', excerpt: 'Practical strategies to extend your DPO and preserve cash — without damaging your supplier relationships.', date: 'January 18, 2026', readTime: '6 min' },
+  { img: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&q=80', category: 'Business Growth', title: 'How to Negotiate Better Supplier Payment Terms', excerpt: 'Practical strategies to extend your DPO and preserve cash, without damaging your supplier relationships.', date: 'January 18, 2026', readTime: '6 min' },
   { img: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=400&q=80', category: 'Working Capital', title: 'The Cash Conversion Cycle: Your Most Important Financial Metric', excerpt: 'Understanding your CCC and how to optimize it can transform your business\'s capital efficiency and growth potential.', date: 'January 5, 2026', readTime: '10 min' }
 ]
 

@@ -2,9 +2,9 @@
   <div>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Industry — Seafood</span>
+        <span class="eyebrow">Industry: Seafood</span>
         <h1>Working capital for<br><em>seafood importers & distributors</em></h1>
-        <p>Seafood businesses face unique challenges — perishable goods, seasonal supply, complex import logistics, and demanding customer payment terms. Drip Capital has specialized experience in seafood trade finance.</p>
+        <p>Seafood businesses face unique challenges: perishable goods, seasonal supply, complex import logistics, and demanding customer payment terms. Drip Capital has specialized experience in seafood trade finance.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Talk to Us →</NuxtLink>
           <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Vendor Financing</NuxtLink>
@@ -75,7 +75,7 @@
             <div class="testimonial-avatar">MR</div>
             <div>
               <div class="testimonial-name">Marcus Rodriguez</div>
-              <div class="testimonial-role">CEO, SunCoast Seafood Imports — Miami, FL</div>
+              <div class="testimonial-role">CEO, SunCoast Seafood Imports, Miami, FL</div>
             </div>
           </div>
         </div>

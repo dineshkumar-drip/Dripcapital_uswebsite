@@ -90,7 +90,7 @@
 const reviews = [
   {
     title: 'Incredibly easy and smooth process',
-    quote: 'Incredibly easy and smooth process — highly recommend. The team was responsive from day one and funding was faster than any bank I\'ve worked with.',
+    quote: 'Incredibly easy and smooth process, highly recommend. The team was responsive from day one and funding was faster than any bank I\'ve worked with.',
     name: 'Marcus Rodriguez',
     role: 'CEO, SunCoast Seafood Imports',
     initials: 'MR',
@@ -114,7 +114,7 @@ const reviews = [
   },
   {
     title: 'Helped us scale when it mattered most',
-    quote: 'We needed to fulfil a large order fast. Drip stepped in within 48 hours. We grew 40% that year — that wouldn\'t have happened without them.',
+    quote: 'We needed to fulfil a large order fast. Drip stepped in within 48 hours. We grew 40% that year. That wouldn\'t have happened without them.',
     name: 'Sarah Chen',
     role: 'Founder, Pacific Apparel Co.',
     initials: 'SC',
@@ -122,7 +122,7 @@ const reviews = [
   },
   {
     title: 'Best financing experience I\'ve had',
-    quote: 'Timing and supply consistency are everything in our industry. Drip let us secure bulk materials when prices were right — without locking up cash.',
+    quote: 'Timing and supply consistency are everything in our industry. Drip let us secure bulk materials when prices were right, without locking up cash.',
     name: 'Maria Gonzalez',
     role: 'CEO, Fresh Coast Seafood',
     initials: 'MG',
@@ -130,7 +130,7 @@ const reviews = [
   },
   {
     title: 'Simple, fast and professional',
-    quote: 'The application took minutes. Decision came in under 48 hours. Our dedicated account manager has been outstanding — responsive and proactive.',
+    quote: 'The application took minutes. Decision came in under 48 hours. Our dedicated account manager has been outstanding, responsive and proactive.',
     name: 'David Kim',
     role: 'VP Finance, Coastal Consumer Goods',
     initials: 'DK',

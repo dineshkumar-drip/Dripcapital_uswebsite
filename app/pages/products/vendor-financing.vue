@@ -3,8 +3,8 @@
     <!-- Hero -->
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Product — Vendor Financing</span>
-        <h1>Extend supplier payment terms —<br><em>keep your cash.</em></h1>
+        <span class="eyebrow">Product: Vendor Financing</span>
+        <h1>Extend supplier payment terms<br><em>and keep your cash.</em></h1>
         <p>We pay your suppliers today so you preserve cash and keep orders moving. You repay on up to 120-day terms that work for your business cycle.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
@@ -24,7 +24,7 @@
               Vendor Financing is Drip Capital's supplier financing product. When you need to pay a supplier but your cash is tied up in receivables or inventory, Drip Capital steps in to pay your supplier directly.
             </p>
             <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
-              You get the goods. Your supplier gets paid on time. And you repay Drip Capital over the next 30–120 days — matching your natural cash conversion cycle.
+              You get the goods. Your supplier gets paid on time. And you repay Drip Capital over the next 30–120 days, matching your natural cash conversion cycle.
             </p>
             <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Get Started Today</NuxtLink>
           </div>
@@ -54,7 +54,7 @@
             <div class="step-number">1</div>
             <div class="step-content">
               <h3 class="step-title">Apply &amp; Get Approved</h3>
-              <p class="step-desc">Submit a brief online application. Our team assesses your business performance — decision in 48 hours. No collateral, no bank deposit required.</p>
+              <p class="step-desc">Submit a brief online application. Our team assesses your business performance and gets back to you in 48 hours. No collateral, no bank deposit required.</p>
             </div>
           </div>
           <div class="step-connector reveal reveal-delay-1"></div>
@@ -62,7 +62,7 @@
             <div class="step-number">2</div>
             <div class="step-content">
               <h3 class="step-title">Drip Pays Your Supplier</h3>
-              <p class="step-desc">Once approved, submit a supplier invoice or PO. Drip Capital pays your supplier directly — same day or within 24 hours. Your supplier is happy. Your orders keep moving.</p>
+              <p class="step-desc">Once approved, submit a supplier invoice or PO. Drip Capital pays your supplier directly, same day or within 24 hours. Your supplier is happy. Your orders keep moving.</p>
             </div>
           </div>
           <div class="step-connector reveal reveal-delay-2"></div>
@@ -70,7 +70,7 @@
             <div class="step-number">3</div>
             <div class="step-content">
               <h3 class="step-title">You Repay Us</h3>
-              <p class="step-desc">Repay Drip Capital on your agreed terms — 30, 60, 90, or 120 days — matching when you receive payment from your customers. Revolve and draw again as needed.</p>
+              <p class="step-desc">Repay Drip Capital on your agreed terms: 30, 60, 90, or 120 days, matching when you receive payment from your customers. Revolve and draw again as needed.</p>
             </div>
           </div>
         </div>
@@ -130,7 +130,14 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Vendor Financing | Drip Capital' })
+useHead({
+  title: 'Vendor Financing for US Businesses | Pay Suppliers Now, Repay in 120 Days | Drip Capital',
+  meta: [
+    { name: 'description', content: 'Drip Capital Vendor Financing lets US businesses pay suppliers immediately and repay on up to 120-day terms. No collateral, 48-hour approval. Keep cash moving.' },
+    { property: 'og:title', content: 'Vendor Financing | Drip Capital' },
+    { property: 'og:description', content: 'Pay your suppliers now, repay in 120 days. Fast approval, no collateral required.' }
+  ]
+})
 
 const benefits = [
   {
@@ -141,7 +148,7 @@ const benefits = [
   {
     icon: 'lightning',
     title: '48-Hour Approval',
-    desc: 'Our proprietary underwriting model gives you a credit decision within 48 hours of completing the application — no weeks-long bank review process.'
+    desc: 'Our proprietary underwriting model gives you a credit decision within 48 hours of completing the application, with no weeks-long bank review process.'
   },
   {
     icon: 'clock',
@@ -151,7 +158,7 @@ const benefits = [
   {
     icon: 'users',
     title: 'Dedicated Account Manager',
-    desc: 'You get a dedicated Drip Capital account manager who understands your business, your suppliers, and your growth goals — available when you need them.'
+    desc: 'You get a dedicated Drip Capital account manager who understands your business, your suppliers, and your growth goals, and is available when you need them.'
   }
 ]
 

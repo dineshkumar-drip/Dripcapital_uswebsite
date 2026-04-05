@@ -3,9 +3,9 @@
     <!-- Hero -->
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Product — Line of Credit</span>
-        <h1>Flexible capital —<br><em>draw when you need it.</em></h1>
-        <p>A revolving credit line for any business need. Draw what you need, repay when you can, and draw again — on your terms.</p>
+        <span class="eyebrow">Product: Line of Credit</span>
+        <h1>Flexible capital.<br><em>Draw when you need it.</em></h1>
+        <p>A revolving credit line for any business need. Draw what you need, repay when you can, and draw again on your terms.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
           <NuxtLink to="/products/vendor-financing" class="btn btn-outline-white btn-lg">View Vendor Financing</NuxtLink>
@@ -21,10 +21,10 @@
             <span class="eyebrow">What is Line of Credit?</span>
             <h2 class="section-title">Capital that revolves<br>with your business.</h2>
             <p class="section-subtitle">
-              Our revolving Line of Credit gives you flexible, on-demand access to capital. Unlike a term loan, you don't take it all at once — you draw what you need, repay, and draw again. Interest only accrues on what you actually use.
+              Our revolving Line of Credit gives you flexible, on-demand access to capital. Unlike a term loan, you don't take it all at once. You draw what you need, repay, and draw again. Interest only accrues on what you actually use.
             </p>
             <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
-              Perfect for businesses with variable cash needs — seasonal businesses, fast-growing companies, and anyone who wants capital on standby.
+              Perfect for businesses with variable cash needs: seasonal businesses, fast-growing companies, and anyone who wants capital on standby.
             </p>
             <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Apply for Line of Credit →</NuxtLink>
           </div>
@@ -96,7 +96,7 @@
             <div class="step-number">3</div>
             <div class="step-content">
               <h3 class="step-title">Repay and Revolve</h3>
-              <p class="step-desc">Repay on your schedule. As you repay, your available credit is restored — you can draw again immediately. No fixed monthly payments.</p>
+              <p class="step-desc">Repay on your schedule. As you repay, your available credit is restored and you can draw again immediately. No fixed monthly payments.</p>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Capital ready when you need it.</h2>
-          <p class="cta-simple-desc">Get approved for a Line of Credit and have working capital on standby — draw only when you need it, pay only for what you use.</p>
+          <p class="cta-simple-desc">Get approved for a Line of Credit and have working capital on standby. Draw only when you need it, pay only for what you use.</p>
           <div class="cta-simple-actions">
             <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply for Line of Credit →</NuxtLink>
             <NuxtLink to="/products/vendor-financing" class="btn btn-outline btn-lg">Compare Products</NuxtLink>
@@ -162,7 +162,7 @@ const benefits = [
   {
     icon: 'unlock',
     title: 'On-Demand Access',
-    desc: 'Your credit line is always available. Draw funds anytime through our portal — no need to reapply every time you need capital.'
+    desc: 'Your credit line is always available. Draw funds anytime through our portal, with no need to reapply every time you need capital.'
   },
   {
     icon: 'dollar',
@@ -177,7 +177,7 @@ const benefits = [
   {
     icon: 'refresh',
     title: 'No Fixed Repayment Schedule',
-    desc: 'Repay when it makes sense for your business — when customers pay you, when seasonal cash flow returns, or on any schedule you prefer.'
+    desc: 'Repay when it makes sense for your business: when customers pay you, when seasonal cash flow returns, or on any schedule you prefer.'
   }
 ]
 

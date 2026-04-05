@@ -2,7 +2,7 @@
   <div>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Industry — Wholesale</span>
+        <span class="eyebrow">Industry: Wholesale</span>
         <h1>Working capital for<br><em>wholesale distributors</em></h1>
         <p>Wholesale businesses operate on thin margins and require large volumes to succeed. Drip Capital provides the capital velocity you need to grow distribution volumes without cash crunches.</p>
         <div class="hero-actions">
@@ -69,13 +69,13 @@
         <div class="testimonial-featured reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-featured-quote">
-            "We distribute to 200+ retail customers and our cash was constantly tied up in transit inventory and waiting on accounts receivable. Drip Capital's Receivables Financing transformed our cash cycle — we now reinvest every dollar as fast as it comes in."
+            "We distribute to 200+ retail customers and our cash was constantly tied up in transit inventory and waiting on accounts receivable. Drip Capital's Receivables Financing transformed our cash cycle. We now reinvest every dollar as fast as it comes in."
           </p>
           <div class="testimonial-person">
             <div class="testimonial-avatar">JP</div>
             <div>
               <div class="testimonial-name">Jennifer Park</div>
-              <div class="testimonial-role">CFO, Pacific Wholesale Distributors — Los Angeles, CA</div>
+              <div class="testimonial-role">CFO, Pacific Wholesale Distributors, Los Angeles, CA</div>
             </div>
           </div>
         </div>

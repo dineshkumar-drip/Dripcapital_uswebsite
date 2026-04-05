@@ -3,8 +3,8 @@
     <!-- Hero -->
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Product — Receivables Financing</span>
-        <h1>Get paid on your invoices —<br><em>today.</em></h1>
+        <span class="eyebrow">Product: Receivables Financing</span>
+        <h1>Get paid on your invoices<br><em>today.</em></h1>
         <p>Stop waiting 60–90 days for customer payments. Access cash against your receivables immediately and put it to work in your business.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
@@ -24,7 +24,7 @@
               Receivables Financing is Drip Capital's product for converting invoices to cash. Instead of waiting 60–90 days for customer payments, you submit your outstanding invoices and receive funds within 24–48 hours.
             </p>
             <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
-              This isn't a loan — it's your money. You earned it. We just get it to you faster so you can reinvest in your business without waiting.
+              This isn't a loan. It's your money. You earned it. We just get it to you faster so you can reinvest in your business without waiting.
             </p>
             <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Apply for Receivables Financing →</NuxtLink>
           </div>
@@ -80,7 +80,7 @@
             <div class="step-number">3</div>
             <div class="step-content">
               <h3 class="step-title">Collect from Customers</h3>
-              <p class="step-desc">Continue your normal collection process. When customers pay, Drip Capital is repaid — no changes to your customer relationships.</p>
+              <p class="step-desc">Continue your normal collection process. When customers pay, Drip Capital is repaid, with no changes to your customer relationships.</p>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@ const benefits = [
   {
     icon: 'lightning',
     title: 'Fast Funding',
-    desc: 'Approved invoices are funded within 24–48 hours — not the weeks you\'d wait for a bank to process a traditional loan.'
+    desc: 'Approved invoices are funded within 24–48 hours, not the weeks you\'d wait for a bank to process a traditional loan.'
   },
   {
     icon: 'shield',
@@ -168,7 +168,7 @@ const benefits = [
 const useCases = [
   {
     title: 'Fund Operations While Waiting on Payments',
-    desc: 'You shipped goods, completed work, and sent invoices — but customers take 60–90 days. Receivables Financing puts that cash to work immediately.'
+    desc: 'You shipped goods, completed work, and sent invoices, but customers take 60–90 days. Receivables Financing puts that cash to work immediately.'
   },
   {
     title: 'Take on a New Large Client',

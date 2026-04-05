@@ -18,7 +18,7 @@
               <span class="hero-tw-text">{{ typewriterDisplay }}<span class="hero-tw-cursor" :class="{ blink: cursorBlink }">|</span></span>
             </div>
             <p class="hero-subtitle">
-              Drip Capital helps businesses doing $5M–$500M in annual revenue access the working capital they need — without traditional banking hurdles.
+              Drip Capital helps businesses doing $5M–$500M in annual revenue access the working capital they need, without traditional banking hurdles.
             </p>
             <div class="hero-form">
               <div class="input-row">
@@ -36,45 +36,69 @@
           </div>
 
           <div class="hero-right">
-            <div class="hero-card">
-              <div class="hero-card-header">
-                <span class="hero-card-eyebrow">Drip Capital by the Numbers</span>
+            <div class="hero-visual-card">
+
+              <!-- Business photo with approval overlay -->
+              <div class="hero-photo-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=700&q=80"
+                  alt="US distribution warehouse"
+                  class="hero-photo"
+                  loading="eager"
+                />
+                <div class="hero-photo-overlay"></div>
+
+                <!-- Floating approval notification -->
+                <div class="hero-approval-badge">
+                  <div class="hero-approval-check">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="hero-approval-title">Funding Approved</div>
+                    <div class="hero-approval-sub">$250,000 · 48 hours</div>
+                  </div>
+                </div>
+
+                <!-- Business label -->
+                <div class="hero-photo-caption">Pacific Coast Distributors, Los Angeles CA</div>
               </div>
-              <div class="hero-stats-grid">
-                <div class="hero-stat">
-                  <div class="hero-stat-value">
-                    $<AnimatedCounter :target="9" suffix="B+" />
-                  </div>
-                  <div class="hero-stat-label">Total Financed</div>
+
+              <!-- Key metrics row -->
+              <div class="hero-metrics">
+                <div class="hero-metric">
+                  <div class="hero-metric-val">$9B+</div>
+                  <div class="hero-metric-label">Deployed</div>
                 </div>
-                <div class="hero-stat">
-                  <div class="hero-stat-value">
-                    <AnimatedCounter :target="10000" suffix="+" />
-                  </div>
-                  <div class="hero-stat-label">Businesses Funded</div>
+                <div class="hero-metric-div"></div>
+                <div class="hero-metric">
+                  <div class="hero-metric-val">10K+</div>
+                  <div class="hero-metric-label">Businesses</div>
                 </div>
-                <div class="hero-stat">
-                  <div class="hero-stat-value">
-                    <AnimatedCounter :target="10" suffix="+" />
-                  </div>
-                  <div class="hero-stat-label">Years of Experience</div>
+                <div class="hero-metric-div"></div>
+                <div class="hero-metric">
+                  <div class="hero-metric-val">48hrs</div>
+                  <div class="hero-metric-label">To Approval</div>
                 </div>
-                <div class="hero-stat">
-                  <div class="hero-stat-value">
-                    <AnimatedCounter :target="30" suffix="+" />
-                  </div>
-                  <div class="hero-stat-label">Countries Served</div>
+                <div class="hero-metric-div"></div>
+                <div class="hero-metric">
+                  <div class="hero-metric-val">10+</div>
+                  <div class="hero-metric-label">Years</div>
                 </div>
               </div>
-              <div class="hero-card-backers">
-                <span class="hero-card-backer-label">Backed by</span>
-                <div class="hero-backer-list">
+
+              <!-- Investor logos on white strip for clear visibility -->
+              <div class="hero-backers">
+                <span class="hero-backers-label">Backed by</span>
+                <div class="hero-backers-logos">
                   <img src="/logo-accel.png" alt="Accel" class="hero-backer-logo" />
                   <img src="/logo-peak-xv.webp" alt="Peak XV" class="hero-backer-logo" />
                   <img src="/logo-barclays.png" alt="Barclays" class="hero-backer-logo" />
                   <img src="/logo-east-west.png" alt="East West Bank" class="hero-backer-logo" />
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -93,7 +117,7 @@
           <div class="stats-item reveal reveal-delay-1">
             <div class="stats-label">Vendor Financing</div>
             <div class="stats-value">Up to 120 Days</div>
-            <div class="stats-desc">Extended repayment — preserve cash</div>
+            <div class="stats-desc">Extended repayment to preserve cash</div>
           </div>
           <div class="stats-item reveal reveal-delay-2">
             <div class="stats-label">Receivables Financing</div>
@@ -157,7 +181,7 @@
             </div>
             <h3 class="product-eq-title">Vendor Financing</h3>
             <p class="product-eq-tagline">Pay suppliers upfront. Repay us later.</p>
-            <p class="product-eq-desc">We pay your suppliers today so you preserve cash and keep orders moving. You repay on flexible terms — up to 120 days.</p>
+            <p class="product-eq-desc">We pay your suppliers today so you preserve cash and keep orders moving. You repay on flexible terms, up to 120 days.</p>
             <ul class="product-eq-list">
               <li>No collateral required</li>
               <li>48-hour credit decision</li>
@@ -180,7 +204,7 @@
             </div>
             <h3 class="product-eq-title">Receivables Financing</h3>
             <p class="product-eq-tagline">Get paid today. Not in 60 days.</p>
-            <p class="product-eq-desc">Stop waiting 60–90 days for customer payments. Convert your outstanding invoices into same-day cash — reduce DSO instantly.</p>
+            <p class="product-eq-desc">Stop waiting 60–90 days for customer payments. Convert your outstanding invoices into same-day cash and reduce DSO instantly.</p>
             <ul class="product-eq-list">
               <li>Funded in 24–48 hours</li>
               <li>Improve days sales outstanding</li>
@@ -204,7 +228,7 @@
             </div>
             <h3 class="product-eq-title">Line of Credit</h3>
             <p class="product-eq-tagline">Flexible capital, on demand.</p>
-            <p class="product-eq-desc">A revolving credit facility for any business need. Draw what you need, repay, and draw again — capital that moves with you.</p>
+            <p class="product-eq-desc">A revolving credit facility for any business need. Draw what you need, repay, and draw again. Capital that moves with you.</p>
             <ul class="product-eq-list">
               <li>On-demand access to capital</li>
               <li>Only pay for what you draw</li>
@@ -234,7 +258,7 @@
             </div>
             <h3 class="hiw-title">Apply &amp; Connect</h3>
             <p class="hiw-desc">
-              Complete a brief online application. We'll connect to your accounting or ERP system to assess your business — not just your credit score.
+              Complete a brief online application. We'll connect to your accounting or ERP system to assess your business, not just your credit score.
             </p>
           </div>
           <div class="hiw-card reveal reveal-delay-1">
@@ -294,7 +318,7 @@
             <div class="usecase-icon">
               <AppIcon name="check-circle" :size="22" color="var(--green)" />
             </div>
-            <h3 class="usecase-title">Pay Suppliers on Time — Every Time</h3>
+            <h3 class="usecase-title">Pay Suppliers on Time, Every Time</h3>
             <p class="usecase-desc">
               Maintain your supplier relationships and negotiate better terms. Drip ensures you always pay on time, building trust and loyalty.
             </p>
@@ -380,7 +404,7 @@
         <div class="section-header reveal" style="text-align: center; max-width: 600px; margin: 0 auto 48px;">
           <span class="eyebrow">Why Drip Capital</span>
           <h2 class="section-title">How we compare to the alternatives.</h2>
-          <p class="section-subtitle" style="margin: 0 auto;">Built specifically for growing businesses — not one-size-fits-all lending.</p>
+          <p class="section-subtitle" style="margin: 0 auto;">Built specifically for growing businesses, not one-size-fits-all lending.</p>
         </div>
         <div class="comparison-wrapper reveal">
           <div class="comparison-scroll">
@@ -403,7 +427,7 @@
                 <tr>
                   <td>Collateral Required</td>
                   <td class="col-drip"><span class="check-yes">None</span></td>
-                  <td><span class="check-no">Yes — Assets</span></td>
+                  <td><span class="check-no">Yes (Assets)</span></td>
                   <td><span class="check-mid">Sometimes</span></td>
                 </tr>
                 <tr>
@@ -486,6 +510,9 @@
       </div>
     </section>
 
+    <!-- ========== LATEST NEWS ========== -->
+    <LatestNews />
+
     <!-- ========== CTA BANNER ========== -->
     <section class="section">
       <div class="container">
@@ -510,7 +537,7 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Drip Capital — Working Capital for Growing Businesses' })
+useHead({ title: 'Drip Capital: Working Capital for Growing Businesses' })
 
 const heroEmail = ref('')
 const openFaq = ref<number | null>(null)
@@ -518,10 +545,10 @@ const particleCanvas = ref<HTMLCanvasElement | null>(null)
 
 // Typewriter USP cycling
 const uspPhrases = [
-  'Transparent pricing — no hidden fees.',
-  'Fast approvals — credit decision in 48 hours.',
-  'Unsecured financing — no collateral needed.',
-  'Collateral-free funding — up to $10M.'
+  'Transparent pricing. No hidden fees.',
+  'Fast approvals. Credit decision in 48 hours.',
+  'Unsecured financing. No collateral needed.',
+  'Collateral-free funding up to $10M.'
 ]
 const typewriterDisplay = ref('')
 const cursorBlink = ref(false)
@@ -570,7 +597,7 @@ function deletePhrase(phraseIndex: number) {
 const faqItems = [
   {
     question: 'What types of businesses qualify for Drip Capital?',
-    answer: 'Drip Capital works with businesses generating $5M–$500M in annual revenue. We specialize in trade finance for importers, exporters, manufacturers, wholesalers, and distributors. We look at your business performance and trade history — not just your credit score.'
+    answer: 'Drip Capital works with businesses generating $5M–$500M in annual revenue. We specialize in trade finance for importers, exporters, manufacturers, wholesalers, and distributors. We look at your business performance and trade history, not just your credit score.'
   },
   {
     question: 'How long does the approval process take?',
@@ -582,11 +609,11 @@ const faqItems = [
   },
   {
     question: 'What is the difference between Vendor Financing, Receivables Financing, and Line of Credit?',
-    answer: 'Vendor Financing is our supplier financing product — we pay your suppliers and you repay us on extended terms (up to 120 days). Receivables Financing lets us accelerate payment on your outstanding invoices. Line of Credit is a revolving facility you can draw from at any time for any business purpose.'
+    answer: 'Vendor Financing is our supplier financing product: we pay your suppliers and you repay us on extended terms (up to 120 days). Receivables Financing lets us accelerate payment on your outstanding invoices. Line of Credit is a revolving facility you can draw from at any time for any business purpose.'
   },
   {
     question: 'How much can I borrow?',
-    answer: 'Credit facilities typically range from $100,000 to $10,000,000+, depending on your business size, revenue, and trade activity. Your facility grows as your business grows — we regularly review and increase limits for active customers.'
+    answer: 'Credit facilities typically range from $100,000 to $10,000,000+, depending on your business size, revenue, and trade activity. Your facility grows as your business grows. We regularly review and increase limits for active customers.'
   }
 ]
 
@@ -790,75 +817,163 @@ onUnmounted(() => {
   font-size: 18px;
 }
 
-/* Hero Card */
-.hero-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 16px;
-  padding: 32px;
-  backdrop-filter: blur(12px);
+/* Hero Visual Card */
+.hero-visual-card {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.35);
 }
 
-.hero-card-header {
-  margin-bottom: 28px;
+.hero-photo-wrap {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
 }
 
-.hero-card-eyebrow {
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(11,31,58,0.15) 0%, rgba(11,31,58,0.72) 100%);
+}
+
+/* Funding approved floating badge */
+.hero-approval-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: rgba(0,160,100,0.97);
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 24px rgba(0,160,100,0.45);
+  animation: badge-in 0.6s ease 0.4s both;
+}
+
+@keyframes badge-in {
+  from { opacity: 0; transform: translateY(-8px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.hero-approval-check {
+  width: 28px;
+  height: 28px;
+  background: rgba(255,255,255,0.22);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.hero-approval-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.hero-approval-sub {
   font-size: 11px;
+  color: rgba(255,255,255,0.82);
+  margin-top: 2px;
+}
+
+/* Business label bottom-left of photo */
+.hero-photo-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Metrics strip */
+.hero-metrics {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.hero-metric {
+  text-align: center;
+}
+
+.hero-metric-val {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.hero-metric-label {
+  font-size: 10px;
+  color: rgba(255,255,255,0.48);
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+}
+
+.hero-metric-div {
+  width: 1px;
+  height: 28px;
+  background: rgba(255,255,255,0.1);
+}
+
+/* Investor logos — semi-transparent light strip */
+.hero-backers {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  background: rgba(255,255,255,0.06);
+}
+
+.hero-backers-label {
+  font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--green);
+  color: rgba(255,255,255,0.38);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.hero-stats-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-bottom: 28px;
-}
-
-.hero-stat-value {
-  font-size: 32px;
-  font-weight: 800;
-  color: var(--white);
-  line-height: 1;
-  letter-spacing: -0.03em;
-}
-
-.hero-stat-label {
-  font-size: 12px;
-  color: rgba(255,255,255,0.52);
-  margin-top: 4px;
-}
-
-.hero-card-backers {
-  padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-.hero-card-backer-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.36);
-  display: block;
-  margin-bottom: 10px;
-}
-
-.hero-backer-list {
+.hero-backers-logos {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  align-items: center;
+  gap: 16px;
 }
 
 .hero-backer-logo {
-  height: 18px;
+  height: 17px;
   width: auto;
-  max-width: 70px;
+  max-width: 68px;
   object-fit: contain;
-  filter: brightness(0) invert(1) opacity(0.5);
+  filter: brightness(0) invert(1) opacity(0.6);
+  transition: opacity 0.2s;
+}
+
+.hero-backer-logo:hover {
+  filter: brightness(0) invert(1) opacity(1);
 }
 
 /* ===== STATS BAR ===== */
@@ -1441,8 +1556,8 @@ onUnmounted(() => {
     font-size: 34px;
   }
 
-  .hero-stats-grid {
-    grid-template-columns: 1fr 1fr;
+  .hero-metrics {
+    padding: 14px 16px;
   }
 
   .stats-grid {

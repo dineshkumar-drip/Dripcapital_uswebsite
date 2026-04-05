@@ -3,7 +3,7 @@
     <!-- Hero -->
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Industry — Manufacturing</span>
+        <span class="eyebrow">Industry: Manufacturing</span>
         <h1>Working capital for<br><em>manufacturers</em></h1>
         <p>Manufacturing businesses face long production cycles, large raw material costs, and slow customer payments. Drip Capital provides the capital to keep your production line moving.</p>
         <div class="hero-actions">
@@ -79,13 +79,13 @@
         <div class="testimonial-featured reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-featured-quote">
-            "Drip Capital changed how we manage our production cycles. We used to have to delay orders when cash was tight — now we have Float to pay our material suppliers while we wait for payment from our distributors. Production never stops."
+            "Drip Capital changed how we manage our production cycles. We used to have to delay orders when cash was tight. Now we have Float to pay our material suppliers while we wait for payment from our distributors. Production never stops."
           </p>
           <div class="testimonial-person">
             <div class="testimonial-avatar">AS</div>
             <div>
               <div class="testimonial-name">Amir Singh</div>
-              <div class="testimonial-role">Owner, Apex Manufacturing LLC — Phoenix, AZ</div>
+              <div class="testimonial-role">Owner, Apex Manufacturing LLC, Phoenix, AZ</div>
             </div>
           </div>
         </div>

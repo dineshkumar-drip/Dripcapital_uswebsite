@@ -10,7 +10,7 @@
             </NuxtLink>
             <p class="footer-tagline">Working Capital for Growing Businesses</p>
             <p class="footer-desc">
-              We help businesses with $5M–$500M in annual revenue access fast, flexible capital — no collateral required.
+              We help businesses with $5M–$500M in annual revenue access fast, flexible capital. No collateral required.
             </p>
 
             <!-- Email CTA -->

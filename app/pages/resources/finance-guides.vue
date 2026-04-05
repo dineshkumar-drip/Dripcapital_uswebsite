@@ -110,10 +110,10 @@ const categories = [
 ]
 
 const guides = [
-  { tag: 'Beginner', title: 'The Complete Guide to Working Capital Financing', desc: 'Everything you need to know about working capital — what it is, why it matters, and the different ways to finance it for your business.', readTime: '12 min' },
-  { tag: 'Intermediate', title: 'Supplier Financing vs. Invoice Factoring: Which is Right for You?', desc: 'A detailed comparison of two popular working capital solutions — when each makes sense and how to evaluate which fits your business model.', readTime: '8 min' },
+  { tag: 'Beginner', title: 'The Complete Guide to Working Capital Financing', desc: 'Everything you need to know about working capital covering what it is, why it matters, and the different ways to finance it for your business.', readTime: '12 min' },
+  { tag: 'Intermediate', title: 'Supplier Financing vs. Invoice Factoring: Which is Right for You?', desc: 'A detailed comparison of two popular working capital solutions: when each makes sense and how to evaluate which fits your business model.', readTime: '8 min' },
   { tag: 'Advanced', title: 'Optimizing Your Cash Conversion Cycle', desc: 'Advanced strategies to shrink the time between cash outflows (paying suppliers) and cash inflows (collecting from customers).', readTime: '15 min' },
-  { tag: 'Industry', title: 'Working Capital for Importers: A Practical Guide', desc: 'Specific guidance for businesses that import goods — navigating supplier terms, customs, logistics financing, and US customer payment cycles.', readTime: '10 min' }
+  { tag: 'Industry', title: 'Working Capital for Importers: A Practical Guide', desc: 'Specific guidance for businesses that import goods: navigating supplier terms, customs, logistics financing, and US customer payment cycles.', readTime: '10 min' }
 ]
 </script>
 

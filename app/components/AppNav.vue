@@ -59,7 +59,7 @@
                   </div>
                   <div>
                     <div class="dropdown-label">Line of Credit</div>
-                    <div class="dropdown-desc">Revolving credit — draw when you need it</div>
+                    <div class="dropdown-desc">Revolving credit, draw when you need it</div>
                   </div>
                 </NuxtLink>
               </div>

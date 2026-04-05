@@ -2,7 +2,7 @@
   <div>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Industry — Consumer Goods</span>
+        <span class="eyebrow">Industry: Consumer Goods</span>
         <h1>Working capital for<br><em>consumer goods brands</em></h1>
         <p>Consumer goods companies move fast, manage complex retail relationships, and require constant inventory investment. Drip Capital helps you keep shelves stocked and cash flowing.</p>
         <div class="hero-actions">
@@ -69,13 +69,13 @@
         <div class="testimonial-featured reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-featured-quote">
-            "Landing a Target order was a dream come true — but it meant producing 10x our normal volume. Drip Capital's Vendor Financing allowed us to pay our overseas manufacturers while we waited for Target's net-90 payment. Without Drip, we would have had to turn down the order."
+            "Landing a Target order was a dream come true but it meant producing 10x our normal volume. Drip Capital's Vendor Financing allowed us to pay our overseas manufacturers while we waited for Target's net-90 payment. Without Drip, we would have had to turn down the order."
           </p>
           <div class="testimonial-person">
             <div class="testimonial-avatar">TL</div>
             <div>
               <div class="testimonial-name">Tanya Lewis</div>
-              <div class="testimonial-role">Founder, NaturalCare Brands — Austin, TX</div>
+              <div class="testimonial-role">Founder, NaturalCare Brands, Austin, TX</div>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ useHead({ title: 'Consumer Goods Working Capital | Drip Capital' })
 
 const challenges = [
   { icon: 'bag', title: 'Large Retailer Payment Terms', desc: 'Big box retailers and grocery chains often demand net-60 to net-90 payment terms, creating enormous cash gaps for suppliers.' },
-  { icon: 'box', title: 'Constant Inventory Investment', desc: 'Consumer goods brands must maintain product availability across SKUs and distribution channels — requiring perpetual working capital.' },
+  { icon: 'box', title: 'Constant Inventory Investment', desc: 'Consumer goods brands must maintain product availability across SKUs and distribution channels, requiring constant working capital.' },
   { icon: 'zap', title: 'Seasonal Demand Spikes', desc: 'Holiday seasons, product launches, and promotional events create sudden surges in demand that require rapid capital deployment.' }
 ]
 

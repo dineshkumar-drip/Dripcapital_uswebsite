@@ -3,7 +3,7 @@
     <div class="container">
       <div class="topbar-inner">
         <div class="topbar-left">
-          <span class="topbar-text">Working capital from $100K to $10M — fast approval, no collateral.</span>
+          <span class="topbar-text">Working capital from $100K to $10M. Fast approval, no collateral.</span>
         </div>
         <nav class="topbar-nav">
           <NuxtLink to="/resources/use-cases" class="topbar-link">Case Studies</NuxtLink>

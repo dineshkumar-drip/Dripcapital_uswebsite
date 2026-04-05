@@ -4,7 +4,7 @@
       <div class="container">
         <span class="eyebrow">Company</span>
         <h1>About<br><em>Drip Capital</em></h1>
-        <p>We're on a mission to make working capital accessible to every growing business — without the friction of traditional banking.</p>
+        <p>We're on a mission to make working capital accessible to every growing business, without the friction of traditional banking.</p>
       </div>
     </section>
 
@@ -16,7 +16,7 @@
             <span class="eyebrow">Our Story</span>
             <h2 class="section-title">Founded in 2015 to fix<br>a broken system.</h2>
             <p class="story-p">
-              Drip Capital was founded in 2015 by Pushkar Mukewar and Neil Kothari — two entrepreneurs who saw firsthand how traditional banks failed growing businesses. SMBs doing $5M–$500M in revenue were being turned away or stuck in 6-week approval processes for products that didn't fit their needs.
+              Drip Capital was founded in 2015 by Pushkar Mukewar and Neil Kothari, two entrepreneurs who saw firsthand how traditional banks failed growing businesses. SMBs doing $5M–$500M in revenue were being turned away or stuck in 6-week approval processes for products that didn't fit their needs.
             </p>
             <p class="story-p">
               The founders built Drip Capital to solve this problem at scale: using technology and data to underwrite trade finance faster and more accurately than any bank could, while delivering capital in 48 hours rather than 6 weeks.
@@ -107,7 +107,7 @@
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Join the Drip Capital family.</h2>
-          <p class="cta-simple-desc">Whether you're a business looking for capital, an investor, or a talented professional looking to join our team — we'd love to hear from you.</p>
+          <p class="cta-simple-desc">Whether you're a business looking for capital, an investor, or a talented professional looking to join our team, we'd love to hear from you.</p>
           <div class="cta-simple-actions">
             <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Get in Touch →</NuxtLink>
             <NuxtLink to="/company/investors" class="btn btn-outline btn-lg">View Investors</NuxtLink>
@@ -123,11 +123,11 @@ useHead({ title: 'About Us | Drip Capital' })
 
 const values = [
   { icon: 'zap', title: 'Speed as a Feature', desc: 'Every business decision has a time value. We obsess over reducing time-to-capital so our customers can seize opportunities before they pass.' },
-  { icon: 'partner', title: 'Partnership Mindset', desc: 'We\'re not just lenders — we\'re partners in your growth. Your success is our success. We grow our facilities as our customers grow.' },
-  { icon: 'shield', title: 'Data-Driven Trust', desc: 'We use technology and data to see what traditional banks miss — the full picture of a business\'s health and potential, not just a credit score.' },
-  { icon: 'dollar', title: 'Customer Obsession', desc: 'Everything we build starts with the customer. Simpler applications, faster approvals, better service — all driven by listening to the businesses we serve.' },
+  { icon: 'partner', title: 'Partnership Mindset', desc: 'We\'re not just lenders. We\'re partners in your growth. Your success is our success. We grow our facilities as our customers grow.' },
+  { icon: 'shield', title: 'Data-Driven Trust', desc: 'We use technology and data to see what traditional banks miss: the full picture of a business\'s health and potential, not just a credit score.' },
+  { icon: 'dollar', title: 'Customer Obsession', desc: 'Everything we build starts with the customer. Simpler applications, faster approvals, better service, all driven by listening to the businesses we serve.' },
   { icon: 'map-pin', title: 'Global Perspective', desc: 'Trade is global. Our products and team reflect that. We serve businesses across the US and India, with a deep understanding of cross-border commerce.' },
-  { icon: 'unlock', title: 'Radical Transparency', desc: 'We believe in clear, honest communication — no hidden fees, no confusing terms. What you see is what you get with Drip Capital.' }
+  { icon: 'unlock', title: 'Radical Transparency', desc: 'We believe in clear, honest communication: no hidden fees, no confusing terms. What you see is what you get with Drip Capital.' }
 ]
 
 const team = [

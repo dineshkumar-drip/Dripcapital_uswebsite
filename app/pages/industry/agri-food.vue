@@ -2,7 +2,7 @@
   <div>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Industry — Agri-Products</span>
+        <span class="eyebrow">Industry: Agri-Products</span>
         <h1>Working capital for<br><em>agriculture & food businesses</em></h1>
         <p>Agriculture and food supply chains operate on seasonal rhythms and thin margins. Drip Capital provides flexible capital solutions tailored to the unique needs of agri-food businesses.</p>
         <div class="hero-actions">
@@ -75,7 +75,7 @@
             <div class="testimonial-avatar">RK</div>
             <div>
               <div class="testimonial-name">Robert Kowalski</div>
-              <div class="testimonial-role">CEO, Midwest Grain Trading Co. — Des Moines, IA</div>
+              <div class="testimonial-role">CEO, Midwest Grain Trading Co., Des Moines, IA</div>
             </div>
           </div>
         </div>
