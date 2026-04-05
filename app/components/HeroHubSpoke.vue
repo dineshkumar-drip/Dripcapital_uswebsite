@@ -105,6 +105,7 @@
           </svg>
         </div>
         <span class="hub-node-label">Manufacturing</span>
+        <span class="hub-node-badge">+165%</span>
       </div>
 
       <!-- Wholesale: right (299,113) → 78.7%, 37.7% -->
@@ -117,6 +118,7 @@
           </svg>
         </div>
         <span class="hub-node-label">Wholesale</span>
+        <span class="hub-node-badge">+142%</span>
       </div>
 
       <!-- Agri-Food: bottom-right (258,241) → 67.9%, 80.3% -->
@@ -131,6 +133,7 @@
           </svg>
         </div>
         <span class="hub-node-label">Agri-Food</span>
+        <span class="hub-node-badge">+178%</span>
       </div>
 
       <!-- Seafood: bottom-left (122,241) → 32.1%, 80.3% -->
@@ -143,6 +146,7 @@
           </svg>
         </div>
         <span class="hub-node-label">Seafood</span>
+        <span class="hub-node-badge">+156%</span>
       </div>
 
       <!-- Consumer Goods: left (81,113) → 21.3%, 37.7% -->
@@ -155,6 +159,7 @@
           </svg>
         </div>
         <span class="hub-node-label">Consumer Goods</span>
+        <span class="hub-node-badge">+189%</span>
       </div>
 
     </div><!-- /hub-stage -->
@@ -163,11 +168,11 @@
     <div class="hub-footer">
       <div class="hub-footer-badge">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00C27C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
+          <polyline points="23 6 13 16 8 11 1 18"/><polyline points="17 6 23 6 23 12"/>
         </svg>
-        <span>Funding Approved · $250,000</span>
+        <span>130–190% average annual growth after funding</span>
       </div>
-      <span class="hub-footer-biz">Pacific Coast Distributors, Los Angeles CA</span>
+      <span class="hub-footer-biz">Drip Capital customers · 10,000+ businesses funded</span>
     </div>
 
   </div>
@@ -278,6 +283,18 @@
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
+}
+
+.hub-node-badge {
+  font-size: 9px;
+  font-weight: 800;
+  color: #00C27C;
+  background: rgba(0,194,124,0.15);
+  border: 1px solid rgba(0,194,124,0.3);
+  border-radius: 6px;
+  padding: 2px 6px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
 /* Footer */
