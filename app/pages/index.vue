@@ -26,77 +26,59 @@
                 <NuxtLink to="/company/contact" class="btn btn-primary">Let's Talk</NuxtLink>
               </div>
             </div>
-            <div class="hero-pills">
-              <span class="pill pill-outline">Vendor Financing</span>
-              <span class="hero-pill-sep">·</span>
-              <span class="pill pill-outline">Receivables Financing</span>
-              <span class="hero-pill-sep">·</span>
-              <span class="pill pill-outline">Line of Credit</span>
+            <!-- Stat mini boxes replacing product pills -->
+            <div class="hero-stats-mini">
+              <div class="hero-stat-mini">
+                <div class="hero-stat-mini-val">$9B+</div>
+                <div class="hero-stat-mini-label">Capital Deployed</div>
+              </div>
+              <div class="hero-stat-mini">
+                <div class="hero-stat-mini-val">10K+</div>
+                <div class="hero-stat-mini-label">Businesses Funded</div>
+              </div>
+              <div class="hero-stat-mini">
+                <div class="hero-stat-mini-val">10+</div>
+                <div class="hero-stat-mini-label">Years in Business</div>
+              </div>
             </div>
           </div>
 
           <div class="hero-right">
             <div class="hero-visual-card">
 
-              <!-- Business photo with approval overlay -->
-              <div class="hero-photo-wrap">
-                <img
-                  src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=700&q=80"
-                  alt="US distribution warehouse"
-                  class="hero-photo"
-                  loading="eager"
-                />
-                <div class="hero-photo-overlay"></div>
-
-                <!-- Floating approval notification -->
-                <div class="hero-approval-badge">
-                  <div class="hero-approval-check">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
+              <!-- Industries section -->
+              <div class="hero-card-section">
+                <div class="hero-card-label">Industries we fund</div>
+                <div class="hero-industries-grid">
+                  <div class="hero-industry-item" v-for="ind in heroIndustries" :key="ind.name">
+                    <span class="hero-industry-icon">{{ ind.icon }}</span>
+                    <span class="hero-industry-name">{{ ind.name }}</span>
                   </div>
-                  <div>
-                    <div class="hero-approval-title">Funding Approved</div>
-                    <div class="hero-approval-sub">$250,000 · 48 hours</div>
-                  </div>
-                </div>
-
-                <!-- Business label -->
-                <div class="hero-photo-caption">Pacific Coast Distributors, Los Angeles CA</div>
-              </div>
-
-              <!-- Key metrics row -->
-              <div class="hero-metrics">
-                <div class="hero-metric">
-                  <div class="hero-metric-val">$9B+</div>
-                  <div class="hero-metric-label">Deployed</div>
-                </div>
-                <div class="hero-metric-div"></div>
-                <div class="hero-metric">
-                  <div class="hero-metric-val">10K+</div>
-                  <div class="hero-metric-label">Businesses</div>
-                </div>
-                <div class="hero-metric-div"></div>
-                <div class="hero-metric">
-                  <div class="hero-metric-val">48hrs</div>
-                  <div class="hero-metric-label">To Approval</div>
-                </div>
-                <div class="hero-metric-div"></div>
-                <div class="hero-metric">
-                  <div class="hero-metric-val">10+</div>
-                  <div class="hero-metric-label">Years</div>
                 </div>
               </div>
 
-              <!-- Investor logos on white strip for clear visibility -->
-              <div class="hero-backers">
-                <span class="hero-backers-label">Backed by</span>
-                <div class="hero-backers-logos">
-                  <img src="/logo-accel.png" alt="Accel" class="hero-backer-logo" />
-                  <img src="/logo-peak-xv.webp" alt="Peak XV" class="hero-backer-logo" />
-                  <img src="/logo-barclays.png" alt="Barclays" class="hero-backer-logo" />
-                  <img src="/logo-east-west.png" alt="East West Bank" class="hero-backer-logo" />
+              <div class="hero-card-divider"></div>
+
+              <!-- Fund use cases -->
+              <div class="hero-card-section">
+                <div class="hero-card-label">What businesses fund with Drip</div>
+                <div class="hero-fund-chips">
+                  <span class="hero-fund-chip" v-for="use in heroFundUses" :key="use.label">
+                    <span class="hero-fund-dot" :style="{ background: use.color }"></span>
+                    {{ use.label }}
+                  </span>
                 </div>
+              </div>
+
+              <!-- Approval footer -->
+              <div class="hero-card-footer">
+                <div class="hero-card-footer-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  <span>Funding Approved · $250,000</span>
+                </div>
+                <span class="hero-card-footer-biz">Pacific Coast Distributors, Los Angeles CA</span>
               </div>
 
             </div>
@@ -543,6 +525,23 @@ const heroEmail = ref('')
 const openFaq = ref<number | null>(null)
 const particleCanvas = ref<HTMLCanvasElement | null>(null)
 
+const heroIndustries = [
+  { icon: '🏭', name: 'Manufacturing' },
+  { icon: '📦', name: 'Wholesale' },
+  { icon: '🌾', name: 'Agri-Food' },
+  { icon: '🐟', name: 'Seafood' },
+  { icon: '🛍️', name: 'Consumer Goods' },
+]
+
+const heroFundUses = [
+  { label: 'Production cycles', color: '#00C27C' },
+  { label: 'Raw materials', color: '#1B5FA0' },
+  { label: 'Logistics', color: '#F59E0B' },
+  { label: 'Marketing spend', color: '#7C3AED' },
+  { label: 'Tariffs', color: '#EF4444' },
+  { label: 'Vendor services', color: '#0B1F3A' },
+]
+
 // Typewriter USP cycling
 const uspPhrases = [
   'Transparent pricing. No hidden fees.',
@@ -804,17 +803,41 @@ onUnmounted(() => {
   background: rgba(255,255,255,0.12);
 }
 
-.hero-pills {
+/* Hero stat mini boxes (left side, replaces pills) */
+.hero-stats-mini {
   display: flex;
-  align-items: center;
   gap: 10px;
-  margin-top: 24px;
+  margin-top: 28px;
   flex-wrap: wrap;
 }
 
-.hero-pill-sep {
-  color: rgba(255,255,255,0.3);
-  font-size: 18px;
+.hero-stat-mini {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 12px;
+  padding: 12px 18px;
+  min-width: 100px;
+  transition: background 0.2s;
+}
+
+.hero-stat-mini:hover {
+  background: rgba(255,255,255,0.11);
+}
+
+.hero-stat-mini-val {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--green);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.hero-stat-mini-label {
+  font-size: 10px;
+  color: rgba(255,255,255,0.52);
+  margin-top: 4px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 /* Hero Visual Card */
@@ -822,158 +845,125 @@ onUnmounted(() => {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(255,255,255,0.04);
-  backdrop-filter: blur(16px);
-  box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+  background: rgba(11,25,48,0.72);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.4);
 }
 
-.hero-photo-wrap {
-  position: relative;
-  height: 230px;
-  overflow: hidden;
+.hero-card-section {
+  padding: 20px 22px;
 }
 
-.hero-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.hero-photo-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(160deg, rgba(11,31,58,0.15) 0%, rgba(11,31,58,0.72) 100%);
-}
-
-/* Funding approved floating badge */
-.hero-approval-badge {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  background: rgba(0,160,100,0.97);
-  border-radius: 12px;
-  padding: 10px 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 6px 24px rgba(0,160,100,0.45);
-  animation: badge-in 0.6s ease 0.4s both;
-}
-
-@keyframes badge-in {
-  from { opacity: 0; transform: translateY(-8px) scale(0.95); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-.hero-approval-check {
-  width: 28px;
-  height: 28px;
-  background: rgba(255,255,255,0.22);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  flex-shrink: 0;
-}
-
-.hero-approval-title {
-  font-size: 12px;
-  font-weight: 700;
-  color: white;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-}
-
-.hero-approval-sub {
-  font-size: 11px;
-  color: rgba(255,255,255,0.82);
-  margin-top: 2px;
-}
-
-/* Business label bottom-left of photo */
-.hero-photo-caption {
-  position: absolute;
-  bottom: 12px;
-  left: 16px;
-  font-size: 10px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.65);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-/* Metrics strip */
-.hero-metrics {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 18px 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.hero-metric {
-  text-align: center;
-}
-
-.hero-metric-val {
-  font-size: 20px;
-  font-weight: 800;
-  color: white;
-  letter-spacing: -0.03em;
-  line-height: 1;
-}
-
-.hero-metric-label {
-  font-size: 10px;
-  color: rgba(255,255,255,0.48);
-  margin-top: 4px;
-  letter-spacing: 0.02em;
-}
-
-.hero-metric-div {
-  width: 1px;
-  height: 28px;
-  background: rgba(255,255,255,0.1);
-}
-
-/* Investor logos — semi-transparent light strip */
-.hero-backers {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 14px 20px;
-  background: rgba(255,255,255,0.06);
-}
-
-.hero-backers-label {
+.hero-card-label {
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.38);
-  white-space: nowrap;
+  margin-bottom: 14px;
+}
+
+/* Industries grid */
+.hero-industries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.hero-industry-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 9px 12px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.hero-industry-item:hover {
+  background: rgba(0,194,124,0.12);
+  border-color: rgba(0,194,124,0.3);
+}
+
+.hero-industry-icon {
+  font-size: 16px;
+  line-height: 1;
   flex-shrink: 0;
 }
 
-.hero-backers-logos {
+.hero-industry-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.82);
+  white-space: nowrap;
+}
+
+.hero-card-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin: 0 22px;
+}
+
+/* Fund use chips */
+.hero-fund-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.hero-fund-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.78);
+  white-space: nowrap;
+}
+
+.hero-fund-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Footer approval strip */
+.hero-card-footer {
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: space-between;
+  padding: 14px 22px;
+  background: rgba(0,194,124,0.1);
+  border-top: 1px solid rgba(0,194,124,0.2);
+  gap: 12px;
 }
 
-.hero-backer-logo {
-  height: 17px;
-  width: auto;
-  max-width: 68px;
-  object-fit: contain;
-  filter: brightness(0) invert(1) opacity(0.6);
-  transition: opacity 0.2s;
+.hero-card-footer-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green);
 }
 
-.hero-backer-logo:hover {
-  filter: brightness(0) invert(1) opacity(1);
+.hero-card-footer-badge svg {
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.hero-card-footer-biz {
+  font-size: 10px;
+  color: rgba(255,255,255,0.38);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-align: right;
 }
 
 /* ===== STATS BAR ===== */
@@ -1556,8 +1546,31 @@ onUnmounted(() => {
     font-size: 34px;
   }
 
-  .hero-metrics {
-    padding: 14px 16px;
+  .hero-industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-stats-mini {
+    gap: 8px;
+  }
+
+  .hero-stat-mini {
+    padding: 10px 14px;
+    min-width: 80px;
+  }
+
+  .hero-stat-mini-val {
+    font-size: 18px;
+  }
+
+  .hero-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .hero-card-footer-biz {
+    text-align: left;
   }
 
   .stats-grid {
