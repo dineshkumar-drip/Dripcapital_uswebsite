@@ -44,44 +44,7 @@
           </div>
 
           <div class="hero-right">
-            <div class="hero-visual-card">
-
-              <!-- Industries section -->
-              <div class="hero-card-section">
-                <div class="hero-card-label">Industries we fund</div>
-                <div class="hero-industries-grid">
-                  <div class="hero-industry-item" v-for="ind in heroIndustries" :key="ind.name">
-                    <span class="hero-industry-icon">{{ ind.icon }}</span>
-                    <span class="hero-industry-name">{{ ind.name }}</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="hero-card-divider"></div>
-
-              <!-- Fund use cases -->
-              <div class="hero-card-section">
-                <div class="hero-card-label">What businesses fund with Drip</div>
-                <div class="hero-fund-chips">
-                  <span class="hero-fund-chip" v-for="use in heroFundUses" :key="use.label">
-                    <span class="hero-fund-dot" :style="{ background: use.color }"></span>
-                    {{ use.label }}
-                  </span>
-                </div>
-              </div>
-
-              <!-- Approval footer -->
-              <div class="hero-card-footer">
-                <div class="hero-card-footer-badge">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                  <span>Funding Approved · $250,000</span>
-                </div>
-                <span class="hero-card-footer-biz">Pacific Coast Distributors, Los Angeles CA</span>
-              </div>
-
-            </div>
+            <HeroHubSpoke />
           </div>
         </div>
       </div>
@@ -525,22 +488,6 @@ const heroEmail = ref('')
 const openFaq = ref<number | null>(null)
 const particleCanvas = ref<HTMLCanvasElement | null>(null)
 
-const heroIndustries = [
-  { icon: '🏭', name: 'Manufacturing' },
-  { icon: '📦', name: 'Wholesale' },
-  { icon: '🌾', name: 'Agri-Food' },
-  { icon: '🐟', name: 'Seafood' },
-  { icon: '🛍️', name: 'Consumer Goods' },
-]
-
-const heroFundUses = [
-  { label: 'Production cycles', color: '#00C27C' },
-  { label: 'Raw materials', color: '#1B5FA0' },
-  { label: 'Logistics', color: '#F59E0B' },
-  { label: 'Marketing spend', color: '#7C3AED' },
-  { label: 'Tariffs', color: '#EF4444' },
-  { label: 'Vendor services', color: '#0B1F3A' },
-]
 
 // Typewriter USP cycling
 const uspPhrases = [
@@ -840,131 +787,6 @@ onUnmounted(() => {
   letter-spacing: 0.02em;
 }
 
-/* Hero Visual Card */
-.hero-visual-card {
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(11,25,48,0.72);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 24px 64px rgba(0,0,0,0.4);
-}
-
-.hero-card-section {
-  padding: 20px 22px;
-}
-
-.hero-card-label {
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.38);
-  margin-bottom: 14px;
-}
-
-/* Industries grid */
-.hero-industries-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-
-.hero-industry-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 10px;
-  padding: 9px 12px;
-  transition: background 0.2s, border-color 0.2s;
-}
-
-.hero-industry-item:hover {
-  background: rgba(0,194,124,0.12);
-  border-color: rgba(0,194,124,0.3);
-}
-
-.hero-industry-icon {
-  font-size: 16px;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.hero-industry-name {
-  font-size: 11px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.82);
-  white-space: nowrap;
-}
-
-.hero-card-divider {
-  height: 1px;
-  background: rgba(255,255,255,0.08);
-  margin: 0 22px;
-}
-
-/* Fund use chips */
-.hero-fund-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-}
-
-.hero-fund-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 20px;
-  padding: 6px 12px;
-  font-size: 11px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.78);
-  white-space: nowrap;
-}
-
-.hero-fund-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-/* Footer approval strip */
-.hero-card-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 22px;
-  background: rgba(0,194,124,0.1);
-  border-top: 1px solid rgba(0,194,124,0.2);
-  gap: 12px;
-}
-
-.hero-card-footer-badge {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--green);
-}
-
-.hero-card-footer-badge svg {
-  color: var(--green);
-  flex-shrink: 0;
-}
-
-.hero-card-footer-biz {
-  font-size: 10px;
-  color: rgba(255,255,255,0.38);
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  text-align: right;
-}
 
 /* ===== STATS BAR ===== */
 .stats-bar {
