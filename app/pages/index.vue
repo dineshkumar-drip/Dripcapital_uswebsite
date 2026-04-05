@@ -8,43 +8,74 @@
       <div class="container">
         <div class="hero-inner">
           <div class="hero-left">
-            <span class="eyebrow">Working Capital for Growing Businesses</span>
+            <span class="eyebrow">America's B2B Working Capital Lender</span>
             <h1 class="hero-h1">
-              Fast, flexible capital<br>
-              to <em>grow your business.</em>
+              Capital for the businesses<br>
+              <em>banks overlook.</em>
             </h1>
             <div class="hero-typewriter-wrap">
               <span class="hero-tw-prefix">✦</span>
               <span class="hero-tw-text">{{ typewriterDisplay }}<span class="hero-tw-cursor" :class="{ blink: cursorBlink }">|</span></span>
             </div>
             <p class="hero-subtitle">
-              Drip Capital helps businesses doing $5M–$500M in annual revenue access the working capital they need, without traditional banking hurdles.
+              We've funded over $9 billion for 10,000+ US businesses. If you need working capital and your bank is too slow or says no, we can help. Approved in 48 hours.
             </p>
-            <div class="hero-form">
-              <div class="input-row">
-                <input type="email" placeholder="Enter your business email" v-model="heroEmail" />
-                <NuxtLink to="/company/contact" class="btn btn-primary">Let's Talk</NuxtLink>
-              </div>
+            <div class="hero-cta-row">
+              <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
+              <a href="tel:+16504370150" class="btn btn-outline-white btn-lg">Call +1 (650) 437-0150</a>
             </div>
-            <!-- Stat mini boxes replacing product pills -->
-            <div class="hero-stats-mini">
-              <div class="hero-stat-mini">
-                <div class="hero-stat-mini-val">$9B+</div>
-                <div class="hero-stat-mini-label">Capital Deployed</div>
-              </div>
-              <div class="hero-stat-mini">
-                <div class="hero-stat-mini-val">10K+</div>
-                <div class="hero-stat-mini-label">Businesses Funded</div>
-              </div>
-              <div class="hero-stat-mini">
-                <div class="hero-stat-mini-val">10+</div>
-                <div class="hero-stat-mini-label">Years in Business</div>
-              </div>
-            </div>
+            <p class="hero-no-fee">No application fee. No collateral required. Decision in 48 hours.</p>
           </div>
 
           <div class="hero-right">
-            <HeroHubSpoke />
+            <!-- Photo card -->
+            <div class="hero-photo-card">
+              <div class="hero-photo-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                  alt="US business owner at work"
+                  class="hero-photo"
+                  loading="eager"
+                />
+                <div class="hero-photo-overlay"></div>
+
+                <!-- Floating testimonial -->
+                <div class="hero-quote-card">
+                  <div class="hero-quote-stars">★★★★★</div>
+                  <p class="hero-quote-text">"Our bank took 6 weeks and said no. Drip approved us in 48 hours. We've grown 40% since."</p>
+                  <div class="hero-quote-person">
+                    <div class="hero-quote-avatar">MR</div>
+                    <div>
+                      <div class="hero-quote-name">Marcus Rodriguez</div>
+                      <div class="hero-quote-co">SunCoast Seafood Imports · Los Angeles, CA</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trust strip -->
+              <div class="hero-trust-strip">
+                <div class="hero-trust-item">
+                  <div class="hero-trust-val">$9B+</div>
+                  <div class="hero-trust-label">Capital Deployed</div>
+                </div>
+                <div class="hero-trust-div"></div>
+                <div class="hero-trust-item">
+                  <div class="hero-trust-val">10K+</div>
+                  <div class="hero-trust-label">Businesses Funded</div>
+                </div>
+                <div class="hero-trust-div"></div>
+                <div class="hero-trust-item">
+                  <div class="hero-trust-val">10+</div>
+                  <div class="hero-trust-label">Years in Business</div>
+                </div>
+                <div class="hero-trust-div"></div>
+                <div class="hero-trust-item">
+                  <div class="hero-trust-val">48hr</div>
+                  <div class="hero-trust-label">To Decision</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -491,10 +522,11 @@ const particleCanvas = ref<HTMLCanvasElement | null>(null)
 
 // Typewriter USP cycling
 const uspPhrases = [
-  'Transparent pricing. No hidden fees.',
-  'Fast approvals. Credit decision in 48 hours.',
-  'Unsecured financing. No collateral needed.',
-  'Collateral-free funding up to $10M.'
+  'No collateral. No personal guarantees.',
+  'Approved in 48 hours. Funded in days.',
+  'For importers, distributors, and manufacturers.',
+  'When your bank says no, we say yes.',
+  'Funding from $100K to $10M.'
 ]
 const typewriterDisplay = ref('')
 const cursorBlink = ref(false)
@@ -731,60 +763,159 @@ onUnmounted(() => {
   margin-bottom: 32px;
 }
 
-.hero-form .input-row {
-  max-width: 460px;
-}
-
-.hero-form .input-row input {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.16);
-  color: var(--white);
-}
-
-.hero-form .input-row input::placeholder {
-  color: rgba(255,255,255,0.36);
-}
-
-.hero-form .input-row input:focus {
-  border-color: var(--green);
-  background: rgba(255,255,255,0.12);
-}
-
 /* Hero stat mini boxes (left side, replaces pills) */
-.hero-stats-mini {
+/* CTA row replaces email form */
+.hero-cta-row {
   display: flex;
-  gap: 10px;
-  margin-top: 28px;
+  gap: 12px;
   flex-wrap: wrap;
+  margin-top: 32px;
 }
 
-.hero-stat-mini {
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.14);
-  border-radius: 12px;
-  padding: 12px 18px;
-  min-width: 100px;
-  transition: background 0.2s;
+.hero-no-fee {
+  font-size: 12px;
+  color: rgba(255,255,255,0.42);
+  margin-top: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
-.hero-stat-mini:hover {
-  background: rgba(255,255,255,0.11);
+/* ===== HERO PHOTO CARD ===== */
+.hero-photo-card {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+  background: #0B1F3A;
 }
 
-.hero-stat-mini-val {
-  font-size: 22px;
+.hero-photo-wrap {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.hero-photo-card:hover .hero-photo {
+  transform: scale(1.03);
+}
+
+.hero-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(11,31,58,0.1) 0%, rgba(11,31,58,0.65) 100%);
+}
+
+/* Floating testimonial card */
+.hero-quote-card {
+  position: absolute;
+  bottom: 20px;
+  left: 18px;
+  right: 18px;
+  background: rgba(255,255,255,0.97);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  animation: quote-in 0.7s ease 0.3s both;
+}
+
+@keyframes quote-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-quote-stars {
+  color: #F59E0B;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.hero-quote-text {
+  font-size: 13px;
+  color: #1a2a3a;
+  line-height: 1.55;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.hero-quote-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-quote-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-quote-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.hero-quote-co {
+  font-size: 10.5px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* Trust strip */
+.hero-trust-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 18px 20px;
+  background: rgba(255,255,255,0.04);
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.hero-trust-item {
+  text-align: center;
+}
+
+.hero-trust-val {
+  display: block;
+  font-size: 20px;
   font-weight: 800;
   color: var(--green);
   letter-spacing: -0.03em;
   line-height: 1;
 }
 
-.hero-stat-mini-label {
-  font-size: 10px;
-  color: rgba(255,255,255,0.52);
+.hero-trust-label {
+  display: block;
+  font-size: 9.5px;
+  color: rgba(255,255,255,0.45);
   margin-top: 4px;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+}
+
+.hero-trust-div {
+  width: 1px;
+  height: 30px;
+  background: rgba(255,255,255,0.1);
 }
 
 
@@ -1372,27 +1503,23 @@ onUnmounted(() => {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero-stats-mini {
-    gap: 8px;
-  }
-
-  .hero-stat-mini {
-    padding: 10px 14px;
-    min-width: 80px;
-  }
-
-  .hero-stat-mini-val {
-    font-size: 18px;
-  }
-
-  .hero-card-footer {
+  .hero-cta-row {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+    gap: 10px;
   }
 
-  .hero-card-footer-biz {
-    text-align: left;
+  .hero-photo-wrap {
+    height: 260px;
+  }
+
+  .hero-trust-strip {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .hero-trust-div {
+    display: none;
   }
 
   .stats-grid {
