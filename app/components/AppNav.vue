@@ -228,6 +228,15 @@
                     <div class="dropdown-desc">Insights & industry news</div>
                   </div>
                 </NuxtLink>
+                <NuxtLink to="/resources/working-capital-calculator" class="dropdown-item" @click="closeDropdown">
+                  <div class="dropdown-icon">
+                    <AppIcon name="chart" :size="16" color="var(--green)" />
+                  </div>
+                  <div>
+                    <div class="dropdown-label">WC Calculator</div>
+                    <div class="dropdown-desc">Calculate your working capital gap</div>
+                  </div>
+                </NuxtLink>
                 <NuxtLink to="/resources/use-cases" class="dropdown-item" @click="closeDropdown">
                   <div class="dropdown-icon">
                     <AppIcon name="clipboard" :size="16" color="var(--green)" />
@@ -246,7 +255,7 @@
         <div class="nav-cta">
           <a href="tel:+16504370150" class="nav-phone">+1 650 437 0150</a>
           <a href="https://app.dripcapital.com/sign_in" target="_blank" rel="noopener noreferrer" class="nav-signin">Sign In</a>
-          <NuxtLink to="/company/contact" class="btn btn-primary btn-sm">Contact Us</NuxtLink>
+          <NuxtLink to="/apply" class="btn btn-primary btn-sm">Apply Now →</NuxtLink>
         </div>
 
         <!-- Hamburger -->
@@ -292,7 +301,7 @@
           <NuxtLink to="/resources/use-cases" class="mobile-link" @click="closeMobile">Use Cases</NuxtLink>
         </div>
         <div class="mobile-cta">
-          <NuxtLink to="/company/contact" class="btn btn-primary w-full" @click="closeMobile">Contact Us</NuxtLink>
+          <NuxtLink to="/apply" class="btn btn-primary w-full" @click="closeMobile">Apply Now →</NuxtLink>
           <a href="tel:+16504370150" class="btn btn-outline w-full">+1 650 437 0150</a>
         </div>
       </div>
