@@ -374,7 +374,7 @@ function handlePhotoError(e: Event, member: TeamMember) {
 /* ── Hero ───────────────────────────────────────────────────────────────────── */
 .hero-sub {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--body);
   max-width: 560px;
   line-height: 1.7;
   margin-top: 20px;

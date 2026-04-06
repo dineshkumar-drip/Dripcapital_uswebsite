@@ -779,11 +779,11 @@ const usStates = [
 .hero-trust-item {
   font-size: 13px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--mid);
 }
 
 .hero-trust-sep {
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--border);
   font-size: 14px;
 }
 

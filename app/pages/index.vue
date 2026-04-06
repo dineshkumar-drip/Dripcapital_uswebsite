@@ -25,7 +25,7 @@
             </div>
             <div class="hero-cta-row">
               <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
-              <a href="tel:+16504370150" class="btn btn-outline-white btn-lg">Call +1 (650) 437-0150</a>
+              <a href="tel:+16504370150" class="btn btn-secondary btn-lg">Call +1 (650) 437-0150</a>
             </div>
             <p class="hero-no-fee">No application fee · No collateral · Decision in 48 hours</p>
           </div>
@@ -634,7 +634,8 @@ onUnmounted(() => {
 <style scoped>
 /* ===== HERO ===== */
 .hero {
-  background: var(--navy);
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
   min-height: calc(100vh - var(--topbar-height) - var(--nav-height));
   display: flex;
   align-items: center;
@@ -645,22 +646,22 @@ onUnmounted(() => {
 
 .hero-glow-left {
   position: absolute;
-  top: -20%;
-  left: -15%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(0,194,124,0.10) 0%, transparent 65%);
+  top: -10%;
+  left: -20%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(0,194,124,0.07) 0%, transparent 65%);
   pointer-events: none;
   z-index: 0;
 }
 
 .hero-glow-right {
   position: absolute;
-  top: -30%;
-  right: -10%;
-  width: 700px;
-  height: 700px;
-  background: radial-gradient(circle, rgba(0,194,124,0.13) 0%, transparent 65%);
+  top: -20%;
+  right: -15%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(11,31,58,0.04) 0%, transparent 65%);
   pointer-events: none;
   z-index: 0;
 }
@@ -687,7 +688,7 @@ onUnmounted(() => {
 
 .hero-growth-desc {
   font-size: 12px;
-  color: rgba(255,255,255,0.65);
+  color: var(--mid);
   line-height: 1.5;
   font-weight: 500;
 }
@@ -708,7 +709,7 @@ onUnmounted(() => {
 .hero-h1 {
   font-size: clamp(36px, 5vw, 60px);
   font-weight: 300;
-  color: var(--white);
+  color: var(--navy);
   line-height: 1.12;
   letter-spacing: -0.03em;
   margin: 16px 0 20px;
@@ -722,7 +723,7 @@ onUnmounted(() => {
 
 .hero-subtitle {
   font-size: 17px;
-  color: rgba(255,255,255,0.68);
+  color: var(--body);
   line-height: 1.7;
   max-width: 480px;
   margin-bottom: 32px;
@@ -739,7 +740,7 @@ onUnmounted(() => {
 
 .hero-no-fee {
   font-size: 12px;
-  color: rgba(255,255,255,0.42);
+  color: var(--mid);
   margin-top: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -1391,7 +1392,7 @@ onUnmounted(() => {
 .hero-tw-text {
   font-size: 16px;
   font-weight: 500;
-  color: rgba(255,255,255,0.85);
+  color: var(--body);
   letter-spacing: -0.01em;
 }
 
