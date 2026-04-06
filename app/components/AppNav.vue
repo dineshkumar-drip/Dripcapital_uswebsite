@@ -185,6 +185,16 @@
             </div>
           </li>
 
+          <!-- Sign In -->
+          <li class="nav-item">
+            <a
+              href="https://app.dripcapital.com/sign_in"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-trigger"
+            >Sign In</a>
+          </li>
+
           <!-- Resources -->
           <li
             class="nav-item has-dropdown"
@@ -253,8 +263,12 @@
 
         <!-- CTA Area -->
         <div class="nav-cta">
-          <a href="tel:+16504370150" class="nav-phone">+1 650 437 0150</a>
-          <a href="https://app.dripcapital.com/sign_in" target="_blank" rel="noopener noreferrer" class="nav-signin">Sign In</a>
+          <a href="tel:+16504370150" class="nav-phone-cta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 012 1.18 2 2 0 014 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            +1 650 437 0150
+          </a>
           <NuxtLink to="/apply" class="btn btn-primary btn-sm">Apply Now →</NuxtLink>
         </div>
 
@@ -390,18 +404,26 @@ onMounted(() => {
   display: block;
 }
 
-.nav-phone {
+.nav-phone-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   font-size: 13px;
   font-weight: 600;
   color: var(--navy);
   text-decoration: none;
   white-space: nowrap;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 7px 14px;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
   letter-spacing: -0.01em;
-  transition: color 0.2s;
 }
 
-.nav-phone:hover {
+.nav-phone-cta:hover {
+  border-color: var(--green);
   color: var(--green-d);
+  background: rgba(0, 194, 124, 0.05);
 }
 
 .nav-links {
@@ -532,18 +554,6 @@ onMounted(() => {
   flex-shrink: 0;
 }
 
-.nav-signin {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--body);
-  text-decoration: none;
-  transition: color 0.2s;
-  white-space: nowrap;
-}
-
-.nav-signin:hover {
-  color: var(--navy);
-}
 
 /* Hamburger */
 .hamburger {
