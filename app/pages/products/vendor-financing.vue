@@ -13,29 +13,117 @@
       </div>
     </section>
 
-    <!-- What is Vendor Financing -->
-    <section class="section">
+    <!-- How Vendor Financing Works — Visual -->
+    <section class="section section-bg">
       <div class="container">
-        <div class="two-col">
-          <div class="reveal">
-            <span class="eyebrow">What is Vendor Financing?</span>
-            <h2 class="section-title">Pay vendors upfront.<br>Repay us later.</h2>
-            <p class="section-subtitle">
-              Vendor Financing is Drip Capital's vendor financing product. When you need to pay a vendor but your cash is tied up in receivables or inventory, Drip Capital steps in to pay your vendor directly.
-            </p>
-            <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
-              You get the goods. Your vendor gets paid on time. And you repay Drip Capital over the next 30–90 days, matching your natural cash conversion cycle.
-            </p>
-            <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Get Started Today</NuxtLink>
+        <div class="section-header reveal" style="max-width: 620px;">
+          <span class="eyebrow">How Vendor Financing Works</span>
+          <h2 class="section-title">Drip pays your vendor for you. <em>You repay Drip Capital up to 90 days later.</em></h2>
+        </div>
+
+        <div class="vf-visual-layout">
+          <!-- Triangle flow diagram -->
+          <div class="vf-diagram reveal">
+            <svg class="vf-svg" viewBox="0 0 580 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Arrow paths -->
+              <!-- 1: YOU → DRIP CAPITAL (down-right) -->
+              <path d="M140 95 L260 290" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreen)" />
+              <!-- 2: DRIP CAPITAL → VENDOR (up-right) -->
+              <path d="M320 290 L440 95" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreen)" />
+              <!-- 3: YOU → DRIP CAPITAL repay (left side, up) -->
+              <path d="M110 110 L110 250 L240 310" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreen)" opacity="0.5"/>
+              <defs>
+                <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                  <path d="M0 0 L8 3 L0 6" fill="var(--green)" />
+                </marker>
+              </defs>
+            </svg>
+
+            <!-- Nodes positioned over SVG -->
+            <div class="vf-node vf-node-you">
+              <div class="vf-node-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+                </svg>
+              </div>
+              <span class="vf-node-label">YOU</span>
+            </div>
+
+            <div class="vf-node vf-node-vendor">
+              <div class="vf-node-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <span class="vf-node-label">VENDOR</span>
+            </div>
+
+            <div class="vf-node vf-node-drip">
+              <div class="vf-node-icon vf-node-icon-drip">
+                <img src="/drip-logo-icon.svg" alt="Drip Capital" width="28" height="28" onerror="this.style.display='none'" />
+                <svg v-if="false" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <span class="vf-node-label">DRIP CAPITAL</span>
+            </div>
+
+            <!-- Step badges -->
+            <div class="vf-step vf-step-1">
+              <span class="vf-step-num">1</span>
+              <span class="vf-step-text">Upload Invoice</span>
+            </div>
+            <div class="vf-step vf-step-2">
+              <span class="vf-step-num">2</span>
+              <span class="vf-step-text">Pays On<br>Due Date</span>
+            </div>
+            <div class="vf-step vf-step-3">
+              <span class="vf-step-num">3</span>
+              <span class="vf-step-text">Repay In Up<br>To 90 Days</span>
+            </div>
           </div>
-          <div class="float-visual reveal reveal-delay-1">
-            <div class="flow-diagram">
-              <div class="flow-node flow-you">Your Business</div>
-              <div class="flow-arrow flow-arrow-down">↓ PO / Order</div>
-              <div class="flow-node flow-drip">Drip Capital<br><span>Pays Vendor</span></div>
-              <div class="flow-arrow flow-arrow-down">↓ Goods</div>
-              <div class="flow-node flow-supplier">Your Vendor</div>
-              <div class="flow-repay">You repay Drip in 30–90 days</div>
+
+          <!-- Example Transaction card -->
+          <div class="vf-example reveal reveal-delay-1">
+            <h3 class="vf-example-title">Example Transaction</h3>
+
+            <div class="vf-example-step">
+              <div class="vf-example-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="vf-example-who">US Buyer: Electronics Distributor</strong>
+                <p class="vf-example-what">Uploads $200,000 Vendor Invoice</p>
+              </div>
+            </div>
+
+            <div class="vf-example-divider"></div>
+
+            <div class="vf-example-step">
+              <div class="vf-example-icon vf-example-icon-drip">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="vf-example-who">Drip Capital</strong>
+                <p class="vf-example-what">Pays Vendor: $160,000 (80%)</p>
+                <p class="vf-example-what">US Buyer Contributes $40,000 (20%)</p>
+              </div>
+            </div>
+
+            <div class="vf-example-divider"></div>
+
+            <div class="vf-example-step">
+              <div class="vf-example-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="vf-example-who">US Buyer: Electronics Distributor</strong>
+                <p class="vf-example-what">Repays Drip Capital In Up To 90 Days</p>
+              </div>
             </div>
           </div>
         </div>
@@ -219,77 +307,180 @@ const useCases = [
   flex-wrap: wrap;
 }
 
-.two-col {
+/* ── Visual Flow Diagram ── */
+.vf-visual-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
   align-items: center;
+  margin-top: 48px;
 }
 
-.flow-diagram {
+.vf-diagram {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 580 / 380;
+  max-width: 580px;
+}
+
+.vf-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Nodes */
+.vf-node {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  padding: 32px;
+  gap: 6px;
+}
+
+.vf-node-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
   background: var(--off);
-  border-radius: 16px;
   border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.flow-node {
-  padding: 16px 28px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.4;
-}
-
-.flow-you {
+.vf-node-icon-drip {
   background: var(--navy);
-  color: var(--white);
-  width: 100%;
+  border-color: var(--navy);
 }
 
-.flow-drip {
-  background: var(--green);
-  color: var(--white);
-  width: 100%;
-}
-
-.flow-drip span {
-  display: block;
+.vf-node-label {
   font-size: 11px;
-  font-weight: 500;
-  opacity: 0.8;
-  margin-top: 2px;
-}
-
-.flow-supplier {
-  background: var(--off2);
+  font-weight: 800;
+  letter-spacing: 0.08em;
   color: var(--navy);
-  border: 1px solid var(--border);
-  width: 100%;
 }
 
-.flow-arrow {
-  font-size: 20px;
-  color: var(--mid);
-  padding: 2px 0;
+.vf-node-you {
+  top: 2%;
+  left: 12%;
 }
 
-.flow-repay {
-  margin-top: 16px;
+.vf-node-vendor {
+  top: 2%;
+  right: 12%;
+}
+
+.vf-node-drip {
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Step badges */
+.vf-step {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.vf-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
   font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vf-step-text {
+  font-size: 13px;
   font-weight: 600;
   color: var(--green);
-  text-align: center;
-  padding: 8px 16px;
+  line-height: 1.3;
+}
+
+.vf-step-1 {
+  top: 28%;
+  left: 32%;
+}
+
+.vf-step-2 {
+  top: 28%;
+  right: 6%;
+}
+
+.vf-step-3 {
+  bottom: 28%;
+  left: 2%;
+}
+
+/* ── Example Transaction Card ── */
+.vf-example {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+}
+
+.vf-example-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.vf-example-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.vf-example-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--off);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vf-example-icon-drip {
   background: rgba(0,194,124,0.08);
-  border-radius: 6px;
-  border: 1px dashed rgba(0,194,124,0.3);
-  width: 100%;
+  border-color: rgba(0,194,124,0.2);
+}
+
+.vf-example-who {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.vf-example-what {
+  font-size: 14px;
+  color: var(--body);
+  line-height: 1.5;
+}
+
+.vf-example-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 16px 0;
 }
 
 .steps-row {
@@ -444,9 +635,17 @@ const useCases = [
 }
 
 @media (max-width: 768px) {
-  .two-col {
+  .vf-visual-layout {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .vf-diagram {
+    max-width: 100%;
+  }
+
+  .vf-step-text {
+    font-size: 11px;
   }
 
   .steps-row {
