@@ -340,6 +340,9 @@
       </div>
     </section>
 
+    <!-- ========== FUNDING CALCULATOR ========== -->
+    <FundingCalculator />
+
     <!-- ========== TESTIMONIALS (Trustpilot) ========== -->
     <TrustpilotSection />
 
