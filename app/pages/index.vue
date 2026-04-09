@@ -98,7 +98,16 @@
             <img src="/logo-barclays.png" alt="Barclays" class="backer-logo" />
           </div>
           <div class="backer-logo-item">
+            <img src="/logo-ifc.svg" alt="IFC - International Finance Corporation" class="backer-logo" />
+          </div>
+          <div class="backer-logo-item">
             <img src="/logo-east-west.png" alt="East West Bank" class="backer-logo" />
+          </div>
+          <div class="backer-logo-item">
+            <img src="/logo-td-bank.svg" alt="TD Bank" class="backer-logo" />
+          </div>
+          <div class="backer-logo-item">
+            <img src="/logo-smbc.svg" alt="SMBC" class="backer-logo" />
           </div>
         </div>
       </div>
@@ -810,9 +819,9 @@ onUnmounted(() => {
 }
 
 .backer-logo {
-  height: 28px;
+  height: 32px;
   width: auto;
-  max-width: 120px;
+  max-width: 160px;
   object-fit: contain;
   filter: grayscale(100%) opacity(0.6);
   transition: filter 0.2s;

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- SMBC green swoosh icon -->
+  <rect x="4" y="10" width="40" height="40" rx="4" fill="#00674B"/>
+  <path d="M12 35 Q20 18 36 22 Q28 30 34 42" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- SMBC text -->
+  <text x="54" y="40" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#00674B" letter-spacing="0.04em">SMBC</text>
+</svg>
