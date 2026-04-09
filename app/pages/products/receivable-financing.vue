@@ -13,39 +13,114 @@
       </div>
     </section>
 
-    <!-- What is Receivables Financing -->
-    <section class="section">
+    <!-- How Receivables Financing Works — Visual -->
+    <section class="section section-bg">
       <div class="container">
-        <div class="two-col">
-          <div class="reveal">
-            <span class="eyebrow">What is Receivables Financing?</span>
-            <h2 class="section-title">Your invoices are worth cash.<br>Get them now.</h2>
-            <p class="section-subtitle">
-              Receivables Financing is Drip Capital's product for converting invoices to cash. Instead of waiting 60–90 days for customer payments, you submit your outstanding invoices and receive funds within 24–48 hours.
-            </p>
-            <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
-              This isn't a loan. It's your money. You earned it. We just get it to you faster so you can reinvest in your business without waiting.
-            </p>
-            <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Apply for Receivables Financing →</NuxtLink>
+        <div class="section-header reveal" style="max-width: 720px;">
+          <span class="eyebrow">How Receivables Financing Works</span>
+          <h2 class="section-title">Drip pays you today against your invoice <em>and collects directly from your buyer on the due date.</em></h2>
+        </div>
+
+        <div class="rf-visual-layout">
+          <!-- Triangle flow diagram -->
+          <div class="rf-diagram reveal">
+            <svg class="rf-svg" viewBox="0 0 580 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- 1: YOU → BUYER (top, horizontal right) -->
+              <path d="M170 60 L400 60" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreenRF)" />
+              <!-- 2: DRIP → YOU (bottom-left, up) -->
+              <path d="M260 310 L140 120" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreenRF)" />
+              <!-- 3: BUYER → DRIP (bottom-right, down-left) -->
+              <path d="M440 120 L330 300" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreenRF)" />
+              <defs>
+                <marker id="arrowGreenRF" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                  <path d="M0 0 L8 3 L0 6" fill="var(--green)" />
+                </marker>
+              </defs>
+            </svg>
+
+            <!-- Nodes -->
+            <div class="rf-node rf-node-you">
+              <div class="rf-node-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+                </svg>
+              </div>
+              <span class="rf-node-label">YOU</span>
+            </div>
+
+            <div class="rf-node rf-node-buyer">
+              <div class="rf-node-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <span class="rf-node-label">BUYER</span>
+            </div>
+
+            <div class="rf-node rf-node-drip">
+              <div class="rf-node-icon rf-node-icon-drip">
+                <img src="/drip-logo-icon.svg" alt="Drip Capital" width="28" height="28" onerror="this.style.display='none'" />
+              </div>
+              <span class="rf-node-label">DRIP CAPITAL</span>
+            </div>
+
+            <!-- Step badges -->
+            <div class="rf-step rf-step-1">
+              <span class="rf-step-num">1</span>
+              <span class="rf-step-text">Upload<br>invoice</span>
+            </div>
+            <div class="rf-step rf-step-2">
+              <span class="rf-step-num">2</span>
+              <span class="rf-step-text">Pays today<br>basis invoice</span>
+            </div>
+            <div class="rf-step rf-step-3">
+              <span class="rf-step-num">3</span>
+              <span class="rf-step-text">Makes payment<br>on due date</span>
+            </div>
           </div>
-          <div class="reveal reveal-delay-1">
-            <div class="dso-card">
-              <div class="dso-header">
-                <span class="dso-label">Before</span>
-                <span class="dso-value dso-bad">67 days DSO</span>
+
+          <!-- Example Transaction card -->
+          <div class="rf-example reveal reveal-delay-1">
+            <h3 class="rf-example-title">Example Transaction</h3>
+
+            <div class="rf-example-step">
+              <div class="rf-example-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+                </svg>
               </div>
-              <div class="dso-bar-outer">
-                <div class="dso-bar-fill dso-fill-before"></div>
+              <div>
+                <strong class="rf-example-who">US Vendor: Electronics Distributor</strong>
+                <p class="rf-example-what">Uploads $200,000 Buyer Invoice</p>
               </div>
-              <div class="dso-divider"></div>
-              <div class="dso-header">
-                <span class="dso-label">After</span>
-                <span class="dso-value dso-good">2 days DSO</span>
+            </div>
+
+            <div class="rf-example-divider"></div>
+
+            <div class="rf-example-step">
+              <div class="rf-example-icon rf-example-icon-drip">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                </svg>
               </div>
-              <div class="dso-bar-outer">
-                <div class="dso-bar-fill dso-fill-after"></div>
+              <div>
+                <strong class="rf-example-who">Drip Capital</strong>
+                <p class="rf-example-what">Pays US Vendor: $160,000 (80%)</p>
               </div>
-              <p class="dso-footnote">DSO = Days Sales Outstanding. Lower is better.</p>
+            </div>
+
+            <div class="rf-example-divider"></div>
+
+            <div class="rf-example-step">
+              <div class="rf-example-icon rf-example-icon-drip">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="rf-example-who">Drip Capital</strong>
+                <p class="rf-example-what">Receives $200,000 on due date and releases reserve ($40,000) to US Vendor</p>
+              </div>
             </div>
           </div>
         </div>
@@ -222,77 +297,155 @@ const useCases = [
   flex-wrap: wrap;
 }
 
-.two-col {
+/* ── RF Visual Flow Diagram ── */
+.rf-visual-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
   align-items: center;
+  margin-top: 48px;
 }
 
-/* DSO Card */
-.dso-card {
-  background: var(--off);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 32px;
+.rf-diagram {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 580 / 380;
+  max-width: 580px;
 }
 
-.dso-header {
+.rf-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rf-node {
+  position: absolute;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 8px;
+  gap: 6px;
 }
 
-.dso-label {
+.rf-node-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rf-node-icon-drip {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.rf-node-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+}
+
+.rf-node-you { top: 2%; left: 12%; }
+.rf-node-buyer { top: 2%; right: 12%; }
+.rf-node-drip { bottom: 6%; left: 50%; transform: translateX(-50%); }
+
+.rf-step {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.rf-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rf-step-text {
   font-size: 13px;
   font-weight: 600;
-  color: var(--mid);
+  color: var(--green);
+  line-height: 1.3;
 }
 
-.dso-value {
-  font-size: 15px;
+.rf-step-1 { top: 28%; left: 32%; }
+.rf-step-2 { bottom: 28%; left: 2%; }
+.rf-step-3 { top: 28%; right: 6%; }
+
+/* Example Transaction Card */
+.rf-example {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+}
+
+.rf-example-title {
+  font-size: 20px;
   font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
 }
 
-.dso-bad { color: #C0392B; }
-.dso-good { color: var(--green); }
-
-.dso-bar-outer {
-  width: 100%;
-  height: 12px;
-  background: var(--border);
-  border-radius: 6px;
-  overflow: hidden;
+.rf-example-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
 }
 
-.dso-bar-fill {
-  height: 100%;
-  border-radius: 6px;
-  transition: width 1s ease;
+.rf-example-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--off);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.dso-fill-before {
-  width: 85%;
-  background: #C0392B;
+.rf-example-icon-drip {
+  background: rgba(0,194,124,0.08);
+  border-color: rgba(0,194,124,0.2);
 }
 
-.dso-fill-after {
-  width: 5%;
-  background: var(--green);
+.rf-example-who {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2px;
 }
 
-.dso-divider {
+.rf-example-what {
+  font-size: 14px;
+  color: var(--body);
+  line-height: 1.5;
+}
+
+.rf-example-divider {
   height: 1px;
   background: var(--border);
-  margin: 20px 0;
-}
-
-.dso-footnote {
-  font-size: 11px;
-  color: var(--mid);
-  margin-top: 16px;
-  text-align: center;
+  margin: 16px 0;
 }
 
 /* Steps */
@@ -449,9 +602,17 @@ const useCases = [
 }
 
 @media (max-width: 768px) {
-  .two-col {
+  .rf-visual-layout {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .rf-diagram {
+    max-width: 100%;
+  }
+
+  .rf-step-text {
+    font-size: 11px;
   }
 
   .steps-row {
