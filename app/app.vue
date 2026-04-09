@@ -12,9 +12,23 @@
 <script setup lang="ts">
 import { useScrollReveal } from '~/composables/useScrollReveal'
 
-const { init } = useScrollReveal()
+const route = useRoute()
+const { init, refresh, destroy } = useScrollReveal()
 
 onMounted(() => {
-  init()
+  nextTick(() => {
+    init()
+  })
+})
+
+// Re-observe new .reveal elements after every route change
+watch(() => route.fullPath, () => {
+  nextTick(() => {
+    refresh()
+  })
+})
+
+onUnmounted(() => {
+  destroy()
 })
 </script>

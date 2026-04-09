@@ -6,7 +6,7 @@
           <!-- Brand Column -->
           <div class="footer-brand">
             <NuxtLink to="/" class="footer-logo-link" aria-label="Drip Capital">
-              <img src="/logo.png" alt="Drip Capital" class="footer-logo-img" />
+              <img src="/logo.svg" alt="Drip Capital" class="footer-logo-img" />
             </NuxtLink>
             <p class="footer-tagline">Working Capital for Growing Businesses</p>
             <p class="footer-desc">

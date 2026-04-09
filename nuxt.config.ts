@@ -13,21 +13,22 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Drip Capital' },
         { property: 'og:title', content: 'Drip Capital | Working Capital for Growing Businesses' },
-        { property: 'og:description', content: 'Fast, flexible working capital for US businesses. Vendor financing, receivables financing, and lines of credit. Apply in minutes, funded in 48 hours.' },
+        { property: 'og:description', content: 'Fast, flexible working capital for US businesses. Vendor financing, receivables financing, and lines of credit. Apply in minutes, funded in 24 hours.' },
         { property: 'og:image', content: 'https://dripcapital.com/og-image.png' },
         { property: 'og:url', content: 'https://dripcapital.com' },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@DripCapital' },
         { name: 'twitter:title', content: 'Drip Capital | Working Capital for Growing Businesses' },
-        { name: 'twitter:description', content: 'Fast, flexible working capital for US businesses. Vendor financing, receivables financing, and lines of credit. Apply in minutes, funded in 48 hours.' },
+        { name: 'twitter:description', content: 'Fast, flexible working capital for US businesses. Vendor financing, receivables financing, and lines of credit. Apply in minutes, funded in 24 hours.' },
         { name: 'twitter:image', content: 'https://dripcapital.com/og-image.png' }
       ],
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap' },
-        { rel: 'icon', type: 'image/png', href: '/logo.png' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap', media: 'print', onload: 'this.media="all"' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'canonical', href: 'https://dripcapital.com' }
       ],
       script: [
@@ -58,14 +59,30 @@ export default defineNuxtConfig({
             'serviceType': ['Vendor Financing', 'Receivables Financing', 'Line of Credit']
           })
         }
+      ],
+      // Add Inter as fallback font-family to avoid FOUT
+      noscript: [
+        { innerHTML: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">' }
       ]
     }
   },
   css: ['~/assets/css/main.css'],
+  nitro: {
+    compressPublicAssets: true,
+  },
   vite: {
     server: {
       hmr: {
         port: 3334
+      }
+    },
+    build: {
+      cssMinify: true,
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+        }
       }
     }
   }

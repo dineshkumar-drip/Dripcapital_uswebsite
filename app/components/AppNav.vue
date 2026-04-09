@@ -4,7 +4,7 @@
       <nav class="nav-inner">
         <!-- Logo -->
         <NuxtLink to="/" class="nav-logo" aria-label="Drip Capital Home">
-          <img src="/logo.png" alt="Drip Capital" class="nav-logo-img" />
+          <img src="/logo.svg" alt="Drip Capital" class="nav-logo-img" />
         </NuxtLink>
 
         <!-- Desktop Links -->
