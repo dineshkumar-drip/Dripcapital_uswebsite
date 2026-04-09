@@ -4,7 +4,7 @@
       <div class="container">
         <span class="eyebrow">Company</span>
         <h1>World-class investors<br>backing <em>our mission</em></h1>
-        <p>Drip Capital is backed by leading technology investors and global financial institutions — giving us the capital and credibility to serve thousands of importers and exporters across the US.</p>
+        <p>Drip Capital is backed by leading technology investors and global financial institutions, giving us the capital and credibility to serve thousands of importers and exporters across the US.</p>
       </div>
     </section>
 
@@ -143,7 +143,7 @@ const equityPartners = [
     type: 'Development Finance',
     logo: '/logos/ifc.png',
     logoStyle: 'max-height: 44px;',
-    desc: 'International Finance Corporation supports private sector development in emerging markets — validating Drip\'s mission to democratize trade finance globally.'
+    desc: 'International Finance Corporation supports private sector development in emerging markets, validating Drip\'s mission to democratize trade finance globally.'
   },
   {
     name: 'Wing VC',
@@ -167,7 +167,7 @@ const bankingPartners = [
     type: 'Global Bank',
     logo: '/logos/smbc.png',
     logoStyle: 'max-height: 40px;',
-    desc: 'Sumitomo Mitsui Banking Corporation — one of Japan\'s largest banks with over $2 trillion in assets and a leading global trade finance franchise.'
+    desc: 'Sumitomo Mitsui Banking Corporation, one of Japan\'s largest banks with over $2 trillion in assets and a leading global trade finance franchise.'
   },
   {
     name: 'East West Bank',

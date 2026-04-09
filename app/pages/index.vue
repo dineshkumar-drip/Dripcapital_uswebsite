@@ -17,7 +17,7 @@
               <span class="hero-tw-text">{{ typewriterDisplay }}<span class="hero-tw-cursor" :class="{ blink: cursorBlink }">|</span></span>
             </div>
             <p class="hero-subtitle">
-              No collateral, no delays — capital that moves as fast as your ambition. Our customers grow 130–190% in annual revenue after funding.
+              No collateral, no delays. Capital that moves as fast as your ambition. Our customers grow 130–190% in annual revenue after funding.
             </p>
             <div class="hero-cta-row">
               <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>

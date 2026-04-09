@@ -6,7 +6,7 @@
         <div class="calc-hero-inner">
           <span class="eyebrow">Free Tool</span>
           <h1 class="calc-h1">Working Capital<br><em>Calculator</em></h1>
-          <p class="calc-sub">Find out how much working capital your business needs — and which Drip Capital product is right for you. Takes 60 seconds.</p>
+          <p class="calc-sub">Find out how much working capital your business needs and which Drip Capital product is right for you. Takes 60 seconds.</p>
         </div>
       </div>
     </section>
@@ -20,7 +20,7 @@
           <div class="calc-inputs-col">
             <div class="calc-card">
               <h2 class="calc-section-label">Your Business Financials</h2>
-              <p class="calc-section-sub">Adjust the sliders or type values directly. All figures are approximate — we just need ballpark numbers.</p>
+              <p class="calc-section-sub">Adjust the sliders or type values directly. All figures are approximate; we just need ballpark numbers.</p>
 
               <!-- Monthly Revenue -->
               <div class="calc-field">
@@ -193,7 +193,7 @@
             <!-- CTA -->
             <div class="calc-cta">
               <NuxtLink to="/apply" class="btn btn-primary btn-lg" style="width:100%; text-align:center; display:block;">
-                Apply Now — Get a Real Offer in 24 Hours →
+                Apply Now: Get a Real Offer in 24 Hours →
               </NuxtLink>
               <p class="calc-cta-note">No application fee · No collateral · Soft pull only</p>
             </div>
@@ -278,7 +278,7 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Working Capital Calculator | Drip Capital — Free Tool' })
+useHead({ title: 'Working Capital Calculator | Drip Capital | Free Tool' })
 
 const inputs = reactive({
   monthlyRevenue: 500000,
@@ -326,7 +326,7 @@ const results = computed(() => {
   let product = {
     badge: 'Vendor Financing',
     name: 'Vendor Financing',
-    why: 'Your payables are a significant burden. Drip Capital can pay your vendors directly and give you up to 90 days to repay — freeing cash for growth.',
+    why: 'Your payables are a significant burden. Drip Capital can pay your vendors directly and give you up to 90 days to repay, freeing cash for growth.',
     link: '/products/vendor-financing'
   }
 

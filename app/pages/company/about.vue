@@ -8,7 +8,7 @@
         <h1 class="reveal reveal-delay-1">$9B+ financed.<br><em>11,000+ businesses. One mission.</em></h1>
         <p class="hero-sub reveal reveal-delay-2">
           Drip Capital is a leading working capital provider for small and mid-sized businesses,
-          backed by Sequoia Capital, Accel, Y Combinator, and IFC World Bank — with a global
+          backed by Sequoia Capital, Accel, Y Combinator, and IFC World Bank, with a global
           presence spanning the US and India.
         </p>
       </div>
@@ -51,7 +51,7 @@
             </p>
             <p class="story-p">
               With over $9B financed across 11,000+ businesses, we have proven at scale that
-              SMBs deserve the same quality of capital as the largest corporations — delivered
+              SMBs deserve the same quality of capital as the largest corporations, delivered
               in 24 hours, not 6 weeks, and without the collateral or complexity that banks
               routinely demand.
             </p>
@@ -277,7 +277,7 @@ const team: TeamMember[] = [
   },
   {
     name: 'Karl Boog',
-    role: 'Capital Markets and Global Partnerships',
+    role: 'Chief Business Officer',
     linkedin: 'https://www.linkedin.com/in/karlboog',
     photo: '/team/karl-boog.svg',
     initials: 'KB',
@@ -330,7 +330,7 @@ const values = [
   { icon: 'zap',      title: 'Speed as a Feature',   desc: "Every business decision has a time value. We obsess over reducing time-to-capital so our customers can seize opportunities before they pass." },
   { icon: 'partner',  title: 'Partnership Mindset',  desc: "We're not just lenders. We're partners in your growth. Your success is our success. We grow our facilities as our customers grow." },
   { icon: 'shield',   title: 'Data-Driven Trust',    desc: "We use technology and data to see what traditional banks miss: the full picture of a business's health and potential, not just a credit score." },
-  { icon: 'dollar',   title: 'Customer Obsession',   desc: "Everything we build starts with the customer. Simpler applications, faster approvals, better service — all driven by listening to the businesses we serve." },
+  { icon: 'dollar',   title: 'Customer Obsession',   desc: "Everything we build starts with the customer. Simpler applications, faster approvals, better service, all driven by listening to the businesses we serve." },
   { icon: 'map-pin',  title: 'Global Perspective',   desc: "Trade is global. Our products and team reflect that. We serve businesses across the US and India with a deep understanding of cross-border commerce." },
   { icon: 'unlock',   title: 'Radical Transparency', desc: "We believe in clear, honest communication: no hidden fees, no confusing terms. What you see is what you get with Drip Capital." },
 ]
