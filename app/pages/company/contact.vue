@@ -53,7 +53,7 @@
                 <label for="c-product">Product Interest</label>
                 <select id="c-product" v-model="form.product">
                   <option value="">What are you interested in?</option>
-                  <option value="vendor-financing">Vendor/Supplier Financing</option>
+                  <option value="vendor-financing">Vendor Financing</option>
                   <option value="receivables-financing">Receivables Financing</option>
                   <option value="line-of-credit">Line of Credit</option>
                   <option value="all">All Products</option>

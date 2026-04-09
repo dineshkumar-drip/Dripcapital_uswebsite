@@ -4,8 +4,8 @@
     <section class="page-hero">
       <div class="container">
         <span class="eyebrow">Product: Vendor Financing</span>
-        <h1>Extend supplier payment terms<br><em>and keep your cash.</em></h1>
-        <p>We pay your suppliers today so you preserve cash and keep orders moving. You repay on up to 120-day terms that work for your business cycle.</p>
+        <h1>Extend vendor payment terms<br><em>and keep your cash.</em></h1>
+        <p>We pay your vendors today so you preserve cash and keep orders moving. You repay on up to 90-day terms that work for your business cycle.</p>
         <div class="hero-actions">
           <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
           <NuxtLink to="/products/receivable-financing" class="btn btn-outline-white btn-lg">View Receivables Financing</NuxtLink>
@@ -19,12 +19,12 @@
         <div class="two-col">
           <div class="reveal">
             <span class="eyebrow">What is Vendor Financing?</span>
-            <h2 class="section-title">Pay suppliers upfront.<br>Repay us later.</h2>
+            <h2 class="section-title">Pay vendors upfront.<br>Repay us later.</h2>
             <p class="section-subtitle">
-              Vendor Financing is Drip Capital's supplier financing product. When you need to pay a supplier but your cash is tied up in receivables or inventory, Drip Capital steps in to pay your supplier directly.
+              Vendor Financing is Drip Capital's vendor financing product. When you need to pay a vendor but your cash is tied up in receivables or inventory, Drip Capital steps in to pay your vendor directly.
             </p>
             <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
-              You get the goods. Your supplier gets paid on time. And you repay Drip Capital over the next 30–120 days, matching your natural cash conversion cycle.
+              You get the goods. Your vendor gets paid on time. And you repay Drip Capital over the next 30–90 days, matching your natural cash conversion cycle.
             </p>
             <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Get Started Today</NuxtLink>
           </div>
@@ -32,10 +32,10 @@
             <div class="flow-diagram">
               <div class="flow-node flow-you">Your Business</div>
               <div class="flow-arrow flow-arrow-down">↓ PO / Order</div>
-              <div class="flow-node flow-drip">Drip Capital<br><span>Pays Supplier</span></div>
+              <div class="flow-node flow-drip">Drip Capital<br><span>Pays Vendor</span></div>
               <div class="flow-arrow flow-arrow-down">↓ Goods</div>
-              <div class="flow-node flow-supplier">Your Supplier</div>
-              <div class="flow-repay">You repay Drip in 30–120 days</div>
+              <div class="flow-node flow-supplier">Your Vendor</div>
+              <div class="flow-repay">You repay Drip in 30–90 days</div>
             </div>
           </div>
         </div>
@@ -54,15 +54,15 @@
             <div class="step-number">1</div>
             <div class="step-content">
               <h3 class="step-title">Apply &amp; Get Approved</h3>
-              <p class="step-desc">Submit a brief online application. Our team assesses your business performance and gets back to you in 48 hours. No collateral, no bank deposit required.</p>
+              <p class="step-desc">Submit a brief online application. Our team assesses your business performance and gets back to you in 24 hours. No collateral, no bank deposit required.</p>
             </div>
           </div>
           <div class="step-connector reveal reveal-delay-1"></div>
           <div class="step-item reveal reveal-delay-1">
             <div class="step-number">2</div>
             <div class="step-content">
-              <h3 class="step-title">Drip Pays Your Supplier</h3>
-              <p class="step-desc">Once approved, submit a supplier invoice or PO. Drip Capital pays your supplier directly, same day or within 24 hours. Your supplier is happy. Your orders keep moving.</p>
+              <h3 class="step-title">Drip Pays Your Vendor</h3>
+              <p class="step-desc">Once approved, submit a vendor invoice or PO. Drip Capital pays your vendor directly, same day or within 24 hours. Your vendor is happy. Your orders keep moving.</p>
             </div>
           </div>
           <div class="step-connector reveal reveal-delay-2"></div>
@@ -70,7 +70,7 @@
             <div class="step-number">3</div>
             <div class="step-content">
               <h3 class="step-title">You Repay Us</h3>
-              <p class="step-desc">Repay Drip Capital on your agreed terms: 30, 60, 90, or 120 days, matching when you receive payment from your customers. Revolve and draw again as needed.</p>
+              <p class="step-desc">Repay Drip Capital on your agreed terms: 30, 60, or 90 days, matching when you receive payment from your customers. Revolve and draw again as needed.</p>
             </div>
           </div>
         </div>
@@ -113,11 +113,44 @@
       </div>
     </section>
 
+    <!-- Comparison Table -->
+    <section class="section section-bg">
+      <div class="container">
+        <div class="section-header reveal" style="text-align: center; max-width: 600px; margin: 0 auto 48px;">
+          <span class="eyebrow">Why Drip Capital</span>
+          <h2 class="section-title">How Vendor Financing compares.</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Purpose-built for businesses that need to pay vendors fast.</p>
+        </div>
+        <div class="comparison-wrapper reveal">
+          <div class="comparison-scroll">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th style="width: 30%;">Feature</th>
+                  <th class="col-drip">Drip Capital</th>
+                  <th>Traditional Bank</th>
+                  <th>MCA / Alt Lender</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Credit Decision</td><td class="col-drip"><span class="check-yes">24 Hours</span></td><td><span class="check-no">4–8 Weeks</span></td><td><span class="check-mid">1–3 Days</span></td></tr>
+                <tr><td>Vendor Payment Speed</td><td class="col-drip"><span class="check-yes">Same day</span></td><td><span class="check-no">5–10 days</span></td><td><span class="check-mid">N/A</span></td></tr>
+                <tr><td>Collateral Required</td><td class="col-drip"><span class="check-yes">None</span></td><td><span class="check-no">Yes (Assets)</span></td><td><span class="check-mid">Sometimes</span></td></tr>
+                <tr><td>Repayment Terms</td><td class="col-drip"><span class="check-yes">Up to 90 days</span></td><td><span class="check-no">Fixed monthly</span></td><td><span class="check-no">Daily/weekly</span></td></tr>
+                <tr><td>Global Vendor Payments</td><td class="col-drip"><span class="check-yes">Yes, any currency</span></td><td><span class="check-mid">Limited</span></td><td><span class="check-no">No</span></td></tr>
+                <tr><td>Dedicated Account Manager</td><td class="col-drip"><span class="check-yes">Yes</span></td><td><span class="check-mid">Sometimes</span></td><td><span class="check-no">Rarely</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="section">
       <div class="container">
         <div class="cta-simple reveal">
-          <h2 class="cta-simple-title">Ready to extend your supplier terms?</h2>
+          <h2 class="cta-simple-title">Ready to extend your vendor terms?</h2>
           <p class="cta-simple-desc">Join thousands of businesses that use Vendor Financing to preserve cash and scale their supply chain.</p>
           <div class="cta-simple-actions">
             <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply for Vendor Financing →</NuxtLink>
@@ -131,11 +164,11 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Vendor Financing for US Businesses | Pay Suppliers Now, Repay in 120 Days | Drip Capital',
+  title: 'Vendor Financing for US Businesses | Pay Vendors Now, Repay in 90 Days | Drip Capital',
   meta: [
-    { name: 'description', content: 'Drip Capital Vendor Financing lets US businesses pay suppliers immediately and repay on up to 120-day terms. No collateral, 48-hour approval. Keep cash moving.' },
+    { name: 'description', content: 'Drip Capital Vendor Financing lets US businesses pay vendors immediately and repay on up to 90-day terms. No collateral, 24-hour approval. Keep cash moving.' },
     { property: 'og:title', content: 'Vendor Financing | Drip Capital' },
-    { property: 'og:description', content: 'Pay your suppliers now, repay in 120 days. Fast approval, no collateral required.' }
+    { property: 'og:description', content: 'Pay your vendors now, repay in 90 days. Fast approval, no collateral required.' }
   ]
 })
 
@@ -147,25 +180,25 @@ const benefits = [
   },
   {
     icon: 'lightning',
-    title: '48-Hour Approval',
-    desc: 'Our proprietary underwriting model gives you a credit decision within 48 hours of completing the application, with no weeks-long bank review process.'
+    title: '24-Hour Approval',
+    desc: 'Our proprietary underwriting model gives you a credit decision within 24 hours of completing the application, with no weeks-long bank review process.'
   },
   {
     icon: 'clock',
-    title: 'Up to 120-Day Terms',
+    title: 'Up to 90-Day Terms',
     desc: 'Extended repayment terms mean your cash stays in your business longer. Match repayment to when you actually receive payment from your customers.'
   },
   {
     icon: 'users',
     title: 'Dedicated Account Manager',
-    desc: 'You get a dedicated Drip Capital account manager who understands your business, your suppliers, and your growth goals, and is available when you need them.'
+    desc: 'You get a dedicated Drip Capital account manager who understands your business, your vendors, and your growth goals, and is available when you need them.'
   }
 ]
 
 const useCases = [
   {
-    title: 'Bridging the Supplier-Customer Gap',
-    desc: 'Your supplier needs payment in 30 days, but your customer pays in 90. Vendor Financing bridges that gap so you never have to delay orders or strain supplier relationships.'
+    title: 'Bridging the Vendor-Customer Gap',
+    desc: 'Your vendor needs payment in 30 days, but your customer pays in 90. Vendor Financing bridges that gap so you never have to delay orders or strain vendor relationships.'
   },
   {
     title: 'Seasonal Inventory Buildup',
@@ -173,7 +206,7 @@ const useCases = [
   },
   {
     title: 'Capturing Early Pay Discounts',
-    desc: 'Some suppliers offer 2–3% discounts for early payment. Vendor Financing lets you capture those discounts without tying up your own cash.'
+    desc: 'Some vendors offer 2–3% discounts for early payment. Vendor Financing lets you capture those discounts without tying up your own cash.'
   }
 ]
 </script>

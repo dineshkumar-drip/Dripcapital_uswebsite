@@ -123,12 +123,45 @@
       </div>
     </section>
 
+    <!-- Comparison Table -->
+    <section class="section section-bg">
+      <div class="container">
+        <div class="section-header reveal" style="text-align: center; max-width: 600px; margin: 0 auto 48px;">
+          <span class="eyebrow">Why Drip Capital</span>
+          <h2 class="section-title">How Receivables Financing compares.</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Get paid on your invoices faster than any alternative.</p>
+        </div>
+        <div class="comparison-wrapper reveal">
+          <div class="comparison-scroll">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th style="width: 30%;">Feature</th>
+                  <th class="col-drip">Drip Capital</th>
+                  <th>Traditional Factoring</th>
+                  <th>Bank Line of Credit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Funding Speed</td><td class="col-drip"><span class="check-yes">24–48 Hours</span></td><td><span class="check-mid">2–5 Days</span></td><td><span class="check-no">4–8 Weeks</span></td></tr>
+                <tr><td>Collateral Required</td><td class="col-drip"><span class="check-yes">None</span></td><td><span class="check-mid">Invoices assigned</span></td><td><span class="check-no">Yes (Assets)</span></td></tr>
+                <tr><td>Customer Notification</td><td class="col-drip"><span class="check-yes">Not required</span></td><td><span class="check-no">Usually required</span></td><td><span class="check-yes">No</span></td></tr>
+                <tr><td>Repayment Structure</td><td class="col-drip"><span class="check-yes">Flexible, invoice-based</span></td><td><span class="check-mid">Invoice collection</span></td><td><span class="check-no">Fixed monthly</span></td></tr>
+                <tr><td>Non-Dilutive</td><td class="col-drip"><span class="check-yes">Yes</span></td><td><span class="check-yes">Yes</span></td><td><span class="check-yes">Yes</span></td></tr>
+                <tr><td>Dedicated Account Manager</td><td class="col-drip"><span class="check-yes">Yes</span></td><td><span class="check-mid">Sometimes</span></td><td><span class="check-no">Rarely</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="section">
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Stop waiting on your customers to pay.</h2>
-          <p class="cta-simple-desc">Access the cash you've already earned. Apply for Receivables Financing today and get funded in 48 hours.</p>
+          <p class="cta-simple-desc">Access the cash you've already earned. Apply for Receivables Financing today and get funded in 24 hours.</p>
           <div class="cta-simple-actions">
             <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply for Receivables Financing →</NuxtLink>
             <NuxtLink to="/products/line-of-credit" class="btn btn-outline btn-lg">Compare Products</NuxtLink>

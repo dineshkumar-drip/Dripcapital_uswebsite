@@ -17,17 +17,13 @@
               <span class="hero-tw-text">{{ typewriterDisplay }}<span class="hero-tw-cursor" :class="{ blink: cursorBlink }">|</span></span>
             </div>
             <p class="hero-subtitle">
-              Businesses funded by Drip Capital grow 130–190% in annual revenue. No collateral, no delays — capital that moves as fast as your ambition.
+              No collateral, no delays — capital that moves as fast as your ambition. Our customers grow 130–190% in annual revenue after funding.
             </p>
-            <div class="hero-growth-callout">
-              <div class="hero-growth-number">130–190%</div>
-              <div class="hero-growth-desc">average annual revenue growth<br>reported by Drip Capital customers</div>
-            </div>
             <div class="hero-cta-row">
               <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
               <a href="tel:+16504370150" class="btn btn-secondary btn-lg">Call +1 (650) 437-0150</a>
             </div>
-            <p class="hero-no-fee">No application fee · No collateral · Decision in 48 hours</p>
+            <p class="hero-no-fee">No application fee · No collateral · Decision in 24 hours</p>
           </div>
 
           <div class="hero-right">
@@ -38,29 +34,54 @@
     </section>
 
 
-    <!-- ========== STATS BAR ========== -->
+    <!-- ========== USPs + TRUST SIGNALS ========== -->
     <section class="stats-bar section-bg">
       <div class="container">
         <div class="stats-grid">
           <div class="stats-item reveal">
-            <div class="stats-label">Credit Decision</div>
-            <div class="stats-value">48 Hours</div>
-            <div class="stats-desc">From application to approval</div>
+            <div class="stats-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="stats-value">24 Hours</div>
+            <div class="stats-desc">Credit decision turnaround</div>
           </div>
           <div class="stats-item reveal reveal-delay-1">
-            <div class="stats-label">Vendor Financing</div>
-            <div class="stats-value">Up to 120 Days</div>
-            <div class="stats-desc">Extended repayment to preserve cash</div>
+            <div class="stats-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <div class="stats-value">Up to $3M</div>
+            <div class="stats-desc">Credit facility per business</div>
           </div>
           <div class="stats-item reveal reveal-delay-2">
-            <div class="stats-label">Receivables Financing</div>
-            <div class="stats-value">24–48 Hours</div>
-            <div class="stats-desc">Get paid on invoices fast</div>
+            <div class="stats-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </div>
+            <div class="stats-value">Pay Any Vendor</div>
+            <div class="stats-desc">Globally, in any currency</div>
           </div>
           <div class="stats-item reveal reveal-delay-3">
-            <div class="stats-label">Line of Credit</div>
-            <div class="stats-value">On Demand</div>
-            <div class="stats-desc">Draw what you need, when you need it</div>
+            <div class="stats-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="stats-value">11,000+</div>
+            <div class="stats-desc">Businesses funded</div>
+          </div>
+        </div>
+        <!-- Trust signal banner -->
+        <div class="trust-banner reveal">
+          <div class="trust-item">
+            <span class="trust-number">$9B+</span>
+            <span class="trust-label">in trade transactions financed</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-number">11,000+</span>
+            <span class="trust-label">SMBs served across the US</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-number">130–190%</span>
+            <span class="trust-label">avg. annual revenue growth</span>
           </div>
         </div>
       </div>
@@ -74,19 +95,10 @@
         </div>
         <div class="backers-logos">
           <div class="backer-logo-item">
-            <img src="/logo-accel.png" alt="Accel" class="backer-logo" />
-          </div>
-          <div class="backer-logo-item">
-            <img src="/logo-peak-xv.webp" alt="Peak XV" class="backer-logo" />
-          </div>
-          <div class="backer-logo-item">
             <img src="/logo-barclays.png" alt="Barclays" class="backer-logo" />
           </div>
           <div class="backer-logo-item">
             <img src="/logo-east-west.png" alt="East West Bank" class="backer-logo" />
-          </div>
-          <div class="backer-logo-item">
-            <img src="/logo-wing-vc.svg" alt="Wing VC" class="backer-logo" />
           </div>
         </div>
       </div>
@@ -113,12 +125,12 @@
               </div>
             </div>
             <h3 class="product-eq-title">Vendor Financing</h3>
-            <p class="product-eq-tagline">Pay suppliers upfront. Repay us later.</p>
-            <p class="product-eq-desc">We pay your suppliers today so you preserve cash and keep orders moving. You repay on flexible terms, up to 120 days.</p>
+            <p class="product-eq-tagline">Pay vendors upfront. Repay us later.</p>
+            <p class="product-eq-desc">We pay your vendors today so you preserve cash and keep orders moving. You repay on flexible terms, up to 90 days.</p>
             <ul class="product-eq-list">
               <li>No collateral required</li>
-              <li>48-hour credit decision</li>
-              <li>Up to 120-day repayment terms</li>
+              <li>24-hour credit decision</li>
+              <li>Up to 90-day repayment terms</li>
               <li>Dedicated account manager</li>
             </ul>
             <NuxtLink to="/products/vendor-financing" class="product-eq-cta">Learn More →</NuxtLink>
@@ -181,7 +193,7 @@
           <span class="eyebrow">The Process</span>
           <h2 class="section-title">How Drip Capital works</h2>
           <p class="section-subtitle" style="margin: 0 auto;">
-            From application to funding in as little as 48 hours.
+            From application to funding in as little as 24 hours.
           </p>
         </div>
         <div class="grid-3">
@@ -191,7 +203,7 @@
             </div>
             <h3 class="hiw-title">Apply &amp; Connect</h3>
             <p class="hiw-desc">
-              Complete a brief online application. We'll connect to your accounting or ERP system to assess your business, not just your credit score.
+              Complete a brief online application. We'll review your trade data and business activity to assess your business, not just your credit score.
             </p>
           </div>
           <div class="hiw-card reveal reveal-delay-1">
@@ -200,7 +212,7 @@
             </div>
             <h3 class="hiw-title">Underwriting &amp; Funding</h3>
             <p class="hiw-desc">
-              Our proprietary underwriting model gives you a decision in 48 hours. Once approved, funds reach your account or your supplier fast.
+              Our proprietary underwriting model gives you a decision in 24 hours. Once approved, funds reach your account or your vendor fast.
             </p>
           </div>
           <div class="hiw-card reveal reveal-delay-2">
@@ -231,9 +243,9 @@
             <div class="usecase-icon">
               <AppIcon name="refresh" :size="22" color="var(--green)" />
             </div>
-            <h3 class="usecase-title">Bridge the Supplier-Customer Gap</h3>
+            <h3 class="usecase-title">Bridge the Vendor-Customer Gap</h3>
             <p class="usecase-desc">
-              You buy from suppliers today but don't get paid by customers for 60–90 days. Vendor Financing bridges that gap so you never have to pause orders.
+              You buy from vendors today but don't get paid by customers for 60–90 days. Vendor Financing bridges that gap so you never have to pause orders.
             </p>
             <NuxtLink to="/products/vendor-financing" class="usecase-link">Vendor Financing →</NuxtLink>
           </div>
@@ -251,9 +263,9 @@
             <div class="usecase-icon">
               <AppIcon name="check-circle" :size="22" color="var(--green)" />
             </div>
-            <h3 class="usecase-title">Pay Suppliers on Time, Every Time</h3>
+            <h3 class="usecase-title">Pay Vendors on Time, Every Time</h3>
             <p class="usecase-desc">
-              Maintain your supplier relationships and negotiate better terms. Drip ensures you always pay on time, building trust and loyalty.
+              Maintain your vendor relationships and negotiate better terms. Drip ensures you always pay on time, building trust and loyalty.
             </p>
             <NuxtLink to="/products/line-of-credit" class="usecase-link">Line of Credit →</NuxtLink>
           </div>
@@ -331,87 +343,6 @@
     <!-- ========== TESTIMONIALS (Trustpilot) ========== -->
     <TrustpilotSection />
 
-    <!-- ========== COMPARISON TABLE ========== -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal" style="text-align: center; max-width: 600px; margin: 0 auto 48px;">
-          <span class="eyebrow">Why Drip Capital</span>
-          <h2 class="section-title">How we compare to the alternatives.</h2>
-          <p class="section-subtitle" style="margin: 0 auto;">Built specifically for growing businesses, not one-size-fits-all lending.</p>
-        </div>
-        <div class="comparison-wrapper reveal">
-          <div class="comparison-scroll">
-            <table class="comparison-table">
-              <thead>
-                <tr>
-                  <th style="width: 30%;">Feature</th>
-                  <th class="col-drip">Drip Capital</th>
-                  <th>Traditional Bank</th>
-                  <th>MCA / Alt Lender</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Credit Decision</td>
-                  <td class="col-drip"><span class="check-yes">48 Hours</span></td>
-                  <td><span class="check-no">4–8 Weeks</span></td>
-                  <td><span class="check-mid">1–3 Days</span></td>
-                </tr>
-                <tr>
-                  <td>Collateral Required</td>
-                  <td class="col-drip"><span class="check-yes">None</span></td>
-                  <td><span class="check-no">Yes (Assets)</span></td>
-                  <td><span class="check-mid">Sometimes</span></td>
-                </tr>
-                <tr>
-                  <td>Underwriting Basis</td>
-                  <td class="col-drip"><span class="check-yes">Business performance</span></td>
-                  <td><span class="check-no">Credit score + assets</span></td>
-                  <td><span class="check-mid">Revenue-based</span></td>
-                </tr>
-                <tr>
-                  <td>Time to Close</td>
-                  <td class="col-drip"><span class="check-yes">48–72 hours</span></td>
-                  <td><span class="check-no">30–60 days</span></td>
-                  <td><span class="check-mid">2–5 days</span></td>
-                </tr>
-                <tr>
-                  <td>Restrictive Covenants</td>
-                  <td class="col-drip"><span class="check-yes">None</span></td>
-                  <td><span class="check-no">Many</span></td>
-                  <td><span class="check-mid">Few</span></td>
-                </tr>
-                <tr>
-                  <td>Repayment Terms</td>
-                  <td class="col-drip"><span class="check-yes">Flexible</span></td>
-                  <td><span class="check-no">Fixed</span></td>
-                  <td><span class="check-no">Daily/weekly</span></td>
-                </tr>
-                <tr>
-                  <td>Facility Access</td>
-                  <td class="col-drip"><span class="check-yes">Grows with you</span></td>
-                  <td><span class="check-mid">Annual review</span></td>
-                  <td><span class="check-no">Transaction-based</span></td>
-                </tr>
-                <tr>
-                  <td>Bank Deposit Required</td>
-                  <td class="col-drip"><span class="check-yes">No</span></td>
-                  <td><span class="check-no">Yes</span></td>
-                  <td><span class="check-yes">No</span></td>
-                </tr>
-                <tr>
-                  <td>Dedicated Account Manager</td>
-                  <td class="col-drip"><span class="check-yes">Yes</span></td>
-                  <td><span class="check-mid">Sometimes</span></td>
-                  <td><span class="check-no">Rarely</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ========== FAQ ========== -->
     <section class="section section-bg">
       <div class="container">
@@ -454,7 +385,7 @@
             <span class="eyebrow" style="color: var(--green);">Get Started Today</span>
             <h2 class="cta-title">Ready to power your business?</h2>
             <p class="cta-desc">
-              Join 10,000+ businesses that trust Drip Capital for their working capital needs. Fast approval, no collateral, flexible terms.
+              Join 11,000+ businesses that trust Drip Capital for their working capital needs. Fast approval, no collateral, flexible terms.
             </p>
           </div>
           <div class="cta-actions">
@@ -479,11 +410,11 @@ const particleCanvas = ref<HTMLCanvasElement | null>(null)
 
 // Typewriter USP cycling
 const uspPhrases = [
-  'Our partners grow 130–190% after funding.',
   'No collateral. No personal guarantees.',
-  'Approved in 48 hours. Funded in days.',
+  'Approved in 24 hours. Funded in days.',
   'When your bank says no, we say yes.',
-  'Funding from $100K to $10M.'
+  'Funding from $100K to $10M.',
+  '11,000+ businesses funded and growing.'
 ]
 const typewriterDisplay = ref('')
 const cursorBlink = ref(false)
@@ -532,11 +463,11 @@ function deletePhrase(phraseIndex: number) {
 const faqItems = [
   {
     question: 'What types of businesses qualify for Drip Capital?',
-    answer: 'Drip Capital works with businesses generating $5M–$500M in annual revenue. We specialize in trade finance for importers, exporters, manufacturers, wholesalers, and distributors. We look at your business performance and trade history, not just your credit score.'
+    answer: 'We specialize in working capital solutions for growing businesses, including importers, exporters, manufacturers, wholesalers, and distributors. We look at your business performance and trade history, not just your credit score.'
   },
   {
     question: 'How long does the approval process take?',
-    answer: 'Most businesses receive a credit decision within 48 hours of completing the application. Once approved, funds can be deployed within the same business day for receivables financing, or directly to your suppliers within 24–48 hours.'
+    answer: 'Most businesses receive a credit decision within 24 hours of completing the application.'
   },
   {
     question: 'Do I need to provide collateral?',
@@ -544,7 +475,7 @@ const faqItems = [
   },
   {
     question: 'What is the difference between Vendor Financing, Receivables Financing, and Line of Credit?',
-    answer: 'Vendor Financing is our supplier financing product: we pay your suppliers and you repay us on extended terms (up to 120 days). Receivables Financing lets us accelerate payment on your outstanding invoices. Line of Credit is a revolving facility you can draw from at any time for any business purpose.'
+    answer: 'Vendor Financing: we pay your vendors and you repay us on extended terms (up to 90 days). Receivables Financing lets us accelerate payment on your outstanding invoices. Line of Credit is a revolving facility you can draw from at any time for any business purpose.'
   },
   {
     question: 'How much can I borrow?',
@@ -776,6 +707,10 @@ onUnmounted(() => {
   background: var(--white);
 }
 
+.stats-icon {
+  margin-bottom: 12px;
+}
+
 .stats-label {
   font-size: 11px;
   font-weight: 700;
@@ -798,6 +733,44 @@ onUnmounted(() => {
   font-size: 13px;
   color: var(--mid);
   line-height: 1.4;
+}
+
+/* Trust signal banner */
+.trust-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 32px;
+  padding: 24px 32px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.trust-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.trust-number {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--green);
+  letter-spacing: -0.02em;
+}
+
+.trust-label {
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 500;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--border);
 }
 
 /* ===== BACKERS ===== */

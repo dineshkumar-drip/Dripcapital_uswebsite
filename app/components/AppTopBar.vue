@@ -35,8 +35,8 @@
 
 <script setup lang="ts">
 const ticks = [
-  '10,000+ businesses funded across the US',
-  'Avg. credit decision in 48 hours',
+  '11,000+ businesses funded across the US',
+  'Avg. credit decision in 24 hours',
   'Backed by Sequoia, Accel & Y Combinator',
   '$2B+ in capital deployed to growing businesses',
 ]

@@ -566,6 +566,15 @@ ul {
 .check-no  { color: #C0392B; font-weight: 600; }
 .check-mid { color: var(--mid); }
 
+.comparison-wrapper {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.comparison-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Marquee */
 .marquee-wrapper {
   overflow: hidden;

@@ -172,7 +172,7 @@
         </svg>
         <span>130–190% average annual growth after funding</span>
       </div>
-      <span class="hub-footer-biz">Drip Capital customers · 10,000+ businesses funded</span>
+      <span class="hub-footer-biz">Drip Capital customers · 11,000+ businesses funded</span>
     </div>
 
   </div>

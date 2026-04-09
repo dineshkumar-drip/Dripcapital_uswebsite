@@ -83,10 +83,10 @@ const activeIndustry = ref('All Industries')
 const industries = ['All Industries', 'Seafood', 'Consumer Goods', 'Manufacturing', 'Wholesale', 'Agri-Food']
 
 const stats = [
-  { value: 10000, suffix: '+', prefix: '', label: 'Businesses funded' },
+  { value: 11000, suffix: '+', prefix: '', label: 'Businesses funded' },
   { value: 9, suffix: 'B+', prefix: '$', label: 'Total capital deployed' },
   { value: 40, suffix: '%', prefix: '', label: 'Average revenue growth' },
-  { value: 48, suffix: ' hrs', prefix: '', label: 'Avg time to funding' }
+  { value: 24, suffix: ' hrs', prefix: '', label: 'Avg time to funding' }
 ]
 
 const allCases = [
@@ -114,7 +114,7 @@ const allCases = [
     company: 'Apex Manufacturing LLC',
     product: 'Receivables Financing',
     title: 'Apex Manufacturing cut DSO from 75 days to under 5',
-    desc: 'This Phoenix-based manufacturer was waiting 60–90 days for payment from large distributors. Drip Capital\'s Advance product transformed their cash cycle, funding each invoice within 48 hours.',
+    desc: 'This Phoenix-based manufacturer was waiting 60–90 days for payment from large distributors. Drip Capital\'s Advance product transformed their cash cycle, funding each invoice within 24 hours.',
     metrics: [{ value: '75→5', label: 'DSO Reduction (days)' }, { value: '$500K', label: 'Monthly Invoices Accelerated' }, { value: '40%', label: 'Production Increase' }]
   },
   {

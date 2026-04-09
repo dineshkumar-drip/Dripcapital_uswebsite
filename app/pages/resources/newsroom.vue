@@ -20,7 +20,7 @@
             <div class="news-date">March 15, 2026</div>
             <span class="news-category-tag">Press Release</span>
             <h2 class="news-featured-title">Drip Capital Surpasses $9 Billion in Trade Finance Funded</h2>
-            <p class="news-featured-excerpt">Drip Capital, the leading technology-driven trade finance platform for SMBs, today announced it has surpassed $9 billion in total capital deployed to over 10,000 businesses across the United States and India.</p>
+            <p class="news-featured-excerpt">Drip Capital, the leading technology-driven trade finance platform for SMBs, today announced it has surpassed $9 billion in total capital deployed to over 11,000 businesses across the United States and India.</p>
             <a href="#" class="btn btn-primary">Read Press Release →</a>
           </div>
           <div class="news-featured-meta">
@@ -34,7 +34,7 @@
             </div>
             <div class="meta-item">
               <span class="meta-label">Businesses Served</span>
-              <span class="meta-value">10,000+</span>
+              <span class="meta-value">11,000+</span>
             </div>
           </div>
         </div>

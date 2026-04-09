@@ -5,14 +5,14 @@
     <section class="page-hero">
       <div class="container">
         <span class="eyebrow">Apply for Financing</span>
-        <h1>Get working capital<br><em>in 48 hours.</em></h1>
+        <h1>Get working capital<br><em>in 24 hours.</em></h1>
         <p>No collateral, no hidden fees. Tell us about your business and get a credit decision fast.</p>
         <div class="hero-trust-row">
           <span class="hero-trust-item">No application fee</span>
           <span class="hero-trust-sep" aria-hidden="true">·</span>
           <span class="hero-trust-item">No collateral</span>
           <span class="hero-trust-sep" aria-hidden="true">·</span>
-          <span class="hero-trust-item">Decision in 48 hours</span>
+          <span class="hero-trust-item">Decision in 24 hours</span>
           <span class="hero-trust-sep" aria-hidden="true">·</span>
           <span class="hero-trust-item">$100K–$10M available</span>
         </div>
@@ -252,7 +252,7 @@
                       :class="{ 'input-error': errors.primaryUse }"
                     >
                       <option value="">Select primary use</option>
-                      <option value="pay-suppliers">Pay suppliers/vendors</option>
+                      <option value="pay-suppliers">Pay vendors</option>
                       <option value="bridge-receivables">Bridge receivables gap</option>
                       <option value="fund-inventory">Fund inventory purchase</option>
                       <option value="expansion">Business expansion</option>
@@ -478,7 +478,7 @@
                 </li>
                 <li class="trust-item">
                   <span class="trust-icon" aria-hidden="true">✓</span>
-                  <span><strong>10,000+</strong> businesses funded</span>
+                  <span><strong>11,000+</strong> businesses funded</span>
                 </li>
                 <li class="trust-item">
                   <span class="trust-icon" aria-hidden="true">✓</span>
@@ -695,7 +695,7 @@ const products = [
     value: 'vendor-financing',
     label: 'Vendor Financing',
     icon: '🏭',
-    desc: 'Pay suppliers, extend your cash runway',
+    desc: 'Pay vendors, extend your cash runway',
   },
   {
     value: 'receivables-financing',
@@ -741,7 +741,7 @@ const faqs = [
   },
   {
     q: 'How quickly can I access capital?',
-    a: 'We issue a credit decision within 48 hours of receiving your complete application. Once you accept an offer, funds are typically available within 2–5 business days depending on your bank.',
+    a: 'We issue a credit decision within 24 hours of receiving your complete application. Once you accept an offer, funds are typically available within 2–5 business days depending on your bank.',
   },
 ]
 

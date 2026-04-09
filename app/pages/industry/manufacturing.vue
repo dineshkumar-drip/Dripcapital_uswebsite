@@ -79,7 +79,7 @@
         <div class="testimonial-featured reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-featured-quote">
-            "Drip Capital changed how we manage our production cycles. We used to have to delay orders when cash was tight. Now we have Float to pay our material suppliers while we wait for payment from our distributors. Production never stops."
+            "Drip Capital changed how we manage our production cycles. We used to have to delay orders when cash was tight. Now we have Float to pay our material vendors while we wait for payment from our distributors. Production never stops."
           </p>
           <div class="testimonial-person">
             <div class="testimonial-avatar">AS</div>
@@ -97,7 +97,7 @@
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Keep your production line moving.</h2>
-          <p class="cta-simple-desc">Apply today and get a credit decision in 48 hours. No collateral, no bank deposit required.</p>
+          <p class="cta-simple-desc">Apply today and get a credit decision in 24 hours. No collateral, no bank deposit required.</p>
           <div class="cta-simple-actions">
             <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
           </div>
@@ -117,15 +117,15 @@ const challenges = [
 ]
 
 const products = [
-  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay your raw material and component suppliers on time. Drip pays them now, you repay on up to 120-day terms.', link: '/products/vendor-financing' },
+  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay your raw material and component vendors on time. Drip pays them now, you repay on up to 90-day terms.', link: '/products/vendor-financing' },
   { badge: 'Receivables Financing', name: 'Receivables Financing', desc: 'Convert your outstanding customer invoices into same-day cash. Stop waiting 60–90 days for payment.', link: '/products/receivable-financing' },
   { badge: 'Line of Credit', name: 'Line of Credit', desc: 'A revolving credit facility to fund operations, cover payroll, or capitalize on bulk purchase opportunities.', link: '/products/line-of-credit' }
 ]
 
 const stats = [
   { value: 500, suffix: '+', prefix: '', label: 'Manufacturers funded' },
-  { value: 48, suffix: ' hrs', prefix: '', label: 'Average credit decision' },
-  { value: 120, suffix: ' days', prefix: '', label: 'Max repayment terms' },
+  { value: 24, suffix: ' hrs', prefix: '', label: 'Average credit decision' },
+  { value: 90, suffix: ' days', prefix: '', label: 'Max repayment terms' },
   { value: 10, suffix: 'M+', prefix: '$', label: 'Max credit facility' }
 ]
 </script>

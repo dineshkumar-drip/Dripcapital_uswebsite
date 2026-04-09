@@ -193,7 +193,7 @@
             <!-- CTA -->
             <div class="calc-cta">
               <NuxtLink to="/apply" class="btn btn-primary btn-lg" style="width:100%; text-align:center; display:block;">
-                Apply Now — Get a Real Offer in 48 Hours →
+                Apply Now — Get a Real Offer in 24 Hours →
               </NuxtLink>
               <p class="calc-cta-note">No application fee · No collateral · Soft pull only</p>
             </div>
@@ -265,7 +265,7 @@
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Ready to close your working capital gap?</h2>
-          <p class="cta-simple-desc">Get a real credit decision in 48 hours. No collateral, no hidden fees, no delays.</p>
+          <p class="cta-simple-desc">Get a real credit decision in 24 hours. No collateral, no hidden fees, no delays.</p>
           <div class="cta-simple-actions">
             <NuxtLink to="/apply" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
             <a href="tel:+16504370150" class="btn btn-outline-white btn-lg">Call +1 (650) 437-0150</a>
@@ -326,7 +326,7 @@ const results = computed(() => {
   let product = {
     badge: 'Vendor Financing',
     name: 'Vendor Financing',
-    why: 'Your payables are a significant burden. Drip Capital can pay your suppliers directly and give you up to 120 days to repay — freeing cash for growth.',
+    why: 'Your payables are a significant burden. Drip Capital can pay your vendors directly and give you up to 90 days to repay — freeing cash for growth.',
     link: '/products/vendor-financing'
   }
 
@@ -341,7 +341,7 @@ const results = computed(() => {
     product = {
       badge: 'Vendor Financing',
       name: 'Vendor Financing',
-      why: 'Your inventory cycle is your biggest cash drain. Vendor Financing lets Drip pay your suppliers upfront while you sell through inventory at your own pace.',
+      why: 'Your inventory cycle is your biggest cash drain. Vendor Financing lets Drip pay your vendors upfront while you sell through inventory at your own pace.',
       link: '/products/vendor-financing'
     }
   } else if (wcGap < 200000) {
@@ -367,10 +367,10 @@ const products = [
   {
     badge: 'Vendor Financing',
     name: 'Vendor Financing',
-    desc: 'Drip pays your suppliers immediately. You repay in up to 120 days. Preserve cash and keep ordering without gaps.',
+    desc: 'Drip pays your vendors immediately. You repay in up to 90 days. Preserve cash and keep ordering without gaps.',
     stats: [
-      { val: '120 days', label: 'Repayment terms' },
-      { val: '48 hrs', label: 'To approval' }
+      { val: '90 days', label: 'Repayment terms' },
+      { val: '24 hrs', label: 'To approval' }
     ],
     link: '/products/vendor-financing'
   },

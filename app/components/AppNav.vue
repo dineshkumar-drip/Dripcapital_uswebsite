@@ -34,7 +34,7 @@
                   </div>
                   <div>
                     <div class="dropdown-label">Vendor Financing</div>
-                    <div class="dropdown-desc">Pay suppliers now, repay in 120 days</div>
+                    <div class="dropdown-desc">Pay vendors now, repay in 90 days</div>
                   </div>
                 </NuxtLink>
                 <NuxtLink to="/products/receivable-financing" class="dropdown-item" @click="closeDropdown">

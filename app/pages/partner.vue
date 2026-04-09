@@ -159,11 +159,11 @@ const partnerTypes = [
 
 const benefits = [
   { icon: 'dollar', title: 'Competitive Referral Commissions', desc: 'Earn industry-leading referral fees for every client you refer who gets funded. Transparent, on-time payments, always.' },
-  { icon: 'lightning', title: 'Fast Approvals for Your Clients', desc: 'Drip Capital\'s 48-hour approval process means your clients get funded fast, reinforcing your value as a trusted advisor.' },
+  { icon: 'lightning', title: 'Fast Approvals for Your Clients', desc: 'Drip Capital\'s 24-hour approval process means your clients get funded fast, reinforcing your value as a trusted advisor.' },
   { icon: 'shield', title: 'Partner Portal Access', desc: 'Track referrals, monitor deal status, and access marketing materials through our dedicated partner portal.' },
   { icon: 'users', title: 'Training & Support', desc: 'We provide training on our products, dedicated partnership managers, and co-marketing resources to help you succeed.' },
   { icon: 'trending', title: 'Growing Product Suite', desc: 'With Vendor Financing, Receivables Financing, and Line of Credit, there\'s a Drip Capital product for nearly every working capital need your clients may have.' },
-  { icon: 'star', title: 'Trusted Brand', desc: 'Partner with a brand backed by Sequoia, Accel, Y Combinator, and world-class financial institutions. Trusted by 10,000+ businesses.' }
+  { icon: 'star', title: 'Trusted Brand', desc: 'Partner with a brand backed by Sequoia, Accel, Y Combinator, and world-class financial institutions. Trusted by 11,000+ businesses.' }
 ]
 
 function submitPartnerForm() {

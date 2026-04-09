@@ -49,7 +49,7 @@
                 </div>
                 <div class="credit-actions-demo">
                   <div class="credit-action-row">
-                    <span class="credit-action-label">Draw $100K for supplier payment</span>
+                    <span class="credit-action-label">Draw $100K for vendor payment</span>
                     <span class="credit-action-tag draw">Draw</span>
                   </div>
                   <div class="credit-action-row">
@@ -80,7 +80,7 @@
             <div class="step-number">1</div>
             <div class="step-content">
               <h3 class="step-title">Get Approved</h3>
-              <p class="step-desc">Apply online and receive your approved credit limit within 48 hours. Your limit is based on your business performance, not your personal credit.</p>
+              <p class="step-desc">Apply online and receive your approved credit limit within 24 hours. Your limit is based on your business performance, not your personal credit.</p>
             </div>
           </div>
           <div class="step-connector reveal reveal-delay-1"></div>
@@ -139,6 +139,39 @@
       </div>
     </section>
 
+    <!-- Comparison Table -->
+    <section class="section section-bg">
+      <div class="container">
+        <div class="section-header reveal" style="text-align: center; max-width: 600px; margin: 0 auto 48px;">
+          <span class="eyebrow">Why Drip Capital</span>
+          <h2 class="section-title">How our Line of Credit compares.</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Flexible capital that grows with your business.</p>
+        </div>
+        <div class="comparison-wrapper reveal">
+          <div class="comparison-scroll">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th style="width: 30%;">Feature</th>
+                  <th class="col-drip">Drip Capital</th>
+                  <th>Bank Credit Line</th>
+                  <th>MCA / Alt Lender</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Approval Speed</td><td class="col-drip"><span class="check-yes">24 Hours</span></td><td><span class="check-no">4–8 Weeks</span></td><td><span class="check-mid">1–3 Days</span></td></tr>
+                <tr><td>Collateral Required</td><td class="col-drip"><span class="check-yes">None</span></td><td><span class="check-no">Yes (Assets)</span></td><td><span class="check-mid">Sometimes</span></td></tr>
+                <tr><td>Draw Flexibility</td><td class="col-drip"><span class="check-yes">On demand, any amount</span></td><td><span class="check-mid">Subject to review</span></td><td><span class="check-no">Fixed advances</span></td></tr>
+                <tr><td>Bank Deposit Required</td><td class="col-drip"><span class="check-yes">No</span></td><td><span class="check-no">Yes</span></td><td><span class="check-yes">No</span></td></tr>
+                <tr><td>Facility Growth</td><td class="col-drip"><span class="check-yes">Grows with you</span></td><td><span class="check-mid">Annual review</span></td><td><span class="check-no">Transaction-based</span></td></tr>
+                <tr><td>Dedicated Account Manager</td><td class="col-drip"><span class="check-yes">Yes</span></td><td><span class="check-mid">Sometimes</span></td><td><span class="check-no">Rarely</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="section">
       <div class="container">
@@ -188,7 +221,7 @@ const useCases = [
   },
   {
     title: 'Opportunistic Purchasing',
-    desc: 'When a supplier offers a bulk discount or a competitor exits, have capital ready to act fast without waiting for a bank approval.'
+    desc: 'When a vendor offers a bulk discount or a competitor exits, have capital ready to act fast without waiting for a bank approval.'
   },
   {
     title: 'Bridge Operating Expenses',

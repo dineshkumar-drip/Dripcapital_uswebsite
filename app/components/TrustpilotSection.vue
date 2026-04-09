@@ -98,7 +98,7 @@ const reviews = [
   },
   {
     title: 'A real partner, not just a lender',
-    quote: 'Unlike traditional banks, Drip understood our business. Approved in 48 hours, no collateral, and a credit line that actually grows with us.',
+    quote: 'Unlike traditional banks, Drip understood our business. Approved in 24 hours, no collateral, and a credit line that actually grows with us.',
     name: 'Jennifer Park',
     role: 'CFO, Pacific Wholesale Distributors',
     initials: 'JP',
@@ -114,7 +114,7 @@ const reviews = [
   },
   {
     title: 'Helped us scale when it mattered most',
-    quote: 'We needed to fulfil a large order fast. Drip stepped in within 48 hours. We grew 40% that year. That wouldn\'t have happened without them.',
+    quote: 'We needed to fulfil a large order fast. Drip stepped in within 24 hours. We grew 40% that year. That wouldn\'t have happened without them.',
     name: 'Sarah Chen',
     role: 'Founder, Pacific Apparel Co.',
     initials: 'SC',
@@ -130,7 +130,7 @@ const reviews = [
   },
   {
     title: 'Simple, fast and professional',
-    quote: 'The application took minutes. Decision came in under 48 hours. Our dedicated account manager has been outstanding, responsive and proactive.',
+    quote: 'The application took minutes. Decision came in under 24 hours. Our dedicated account manager has been outstanding, responsive and proactive.',
     name: 'David Kim',
     role: 'VP Finance, Coastal Consumer Goods',
     initials: 'DK',

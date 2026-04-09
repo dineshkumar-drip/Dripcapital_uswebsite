@@ -106,7 +106,7 @@ const challenges = [
 ]
 
 const products = [
-  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay overseas manufacturers and domestic suppliers on time while waiting for large retailer payments.', link: '/products/vendor-financing' },
+  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay overseas manufacturers and domestic vendors on time while waiting for large retailer payments.', link: '/products/vendor-financing' },
   { badge: 'Receivables Financing', name: 'Receivables Financing', desc: 'Convert outstanding retailer invoices into immediate cash to fund your next production run.', link: '/products/receivable-financing' },
   { badge: 'Line of Credit', name: 'Line of Credit', desc: 'Keep a revolving credit line available for product launches, trade promotions, and seasonal inventory builds.', link: '/products/line-of-credit' }
 ]

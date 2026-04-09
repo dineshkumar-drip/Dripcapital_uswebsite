@@ -51,10 +51,10 @@
             <p class="story-p">
               The founders built Drip Capital to solve this problem at scale — using technology and
               data to underwrite trade finance faster and more accurately than any bank could, while
-              delivering capital in 48 hours rather than 6 weeks.
+              delivering capital in 24 hours rather than 6 weeks.
             </p>
             <p class="story-p">
-              Today, Drip Capital has funded over $9B in trade for 10,000+ businesses across the US
+              Today, Drip Capital has funded over $9B in trade for 11,000+ businesses across the US
               and India, backed by Sequoia Capital, Accel, Y Combinator, and IFC/World Bank.
             </p>
           </div>
@@ -258,7 +258,7 @@ useHead({ title: 'About Drip Capital | Working Capital for SMBs' })
 
 // ── Mission pillars ────────────────────────────────────────────────────────────
 const missionPillars = [
-  { icon: 'zap',      label: 'Speed',  detail: '48-hour approvals vs 6-week bank timelines' },
+  { icon: 'zap',      label: 'Speed',  detail: '24-hour approvals vs 6-week bank timelines' },
   { icon: 'unlock',   label: 'Access', detail: 'No collateral, no personal guarantees' },
   { icon: 'chart',    label: 'Scale',  detail: 'Capital grows with your business' },
 ]
@@ -267,7 +267,7 @@ const missionPillars = [
 const storyStats = [
   { value: '2015',   label: 'Founded in Palo Alto, CA' },
   { value: '$9B+',   label: 'Total capital deployed' },
-  { value: '10,000+', label: 'Businesses funded' },
+  { value: '11,000+', label: 'Businesses funded' },
   { value: '30+',    label: 'Countries reached' },
 ]
 
@@ -278,7 +278,7 @@ const timeline = [
   { year: '2018', event: 'Series A led by Accel. Launched US vendor financing product.' },
   { year: '2019', event: '$45M Series B led by Sequoia Capital. Surpassed $500M funded.' },
   { year: '2021', event: 'Crossed $1B in total financing. Expanded to seafood & agri-food industries.' },
-  { year: '2023', event: '$2B+ annual run rate. 10,000+ active business customers.' },
+  { year: '2023', event: '$2B+ annual run rate. 11,000+ active business customers.' },
   { year: '2024', event: '$9B+ cumulative financing. Launched Line of Credit product.' },
 ]
 

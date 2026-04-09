@@ -86,7 +86,7 @@
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Scale your distribution volumes.</h2>
-          <p class="cta-simple-desc">Get approved in 48 hours and access the capital you need to grow your wholesale business.</p>
+          <p class="cta-simple-desc">Get approved in 24 hours and access the capital you need to grow your wholesale business.</p>
           <div class="cta-simple-actions">
             <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
           </div>
@@ -106,15 +106,15 @@ const challenges = [
 ]
 
 const products = [
-  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay your suppliers without waiting. Drip Capital fronts the payment so you can keep ordering and distributing without cash gaps.', link: '/products/vendor-financing' },
+  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay your vendors without waiting. Drip Capital fronts the payment so you can keep ordering and distributing without cash gaps.', link: '/products/vendor-financing' },
   { badge: 'Receivables Financing', name: 'Receivables Financing', desc: 'Turn your net-60/90 invoices into same-day cash and reinvest immediately into new inventory.', link: '/products/receivable-financing' },
   { badge: 'Line of Credit', name: 'Line of Credit', desc: 'A revolving credit line to handle opportunistic bulk buys and seasonal inventory swings.', link: '/products/line-of-credit' }
 ]
 
 const stats = [
   { value: 800, suffix: '+', prefix: '', label: 'Wholesale businesses funded' },
-  { value: 48, suffix: ' hrs', prefix: '', label: 'Average credit decision' },
-  { value: 120, suffix: ' days', prefix: '', label: 'Max repayment terms' },
+  { value: 24, suffix: ' hrs', prefix: '', label: 'Average credit decision' },
+  { value: 90, suffix: ' days', prefix: '', label: 'Max repayment terms' },
   { value: 9, suffix: 'B+', prefix: '$', label: 'Total financed to date' }
 ]
 </script>

@@ -69,7 +69,7 @@
         <div class="testimonial-featured reveal">
           <div class="stars">★★★★★</div>
           <p class="testimonial-featured-quote">
-            "As a shrimp importer, our suppliers in Southeast Asia need payment before we receive the goods. Drip Capital's Vendor Financing allows us to pay overseas suppliers while we wait for U.S. customer payments. We grew import volume 80% in 18 months."
+            "As a shrimp importer, our vendors in Southeast Asia need payment before we receive the goods. Drip Capital's Vendor Financing allows us to pay overseas vendors while we wait for U.S. customer payments. We grew import volume 80% in 18 months."
           </p>
           <div class="testimonial-person">
             <div class="testimonial-avatar">MR</div>
@@ -86,7 +86,7 @@
       <div class="container">
         <div class="cta-simple reveal">
           <h2 class="cta-simple-title">Scale your seafood import business.</h2>
-          <p class="cta-simple-desc">We understand the unique dynamics of seafood trade finance. Get a credit decision in 48 hours, no collateral required.</p>
+          <p class="cta-simple-desc">We understand the unique dynamics of seafood trade finance. Get a credit decision in 24 hours, no collateral required.</p>
           <div class="cta-simple-actions">
             <NuxtLink to="/company/contact" class="btn btn-primary btn-lg">Apply Now →</NuxtLink>
           </div>
@@ -102,11 +102,11 @@ useHead({ title: 'Seafood Industry Working Capital | Drip Capital' })
 const challenges = [
   { icon: 'fish', title: 'Perishable Goods', desc: 'Seafood has a very short shelf life. Delays in financing or payment can result in expired inventory and significant financial losses.' },
   { icon: 'refresh', title: 'Seasonal Supply Fluctuations', desc: 'Fishing seasons, catch limits, and weather events create unpredictable supply variability that makes cash planning extremely difficult.' },
-  { icon: 'map-pin', title: 'Import & Logistics Complexity', desc: 'Seafood importers must pay overseas suppliers before goods arrive, navigate customs, manage cold chain logistics, and then wait on customer payments.' }
+  { icon: 'map-pin', title: 'Import & Logistics Complexity', desc: 'Seafood importers must pay overseas vendors before goods arrive, navigate customs, manage cold chain logistics, and then wait on customer payments.' }
 ]
 
 const products = [
-  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay overseas seafood suppliers before goods arrive. Drip Capital handles supplier payment while you manage import logistics.', link: '/products/vendor-financing' },
+  { badge: 'Vendor Financing', name: 'Vendor Financing', desc: 'Pay overseas seafood vendors before goods arrive. Drip Capital handles vendor payment while you manage import logistics.', link: '/products/vendor-financing' },
   { badge: 'Receivables Financing', name: 'Receivables Financing', desc: 'Turn outstanding invoices from distributors and retailers into immediate cash to fund your next seafood shipment.', link: '/products/receivable-financing' },
   { badge: 'Line of Credit', name: 'Line of Credit', desc: 'A revolving credit line to capitalize on spot market opportunities and manage cash across fishing seasons.', link: '/products/line-of-credit' }
 ]
@@ -115,7 +115,7 @@ const stats = [
   { value: 200, suffix: '+', prefix: '', label: 'Seafood businesses funded' },
   { value: 80, suffix: '%', prefix: '', label: 'Average volume growth' },
   { value: 3, suffix: 'M+', prefix: '$', label: 'Typical capital unlocked' },
-  { value: 48, suffix: ' hrs', prefix: '', label: 'Time to credit decision' }
+  { value: 24, suffix: ' hrs', prefix: '', label: 'Time to credit decision' }
 ]
 </script>
 
