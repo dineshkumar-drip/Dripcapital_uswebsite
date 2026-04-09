@@ -31,7 +31,7 @@
           </div>
 
           <div class="hero-right">
-            <HeroHubSpoke />
+            <HeroVisual />
           </div>
         </div>
       </div>
@@ -640,8 +640,12 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   padding: 80px 0 72px;
+}
+
+.hero-right {
+  overflow: visible;
 }
 
 .hero-glow-left {
