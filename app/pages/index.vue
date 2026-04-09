@@ -284,8 +284,8 @@
           <div class="case-card reveal">
             <div class="case-card-img">
               <img
-                src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=800&q=80"
-                alt="Seafood distributor case study"
+                src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=800&q=80"
+                alt="Seafood distribution industry"
                 loading="lazy"
               />
               <div class="case-tag">Seafood Distribution</div>
@@ -293,7 +293,7 @@
             <div class="case-card-body">
               <h3 class="case-title">Pacific Seafood Co. scaled import volume by 80%</h3>
               <p class="case-desc">
-                A leading seafood importer used Drip Capital's Vendor Financing to extend supplier payment terms, freeing up $3M+ in working capital and enabling rapid expansion.
+                A leading seafood importer used Drip Capital's Vendor Financing to extend vendor payment terms, freeing up $3M+ in working capital and enabling rapid expansion.
               </p>
               <div class="case-metrics">
                 <div class="case-metric">
@@ -312,8 +312,8 @@
           <div class="case-card reveal reveal-delay-1">
             <div class="case-card-img">
               <img
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"
-                alt="Apparel company case study"
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80"
+                alt="Consumer goods retail industry"
                 loading="lazy"
               />
               <div class="case-tag">Consumer Goods</div>

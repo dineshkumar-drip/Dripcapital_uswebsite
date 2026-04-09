@@ -91,48 +91,48 @@ const reviews = [
   {
     title: 'Incredibly easy and smooth process',
     quote: 'Incredibly easy and smooth process, highly recommend. The team was responsive from day one and funding was faster than any bank I\'ve worked with.',
-    name: 'Marcus Rodriguez',
-    role: 'CEO, SunCoast Seafood Imports',
+    name: 'Marcus R.',
+    role: 'CEO, Seafood Importing',
     initials: 'MR',
     color: '#0B1F3A'
   },
   {
     title: 'A real partner, not just a lender',
     quote: 'Unlike traditional banks, Drip understood our business. Approved in 24 hours, no collateral, and a credit line that actually grows with us.',
-    name: 'Jennifer Park',
-    role: 'CFO, Pacific Wholesale Distributors',
+    name: 'Jennifer P.',
+    role: 'CFO, Wholesale Distribution',
     initials: 'JP',
     color: '#00693A'
   },
   {
     title: 'Fast, transparent, no surprises',
     quote: 'No hidden fees, fast turnaround. We\'ve been a Drip Capital customer for 3 years and they\'ve been a true partner in our growth.',
-    name: 'Amir Singh',
-    role: 'Owner, Apex Manufacturing LLC',
+    name: 'Amir S.',
+    role: 'Owner, Manufacturing',
     initials: 'AS',
     color: '#1B5FA0'
   },
   {
     title: 'Helped us scale when it mattered most',
     quote: 'We needed to fulfil a large order fast. Drip stepped in within 24 hours. We grew 40% that year. That wouldn\'t have happened without them.',
-    name: 'Sarah Chen',
-    role: 'Founder, Pacific Apparel Co.',
+    name: 'Sarah C.',
+    role: 'Founder, Consumer Goods',
     initials: 'SC',
     color: '#7C3AED'
   },
   {
     title: 'Best financing experience I\'ve had',
     quote: 'Timing and supply consistency are everything in our industry. Drip let us secure bulk materials when prices were right, without locking up cash.',
-    name: 'Maria Gonzalez',
-    role: 'CEO, Fresh Coast Seafood',
+    name: 'Maria G.',
+    role: 'CEO, Seafood Distribution',
     initials: 'MG',
     color: '#B45309'
   },
   {
     title: 'Simple, fast and professional',
     quote: 'The application took minutes. Decision came in under 24 hours. Our dedicated account manager has been outstanding, responsive and proactive.',
-    name: 'David Kim',
-    role: 'VP Finance, Coastal Consumer Goods',
+    name: 'David K.',
+    role: 'VP Finance, Consumer Goods',
     initials: 'DK',
     color: '#065F46'
   },
