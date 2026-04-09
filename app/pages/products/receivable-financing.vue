@@ -59,7 +59,7 @@
 
             <div class="rf-node rf-node-drip">
               <div class="rf-node-icon rf-node-icon-drip">
-                <img src="/drip-logo-icon.svg" alt="Drip Capital" width="28" height="28" onerror="this.style.display='none'" />
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
               </div>
               <span class="rf-node-label">DRIP CAPITAL</span>
             </div>
