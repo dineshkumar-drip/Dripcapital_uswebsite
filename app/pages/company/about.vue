@@ -4,11 +4,12 @@
     <!-- ── 1. Hero ─────────────────────────────────────────────────── -->
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow reveal reveal-delay-0">Our Story</span>
-        <h1 class="reveal reveal-delay-1">Built to fund<br><em>America's growth engine.</em></h1>
+        <span class="eyebrow reveal reveal-delay-0">About Drip Capital</span>
+        <h1 class="reveal reveal-delay-1">$9B+ financed.<br><em>11,000+ businesses. One mission.</em></h1>
         <p class="hero-sub reveal reveal-delay-2">
-          Founded in 2015 by two Stanford MBAs who watched traditional banks turn away thousands
-          of thriving SMBs. We built a better way.
+          Drip Capital is a leading working capital provider for small and mid-sized businesses,
+          backed by Sequoia Capital, Accel, Y Combinator, and IFC World Bank — with a global
+          presence spanning the US and India.
         </p>
       </div>
     </section>
@@ -41,21 +42,23 @@
         <div class="story-layout reveal">
           <div class="story-text">
             <span class="eyebrow">Our Story</span>
-            <h2 class="section-title">Founded in 2015 to fix<br>a broken system.</h2>
+            <h2 class="section-title">A global leader in<br>working capital finance.</h2>
             <p class="story-p">
-              Drip Capital was founded in 2015 by Pushkar Mukewar and Neil Kothari, two entrepreneurs
-              who saw firsthand how traditional banks failed growing businesses. SMBs doing $5M–$500M
-              in revenue were being turned away or stuck in 6-week approval processes for products
-              that didn't fit their needs.
+              Drip Capital is one of the world's leading working capital providers for small and
+              mid-sized businesses engaged in international trade. We operate at the intersection
+              of technology and finance, deploying sophisticated data models to underwrite
+              businesses faster and more accurately than traditional institutions ever could.
             </p>
             <p class="story-p">
-              The founders built Drip Capital to solve this problem at scale — using technology and
-              data to underwrite trade finance faster and more accurately than any bank could, while
-              delivering capital in 24 hours rather than 6 weeks.
+              With over $9B financed across 11,000+ businesses, we have proven at scale that
+              SMBs deserve the same quality of capital as the largest corporations — delivered
+              in 24 hours, not 6 weeks, and without the collateral or complexity that banks
+              routinely demand.
             </p>
             <p class="story-p">
-              Today, Drip Capital has funded over $9B in trade for 11,000+ businesses across the US
-              and India, backed by Sequoia Capital, Accel, Y Combinator, and IFC/World Bank.
+              Headquartered in Palo Alto with operations in Mumbai, and backed by Sequoia Capital,
+              Accel, Y Combinator, and IFC/World Bank, Drip Capital is purpose-built to serve
+              the next generation of global trade.
             </p>
           </div>
           <div class="story-stats">
@@ -68,41 +71,14 @@
       </div>
     </section>
 
-    <!-- ── 4. Timeline ───────────────────────────────────────────────── -->
+    <!-- ── 4. Leadership ─────────────────────────────────────────────── -->
     <section class="section section-bg">
-      <div class="container">
-        <div class="section-header reveal" style="text-align:center;max-width:540px;margin:0 auto 56px;">
-          <span class="eyebrow">Our Journey</span>
-          <h2 class="section-title">A decade of relentless growth.</h2>
-        </div>
-        <div class="timeline">
-          <div
-            v-for="(milestone, i) in timeline"
-            :key="milestone.year"
-            class="timeline-item reveal"
-            :class="`reveal-delay-${i % 4}`"
-          >
-            <div class="timeline-year">{{ milestone.year }}</div>
-            <div class="timeline-connector">
-              <div class="timeline-dot"></div>
-              <div class="timeline-line"></div>
-            </div>
-            <div class="timeline-body">
-              <div class="timeline-event">{{ milestone.event }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── 5. Leadership ─────────────────────────────────────────────── -->
-    <section class="section">
       <div class="container">
         <div class="section-header reveal" style="max-width:540px;margin-bottom:48px;">
           <span class="eyebrow">Leadership</span>
           <h2 class="section-title">The team behind Drip Capital.</h2>
         </div>
-        <div class="grid-3">
+        <div class="grid-4">
           <div
             v-for="(t, i) in team"
             :key="t.name"
@@ -126,28 +102,29 @@
               </div>
             </div>
             <div class="team-body">
-              <h3 class="team-name">{{ t.name }}</h3>
+              <div class="team-name-row">
+                <h3 class="team-name">{{ t.name }}</h3>
+                <a
+                  :href="t.linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="team-linkedin-icon"
+                  :aria-label="`${t.name} on LinkedIn`"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+              </div>
               <div class="team-role">{{ t.role }}</div>
-              <p class="team-bio">{{ t.bio }}</p>
-              <a
-                :href="t.linkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="team-linkedin"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-                LinkedIn
-              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── 6. Values ─────────────────────────────────────────────────── -->
-    <section class="section section-bg">
+    <!-- ── 5. Values ─────────────────────────────────────────────────── -->
+    <section class="section">
       <div class="container">
         <div class="section-header reveal" style="text-align:center;max-width:560px;margin:0 auto 48px;">
           <span class="eyebrow">Our Values</span>
@@ -170,8 +147,8 @@
       </div>
     </section>
 
-    <!-- ── 7. Investors ──────────────────────────────────────────────── -->
-    <section class="section">
+    <!-- ── 6. Investors ──────────────────────────────────────────────── -->
+    <section class="section section-bg">
       <div class="container">
         <div class="section-header reveal" style="text-align:center;max-width:560px;margin:0 auto 48px;">
           <span class="eyebrow">Backed By</span>
@@ -185,8 +162,8 @@
       </div>
     </section>
 
-    <!-- ── 8. Offices ────────────────────────────────────────────────── -->
-    <section class="section section-bg">
+    <!-- ── 7. Offices ────────────────────────────────────────────────── -->
+    <section class="section">
       <div class="container">
         <div class="section-header reveal" style="max-width:540px;margin-bottom:48px;">
           <span class="eyebrow">Our Offices</span>
@@ -208,8 +185,8 @@
       </div>
     </section>
 
-    <!-- ── 9. Press ──────────────────────────────────────────────────── -->
-    <section class="section">
+    <!-- ── 8. Press ──────────────────────────────────────────────────── -->
+    <section class="section section-bg">
       <div class="container">
         <div class="section-header reveal" style="text-align:center;max-width:560px;margin:0 auto 48px;">
           <span class="eyebrow">In the Press</span>
@@ -233,7 +210,7 @@
       </div>
     </section>
 
-    <!-- ── 10. CTA ────────────────────────────────────────────────────── -->
+    <!-- ── 9. CTA ────────────────────────────────────────────────────── -->
     <section class="section">
       <div class="container">
         <div class="cta-simple reveal">
@@ -265,28 +242,16 @@ const missionPillars = [
 
 // ── Story stats ────────────────────────────────────────────────────────────────
 const storyStats = [
-  { value: '2015',   label: 'Founded in Palo Alto, CA' },
-  { value: '$9B+',   label: 'Total capital deployed' },
+  { value: '$9B+',    label: 'Total capital deployed' },
   { value: '11,000+', label: 'Businesses funded' },
-  { value: '30+',    label: 'Countries reached' },
-]
-
-// ── Timeline ───────────────────────────────────────────────────────────────────
-const timeline = [
-  { year: '2015', event: 'Founded in Palo Alto by Pushkar & Neil. First trade finance deal funded.' },
-  { year: '2016', event: 'Y Combinator backed. First $10M in transactions.' },
-  { year: '2018', event: 'Series A led by Accel. Launched US vendor financing product.' },
-  { year: '2019', event: '$45M Series B led by Sequoia Capital. Surpassed $500M funded.' },
-  { year: '2021', event: 'Crossed $1B in total financing. Expanded to seafood & agri-food industries.' },
-  { year: '2023', event: '$2B+ annual run rate. 11,000+ active business customers.' },
-  { year: '2024', event: '$9B+ cumulative financing. Launched Line of Credit product.' },
+  { value: '2',       label: 'Global offices' },
+  { value: '30+',     label: 'Countries reached' },
 ]
 
 // ── Leadership ─────────────────────────────────────────────────────────────────
 interface TeamMember {
   name: string
   role: string
-  bio: string
   linkedin: string
   photo: string
   initials: string
@@ -297,25 +262,54 @@ const team: TeamMember[] = [
   {
     name: 'Pushkar Mukewar',
     role: 'CEO and Founder',
-    bio: 'Pushkar started Drip with the mission of making trade easy and accessible for small businesses globally. Before Drip, he spent several years in financial services across the US, Europe, the Middle East, and India — first as a Risk professional at Capital One, then as a Consultant with Oliver Wyman. Pushkar holds an MBA from The Wharton School at the University of Pennsylvania and an MS from the Georgia Institute of Technology.',
-    linkedin: 'https://www.linkedin.com/in/pushkarmukewar/',
+    linkedin: 'https://www.linkedin.com/in/pushkar-mukewar-0316951',
     photo: '/team/pushkar-mukewar.svg',
     initials: 'PM',
     color: '#0B1F3A',
   },
   {
+    name: 'Tej Mulgaonkar',
+    role: 'CTO',
+    linkedin: 'https://www.linkedin.com/in/tej-mulgaonkar-21a6b77b',
+    photo: '/team/tej-mulgaonkar.jpg',
+    initials: 'TM',
+    color: '#1B5FA0',
+  },
+  {
     name: 'Karl Boog',
     role: 'Capital Markets and Global Partnerships',
-    bio: 'Karl is responsible for Drip\'s Capital Markets strategy, including funding and managing strategic relationships with global banks and institutional investors. He also leads Drip\'s Global Partnerships business. Karl started his career at BlackRock in New York, focused on fixed income and derivatives. Prior to Drip, he was an executive in hedge funds and asset management. Karl holds a B.S. from The Wharton School at the University of Pennsylvania.',
-    linkedin: 'https://www.linkedin.com/in/karlboog/',
+    linkedin: 'https://www.linkedin.com/in/karlboog',
     photo: '/team/karl-boog.svg',
     initials: 'KB',
     color: '#1B5FA0',
   },
   {
+    name: 'Rohan Vora',
+    role: 'Head of Business',
+    linkedin: 'https://www.linkedin.com/in/rohanvora1/',
+    photo: '/team/rohan-vora.jpg',
+    initials: 'RV',
+    color: '#00693A',
+  },
+  {
+    name: 'Gurpreet Kaur Bilkhu',
+    role: 'Capital Markets',
+    linkedin: 'https://www.linkedin.com/in/gurpreet-kaur-bilkhu-4a571216/',
+    photo: '/team/gurpreet-bilkhu.jpg',
+    initials: 'GK',
+    color: '#5B2D8E',
+  },
+  {
+    name: 'Varun Chhabra',
+    role: 'Head of Sales',
+    linkedin: 'https://www.linkedin.com/in/varun-chhabra-bbab9835',
+    photo: '/team/varun-chhabra.jpg',
+    initials: 'VC',
+    color: '#B45309',
+  },
+  {
     name: 'Matt Heske',
     role: 'Channel Partnerships',
-    bio: 'Matt is responsible for Drip Capital\'s US partnership initiatives, developing strategic alliances to expand market reach and enhance revenue opportunities. With a background in financial services and alternative lending, he has a decade of experience driving business development through key partnerships. Matt holds an M.B.A. from UNC Kenan-Flagler Business School and a B.A. from The College of the Holy Cross.',
     linkedin: 'https://www.linkedin.com/in/mattheske/',
     photo: '/team/matt-heske.png',
     initials: 'MH',
@@ -323,12 +317,11 @@ const team: TeamMember[] = [
   },
   {
     name: 'Brad Shropshire',
-    role: 'Collections & Recovery',
-    bio: 'Brad leads Drip Capital\'s US Collections & Recovery operations, bringing extensive experience in credit risk management and portfolio recovery. He oversees end-to-end collection strategies, ensuring optimal recovery rates while maintaining strong client relationships. Brad\'s expertise spans financial services, asset-backed lending, and cross-border receivables management.',
+    role: 'Vice President',
     linkedin: 'https://www.linkedin.com/in/bradshropshire/',
     photo: '/team/brad-shropshire.jpg',
     initials: 'BS',
-    color: '#B45309',
+    color: '#C2410C',
   },
 ]
 
@@ -481,72 +474,13 @@ function handlePhotoError(e: Event, member: TeamMember) {
   line-height: 1.4;
 }
 
-/* ── Timeline ───────────────────────────────────────────────────────────────── */
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  position: relative;
-}
-
-.timeline-item {
-  display: grid;
-  grid-template-columns: 88px 32px 1fr;
-  align-items: stretch;
-  gap: 0;
-}
-
-.timeline-year {
-  font-size: 15px;
-  font-weight: 800;
-  color: var(--green);
-  text-align: right;
-  padding: 20px 20px 20px 0;
-  line-height: 1;
-  align-self: center;
-}
-
-.timeline-connector {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.timeline-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--green);
-  border: 2px solid var(--white);
-  outline: 2px solid var(--green);
-  flex-shrink: 0;
-  margin-top: 22px;
-  z-index: 1;
-}
-
-.timeline-line {
-  flex: 1;
-  width: 2px;
-  background: var(--border);
-}
-
-.timeline-item:last-child .timeline-line {
-  display: none;
-}
-
-.timeline-body {
-  padding: 16px 0 16px 20px;
-  align-self: center;
-}
-
-.timeline-event {
-  font-size: 14px;
-  color: var(--body);
-  line-height: 1.7;
-  max-width: 480px;
-}
-
 /* ── Leadership ─────────────────────────────────────────────────────────────── */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .team-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -554,17 +488,11 @@ function handlePhotoError(e: Event, member: TeamMember) {
   background: var(--white);
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.team-card:hover {
-  box-shadow: var(--shadow);
-  transform: translateY(-3px);
 }
 
 .team-photo-wrap {
   position: relative;
-  height: 260px;
+  height: 200px;
   background: var(--off);
   overflow: hidden;
 }
@@ -583,60 +511,51 @@ function handlePhotoError(e: Event, member: TeamMember) {
   display: none;
   align-items: center;
   justify-content: center;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 800;
   color: var(--white);
   letter-spacing: -0.02em;
 }
 
 .team-body {
-  padding: 20px 22px 22px;
+  padding: 14px 16px 16px;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  gap: 4px;
+}
+
+.team-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .team-name {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--navy);
-  margin-bottom: 4px;
   line-height: 1.3;
 }
 
+.team-linkedin-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0A66C2;
+  flex-shrink: 0;
+  transition: opacity 0.15s;
+}
+
+.team-linkedin-icon:hover {
+  opacity: 0.75;
+}
+
 .team-role {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--green);
-  margin-bottom: 12px;
-}
-
-.team-bio {
-  font-size: 13px;
-  color: var(--body);
-  line-height: 1.7;
-  flex: 1;
-  margin-bottom: 16px;
-}
-
-.team-linkedin {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #0A66C2;
-  text-decoration: none;
-  padding: 7px 14px;
-  border: 1px solid rgba(10, 102, 194, 0.25);
-  border-radius: 6px;
-  transition: background 0.15s, border-color 0.15s;
-  align-self: flex-start;
-}
-
-.team-linkedin:hover {
-  background: rgba(10, 102, 194, 0.06);
-  border-color: #0A66C2;
+  line-height: 1.4;
 }
 
 /* ── Values ─────────────────────────────────────────────────────────────────── */
@@ -867,6 +786,12 @@ function handlePhotoError(e: Event, member: TeamMember) {
 }
 
 /* ── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .mission-pillars {
     grid-template-columns: 1fr;
@@ -887,13 +812,8 @@ function handlePhotoError(e: Event, member: TeamMember) {
     gap: 40px;
   }
 
-  .timeline-item {
-    grid-template-columns: 64px 24px 1fr;
-  }
-
-  .timeline-year {
-    font-size: 13px;
-    padding-right: 12px;
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .cta-simple {
@@ -911,6 +831,12 @@ function handlePhotoError(e: Event, member: TeamMember) {
   .investor-badge {
     padding: 12px 22px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
   }
 }
 </style>

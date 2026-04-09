@@ -107,7 +107,7 @@
             <img src="/logo-td-bank.svg" alt="TD Bank" class="backer-logo" />
           </div>
           <div class="backer-logo-item">
-            <img src="/logo-smbc.svg" alt="SMBC" class="backer-logo" />
+            <img src="/logo-smbc.avif" alt="SMBC" class="backer-logo" />
           </div>
         </div>
       </div>
