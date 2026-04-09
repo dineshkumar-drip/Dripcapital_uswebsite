@@ -13,54 +13,113 @@
       </div>
     </section>
 
-    <!-- What is Line of Credit -->
-    <section class="section">
+    <!-- How Line of Credit Works — Visual -->
+    <section class="section section-bg">
       <div class="container">
-        <div class="two-col">
-          <div class="reveal">
-            <span class="eyebrow">What is Line of Credit?</span>
-            <h2 class="section-title">Capital that revolves<br>with your business.</h2>
-            <p class="section-subtitle">
-              Our revolving Line of Credit gives you flexible, on-demand access to capital. Unlike a term loan, you don't take it all at once. You draw what you need, repay, and draw again. Interest only accrues on what you actually use.
-            </p>
-            <p style="margin-top: 16px; color: var(--body); font-size: 15px; line-height: 1.7;">
-              Perfect for businesses with variable cash needs: seasonal businesses, fast-growing companies, and anyone who wants capital on standby.
-            </p>
-            <NuxtLink to="/company/contact" class="btn btn-primary mt-32">Apply for Line of Credit →</NuxtLink>
+        <div class="section-header reveal" style="max-width: 660px;">
+          <span class="eyebrow">How Line of Credit Works</span>
+          <h2 class="section-title">Flexible working capital line <em>that can be drawn and repaid via 6 EMIs.</em></h2>
+        </div>
+
+        <div class="loc-visual-layout">
+          <!-- Flow diagram -->
+          <div class="loc-diagram reveal">
+            <svg class="loc-svg" viewBox="0 0 580 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- 1: DRIP → YOU (draw, left arrow) -->
+              <path d="M400 130 L220 250" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreenLOC)" />
+              <!-- 2: YOU → BUSINESS (use, right-down) -->
+              <path d="M250 320 L400 350" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreenLOC)" />
+              <!-- 3: DRIP → YOU repay (right arrow, going back up) -->
+              <path d="M350 210 L220 280" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowGreenLOC)" opacity="0.5" />
+              <defs>
+                <marker id="arrowGreenLOC" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                  <path d="M0 0 L8 3 L0 6" fill="var(--green)" />
+                </marker>
+              </defs>
+            </svg>
+
+            <!-- Nodes -->
+            <div class="loc-node loc-node-you">
+              <div class="loc-node-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+                </svg>
+              </div>
+              <span class="loc-node-label">YOU</span>
+            </div>
+
+            <div class="loc-node loc-node-drip">
+              <div class="loc-node-icon loc-node-icon-drip">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+              </div>
+              <span class="loc-node-label">DRIP CAPITAL</span>
+            </div>
+
+            <div class="loc-node loc-node-biz">
+              <div class="loc-node-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/><path d="M6 8h.01M10 8h.01"/>
+                </svg>
+              </div>
+              <span class="loc-node-label" style="font-size: 9px;">BUSINESS NEEDS</span>
+            </div>
+
+            <!-- Step badges -->
+            <div class="loc-step loc-step-1">
+              <span class="loc-step-num">1</span>
+              <span class="loc-step-text">Draw from credit line<br>as needed</span>
+            </div>
+            <div class="loc-step loc-step-2">
+              <span class="loc-step-num">2</span>
+              <span class="loc-step-text">Use for business<br>needs</span>
+            </div>
+            <div class="loc-step loc-step-3">
+              <span class="loc-step-num">3</span>
+              <span class="loc-step-text">Repay in 6 EMIs</span>
+            </div>
           </div>
-          <div class="reveal reveal-delay-1">
-            <div class="flex-visual">
-              <div class="credit-meter">
-                <div class="credit-meter-header">
-                  <span class="credit-label">Available Credit</span>
-                  <span class="credit-amount">$500,000</span>
-                </div>
-                <div class="credit-bar-outer">
-                  <div class="credit-bar-available"></div>
-                  <div class="credit-bar-drawn"></div>
-                </div>
-                <div class="credit-legend">
-                  <span class="legend-item">
-                    <span class="legend-dot legend-green"></span>Available
-                  </span>
-                  <span class="legend-item">
-                    <span class="legend-dot legend-navy"></span>Drawn
-                  </span>
-                </div>
-                <div class="credit-actions-demo">
-                  <div class="credit-action-row">
-                    <span class="credit-action-label">Draw $100K for vendor payment</span>
-                    <span class="credit-action-tag draw">Draw</span>
-                  </div>
-                  <div class="credit-action-row">
-                    <span class="credit-action-label">Repay $100K after customer pays</span>
-                    <span class="credit-action-tag repay">Repay</span>
-                  </div>
-                  <div class="credit-action-row">
-                    <span class="credit-action-label">Draw $200K for seasonal inventory</span>
-                    <span class="credit-action-tag draw">Draw</span>
-                  </div>
-                </div>
+
+          <!-- Example Transaction card -->
+          <div class="loc-example reveal reveal-delay-1">
+            <h3 class="loc-example-title">Example Transaction</h3>
+
+            <div class="loc-example-step">
+              <div class="loc-example-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="loc-example-who">US Business: Electronics Distributor</strong>
+                <p class="loc-example-what">Draws $50,000 from $200,000 credit line.</p>
+              </div>
+            </div>
+
+            <div class="loc-example-divider"></div>
+
+            <div class="loc-example-step">
+              <div class="loc-example-icon loc-example-icon-drip">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="loc-example-who">Drip Capital</strong>
+                <p class="loc-example-what">Disburses $50,000 within 24 hours</p>
+              </div>
+            </div>
+
+            <div class="loc-example-divider"></div>
+
+            <div class="loc-example-step">
+              <div class="loc-example-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+                </svg>
+              </div>
+              <div>
+                <strong class="loc-example-who">US Business: Electronics Distributor</strong>
+                <p class="loc-example-what">Repay $50,000 in 6 equal EMIs</p>
               </div>
             </div>
           </div>
@@ -238,126 +297,155 @@ const useCases = [
   flex-wrap: wrap;
 }
 
-.two-col {
+/* ── LOC Visual Flow Diagram ── */
+.loc-visual-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
   align-items: center;
+  margin-top: 48px;
 }
 
-/* Flex Visual */
-.flex-visual {
-  padding: 32px;
-  background: var(--off);
-  border: 1px solid var(--border);
-  border-radius: 16px;
+.loc-diagram {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 580 / 400;
+  max-width: 580px;
 }
 
-.credit-meter-header {
+.loc-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loc-node {
+  position: absolute;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 12px;
+  gap: 6px;
 }
 
-.credit-label {
-  font-size: 12px;
-  font-weight: 700;
+.loc-node-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loc-node-icon-drip {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.loc-node-label {
+  font-size: 11px;
+  font-weight: 800;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--mid);
+  color: var(--navy);
 }
 
-.credit-amount {
+.loc-node-you { bottom: 18%; left: 10%; }
+.loc-node-drip { top: 6%; right: 14%; }
+.loc-node-biz { bottom: 6%; right: 14%; }
+
+.loc-step {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.loc-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.loc-step-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+  line-height: 1.3;
+}
+
+.loc-step-1 { top: 18%; left: 30%; }
+.loc-step-2 { bottom: 14%; left: 35%; }
+.loc-step-3 { top: 42%; left: 38%; }
+
+/* Example Transaction Card */
+.loc-example {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+}
+
+.loc-example-title {
   font-size: 20px;
   font-weight: 800;
   color: var(--navy);
-}
-
-.credit-bar-outer {
-  width: 100%;
-  height: 16px;
-  background: var(--navy);
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  margin-bottom: 12px;
-}
-
-.credit-bar-available {
-  height: 100%;
-  width: 60%;
-  background: var(--green);
-}
-
-.credit-bar-drawn {
-  height: 100%;
-  width: 40%;
-  background: rgba(255,255,255,0.2);
-}
-
-.credit-legend {
-  display: flex;
-  gap: 20px;
   margin-bottom: 24px;
+  letter-spacing: -0.02em;
 }
 
-.legend-item {
+.loc-example-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.loc-example-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--off);
+  border: 1px solid var(--border);
   display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.loc-example-icon-drip {
+  background: rgba(0,194,124,0.08);
+  border-color: rgba(0,194,124,0.2);
+}
+
+.loc-example-who {
   font-size: 12px;
-  color: var(--mid);
-}
-
-.legend-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.legend-green { background: var(--green); }
-.legend-navy  { background: var(--navy); }
-
-.credit-actions-demo {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  border-top: 1px solid var(--border);
-  padding-top: 16px;
-}
-
-.credit-action-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 12px;
-  background: var(--white);
-  border-radius: 8px;
-}
-
-.credit-action-label {
-  font-size: 13px;
-  color: var(--body);
-}
-
-.credit-action-tag {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 4px;
-}
-
-.credit-action-tag.draw {
-  background: rgba(0,194,124,0.12);
-  color: var(--green-d);
-}
-
-.credit-action-tag.repay {
-  background: rgba(11,31,58,0.08);
+  font-weight: 800;
   color: var(--navy);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.loc-example-what {
+  font-size: 14px;
+  color: var(--body);
+  line-height: 1.5;
+}
+
+.loc-example-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 16px 0;
 }
 
 /* Steps */
@@ -512,10 +600,13 @@ const useCases = [
 }
 
 @media (max-width: 768px) {
-  .two-col {
+  .loc-visual-layout {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+
+  .loc-diagram { max-width: 100%; }
+  .loc-step-text { font-size: 11px; }
 
   .steps-row {
     flex-direction: column;
