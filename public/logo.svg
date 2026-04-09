@@ -1,5 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
-  <text x="0" y="44" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="44" fill="#0B1F3A" letter-spacing="-2">DRIP</text>
-  <line x1="118" y1="6" x2="134" y2="54" stroke="#00C27C" stroke-width="5.5" stroke-linecap="round"/>
-  <text x="138" y="44" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="38" fill="#0B1F3A">c</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" fill="none">
+  <!-- D -->
+  <path d="M0 8h12.5c13.8 0 22.8 9.2 22.8 20s-9 20-22.8 20H0V8zm10.8 8.4v23.2h2c7.8 0 13-5.4 13-11.6s-5.2-11.6-13-11.6h-2z" fill="#0B1F3A"/>
+  <!-- R -->
+  <path d="M42 8h14c8.6 0 13.6 5 13.6 11.4 0 5-2.8 8.8-7.4 10.4L72 48H60.2l-8-16.6H52.8V48H42V8zm10.8 8v10h2.8c3.2 0 5.2-1.8 5.2-5s-2-5-5.2-5h-2.8z" fill="#0B1F3A"/>
+  <!-- I -->
+  <path d="M78 8h10.8v40H78V8z" fill="#0B1F3A"/>
+  <!-- P -->
+  <path d="M96 8h14.4c8.8 0 14 5.4 14 12.8s-5.2 12.8-14 12.8H106.8V48H96V8zm10.8 8v9.6h2.8c3.4 0 5.4-1.8 5.4-4.8s-2-4.8-5.4-4.8h-2.8z" fill="#0B1F3A"/>
+  <!-- Forward slash (green, tilted) -->
+  <line x1="131" y1="46" x2="147" y2="4" stroke="#00C27C" stroke-width="7" stroke-linecap="round"/>
+  <!-- c -->
+  <path d="M168 28c0-11.6 8.8-21 20-21 5.6 0 10.4 2.2 13.6 5.8l-6.8 7c-1.6-2-4-3.2-6.8-3.2-5.4 0-9.4 4.6-9.4 11.4s4 11.4 9.4 11.4c2.8 0 5.2-1.2 6.8-3.2l6.8 7C198.4 47 193.6 49 188 49c-11.2 0-20-9.4-20-21z" fill="#0B1F3A"/>
 </svg>
